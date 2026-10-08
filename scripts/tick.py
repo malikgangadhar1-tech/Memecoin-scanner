@@ -92,15 +92,32 @@ def step_pool():
                 w = csv.writer(fh)
                 if new: w.writerow("pool,ticker,alerted_at,alert_mcap,alert_liq,alert_buyers,alert_buys,alert_sells,mcap_1h,mcap_6h,mcap_24h,peak_mcap_seen,verdict".split(","))
                 w.writerow([p["addr"], p.get("symbol"), datetime.now(IST).isoformat(timespec="seconds"), round(p["mcap"]), round(p["liq"]), p["buyers"], p["buys"], p["sells"], "", "", "", "", ""])
+            try:
+                with open(f"{P}/data/v3_alerts.jsonl", "a") as fh:
+                    fh.write(json.dumps({"t": time.time(), "mint": p.get("mint"), "pool": p["addr"], "sym": p.get("symbol"), "mc": p["mcap"],
+                        # full setup snapshot for the lab notebook (Rohit Oct 8 16:34: "need the setup info")
+                        **{k: p.get(k) for k in ("liq", "buyers", "buys", "sells", "sellers", "avg", "age_min", "buyers_5m", "buyers_prev5m", "buyers_half_early", "buyers_half_late", "half_window_s", "largest_bundle_5m", "socials", "dev_pct", "top10_pct", "tag")}}) + "\n")
+            except Exception: pass
         soc = {True: "socials yes", False: "socials no"}.get(p.get("socials"), "socials unknown")
         conc = " (sells concentrated)" if p["sellers"] and p["sells"] / p["sellers"] > 3 else ""
         tag = f"{p['tag']} — " if p.get("tag") else ""
+        if (p.get("age_min") is not None) and p["age_min"] < 10: tag = "⭐ FRESH <10m — " + tag  # Rohit Oct 8 16:10: label only (49% vs 30%)
         if p.get("dev_pct") is not None or p.get("top10_pct") is not None:
             dv = p.get("dev_pct"); flag = " ⚠️DEV>1%" if (dv or 0) > 1 else ""
             tag += f"dev {dv if dv is not None else '?'}%{flag} / top10 {p.get('top10_pct') if p.get('top10_pct') is not None else '?'}% — "
         lines.append(f"{p.get('symbol')} — {tag}mcap {usd(p['mcap'])} — liq {usd(p['liq'])} — {p['buyers']} buyers / {p['buys']} buys / {p['sells']} sells{conc} — "
-                     f"{p.get('buyers_5m')} buyers in last 5 min — {p['age_min']}m old, launched {p['created_ist']} — {soc} — https://dexscreener.com/solana/{p['addr']}")
+                     f"{p.get('buyers_5m')} buyers in last 5 min{accel(p)} — {p['age_min']}m old, launched {p['created_ist']} — {soc} — https://dexscreener.com/solana/{p['addr']}")
     if lines: _tl.out.append("\n".join(lines))
+
+def accel(p):
+    # Label only (Rohit Oct 8 16:34): buyers in the 5 min before that, arrow = speeding up / slowing down
+    pv, b5 = p.get("buyers_prev5m"), p.get("buyers_5m")
+    if pv is not None and b5 is not None:
+        return f" (prev 5 min {pv} {'↑' if b5 > pv else ('↓' if b5 < pv else '=')})"
+    e, l, w = p.get("buyers_half_early"), p.get("buyers_half_late"), p.get("half_window_s")
+    if e is None or l is None or not w: return ""
+    arrow = "↑ speeding up" if l > 1.15 * e else ("↓ slowing" if l < 0.85 * e else "= steady")
+    return f" ({arrow}: {e}→{l} buyers per {round(w/60,1)}m)"
 
 def step_band():
     j = lastjson(run(["python3", "scripts/pump_band_watch.py", "--seconds", "20"], 120))
@@ -135,7 +152,8 @@ def step_walletlive():
     if sw or other: _tl.out.append("\n".join(sw + other))
 
 from concurrent.futures import ThreadPoolExecutor
-STEPS = [("revival", step_revival), ("pool", step_pool), ("kol", step_kol), ("walletlive", step_walletlive)]
+# revival (dev sold at a loss + side wallet sold) TERMINATED by Rohit Oct 8 16:34 IST: "needs way more discretion, I'll look at it later" (3/31 clean 2x)
+STEPS = [("pool", step_pool), ("kol", step_kol), ("walletlive", step_walletlive)]
 T0 = time.time()
 import threading
 _tl = threading.local()
@@ -155,6 +173,51 @@ sel = [(n, f) for n, f in STEPS if not ONLY or n in ONLY]
 with ThreadPoolExecutor(len(sel)) as ex:
     for n, f in sel: ex.submit(wrap, n, f)
 out = [x for n, _ in sel for x in res.get(n, [])]
+
+# "Wallet confirmed" 2nd ping (Rohit Oct 8 16:10, combining edges): a judged/extra SW wallet buys a v3 coin within 60 min of its ping.
+def wallet_confirm():
+    import sqlite3, csv as _csv
+    vf = f"{P}/data/v3_alerts.jsonl"
+    if not os.path.exists(vf): return []
+    now = time.time(); V = []
+    for l in open(vf):
+        try: a = json.loads(l)
+        except Exception: continue
+        if a.get("mint") and now - a["t"] <= 3600: V.append(a)
+    if not V: return []
+    df = f"{P}/data/wallet_confirmed.json"; done = set(json.load(open(df))) if os.path.exists(df) else set()
+    con = sqlite3.connect(f"{P}/engine/watch.db", timeout=30)
+    good = {w for (w,) in con.execute("select wallet from judge_scores where score>=65")}
+    try: good |= {r["wallet"] for r in _csv.DictReader(open(f"{P}/engine/extra_wallets.csv"))}
+    except Exception: pass
+    bad = set()
+    for fn in ("sw_blocklist.json", "logs/sw_demoted.json"):
+        try: bad |= set(json.load(open(f"{P}/engine/{fn}")))
+        except Exception: pass
+    try: bad |= {l.split()[0] for l in open(f"{P}/engine/sw_blocklist.txt") if l.strip() and not l.startswith("#")}
+    except Exception: pass
+    lines = []
+    for a in V:
+        if a["mint"] in done: continue
+        rows = [r for r in con.execute("select wallet, ts, sol from sw_trades where mint=? and kind='buy' and sol>=0.05 and ts>=? and ts<=? order by ts", (a["mint"], int(a["t"]) - 120, int(a["t"]) + 3600)) if r[0] in good and r[0] not in bad]
+        if not rows: continue
+        done.add(a["mint"]); w, ts, sol = rows[0]; nw = len({r[0] for r in rows})
+        mc = 0
+        try:
+            ps = json.load(urllib.request.urlopen(urllib.request.Request("https://api.dexscreener.com/tokens/v1/solana/" + a["mint"], headers={"User-Agent": "Mozilla/5.0"}), timeout=15))
+            if ps: mc = max(x.get("marketCap") or 0 for x in ps)
+        except Exception: pass
+        if not DRY:
+            with open(f"{P}/data/wallet_confirmed.jsonl", "a") as fh:
+                fh.write(json.dumps({"t": now, "buy_ts": ts, "mint": a["mint"], "pool": a["pool"], "sym": a.get("sym"), "v3_mc": a["mc"], "mc": mc, "wallets": sorted({r[0] for r in rows})}) + "\n")
+        ist = datetime.fromtimestamp(ts, IST).strftime("%H:%M")
+        lines.append(f"✅ Wallet confirmed: {a.get('sym')} — {nw} smart wallet{'s' if nw > 1 else ''} bought ({w[:6]} {sol:.2f} SOL at {ist} IST, {max(0, round((ts - a['t']) / 60))} min after v3 ping) — v3 ping mcap {usd(a['mc'])} → now {usd(mc) if mc else '?'} — https://dexscreener.com/solana/{a['pool']}")
+    if not DRY: json.dump(sorted(done), open(df, "w"))
+    return lines
+try:
+    _wc = wallet_confirm()
+    if _wc: out.append("\n".join(_wc))
+except Exception: log("CRASH wallet_confirm", traceback.format_exc()[-800:])
 
 # Narrative LABEL via Rohit's Gemini (Flash-Lite, his key, not the Hark pool). One batched call per tick, label only:
 # it never adds, drops or reorders an alert. Daily cap 400 calls (free tier 450/day). Any failure = no label.

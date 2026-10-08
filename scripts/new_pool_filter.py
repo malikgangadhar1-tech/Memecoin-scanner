@@ -125,13 +125,28 @@ def main():
             errors.append(f"trades {pp['addr']}: {e}"); reasons["trades_unavailable"] = reasons.get("trades_unavailable", 0) + 1; continue
         cut = now - timedelta(minutes=5)
         byblock, allw = {}, set()
+        # ACCELERATION LABEL (Rohit Oct 8 16:34 IST, physics read: velocity vs acceleration): distinct buyers 5-10 min ago.
+        cut2 = now - timedelta(minutes=10); prevw = set(); oldest = None
         for t in tr:
             a = t["attributes"]
             ts = parse_ts(a.get("block_timestamp"))
+            if ts and (oldest is None or ts < oldest): oldest = ts
+            if a.get("kind") == "buy" and ts and cut2 <= ts < cut: prevw.add(a.get("tx_from_address"))
             if a.get("kind") != "buy" or not ts or ts < cut: continue
             byblock.setdefault(a.get("block_number"), set()).add(a.get("tx_from_address")); allw.add(a.get("tx_from_address"))
         big = max((len(w) for w in byblock.values()), default=0)
         pp["buyers_5m"] = len(allw); pp["largest_bundle_5m"] = big
+        pp["buyers_prev5m"] = len(prevw) if (oldest is not None and oldest <= cut2) else None  # None = trade page doesn't reach 10 min back
+        # Busy pools: GT's trade page often covers < 10 min, so also split the covered window (max 5 min) into halves.
+        if oldest is not None:
+            start = max(cut, oldest); mid = start + (now - start) / 2
+            h1, h2 = set(), set()
+            for t in tr:
+                a = t["attributes"]; ts = parse_ts(a.get("block_timestamp"))
+                if a.get("kind") != "buy" or not ts or ts < start: continue
+                (h2 if ts >= mid else h1).add(a.get("tx_from_address"))
+            pp["buyers_half_early"], pp["buyers_half_late"] = len(h1), len(h2)
+            pp["half_window_s"] = round((now - start).total_seconds() / 2)
         if len(allw) < 8 or (big >= 5 and big >= 0.5 * len(allw)):
             try:
                 with open(os.path.join(os.path.dirname(ALERTED), "pool_rejects_v3.jsonl"), "a") as fh:
@@ -162,6 +177,32 @@ def main():
                     fh.write(json.dumps(dict(t=time.time(), mint=pp["mint"], pool=pp["addr"], **hl)) + "\n")
         except Exception as e:
             errors.append(f"holders {pp['mint']}: {e}")
+    # COPYCAT CUT (Rohit Oct 8 15:52 IST "eliminate v3 copycat ticker"; backtest 4/18 clean vs 15/27):
+    # drop a pass whose ticker was already alerted earlier by any signal, or by an earlier pass this tick.
+    SEEN = os.path.join(os.path.dirname(ALERTED), "seen_symbols.json")
+    try: seen = set(json.load(open(SEEN)))
+    except Exception:
+        seen = set()
+        try:
+            for l in open(os.path.join(ROOT, "grading", "outcomes.jsonl")):
+                s_ = (json.loads(l).get("sym") or "").strip().lower()
+                if s_: seen.add(s_)
+        except Exception: pass
+    kept2 = []
+    for pp in passing:
+        s_ = (pp.get("symbol") or "").strip().lower()
+        if s_ and s_ in seen:
+            reasons["copycat_ticker"] = reasons.get("copycat_ticker", 0) + 1
+            if commit:
+                with open(os.path.join(os.path.dirname(ALERTED), "pool_rejects_v3.jsonl"), "a") as fh:
+                    fh.write(json.dumps(dict(t=time.time(), pool=pp["addr"], mint=pp.get("mint"), sym=pp.get("symbol"), mc=pp.get("mcap"), reason="copycat_ticker")) + "\n")
+                alerted.append(pp["addr"])
+            continue
+        if s_: seen.add(s_)
+        kept2.append(pp)
+    passing = kept2
+    if commit:
+        json.dump(sorted(seen), open(SEEN, "w"))
     if commit and passing:
         alerted += [pp["addr"] for pp in passing]
         os.makedirs(os.path.dirname(ALERTED), exist_ok=True)

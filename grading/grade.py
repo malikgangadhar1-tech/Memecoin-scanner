@@ -44,12 +44,20 @@ if os.path.exists(f"{P}/data/pump_band_alerts.jsonl"):
         if l.strip():
             r = json.loads(l); alerts.append({"scanner": "band", "signal": "pump.fun band", "t": r["t"], "mint": r["mint"], "sym": r.get("symbol"), "mc": r.get("mc")})
 
+# v3 "wallet confirmed" 2nd pings (live Oct 8 16:15 IST); graded from the confirm ping's time and mcap
+if os.path.exists(f"{P}/data/wallet_confirmed.jsonl"):
+    for l in open(f"{P}/data/wallet_confirmed.jsonl"):
+        if l.strip():
+            r = json.loads(l); alerts.append({"scanner": "v3wc", "signal": "v3 wallet confirmed", "t": r["t"], "mint": r["mint"], "sym": r.get("sym"), "mc": r.get("mc") or None})
+
 # smart-wallet convergence alerts (live since Oct 7 13:00 IST; earlier rows are backfill)
 try:
     import sqlite3
     _c = sqlite3.connect(f"{P}/engine/watch.db", timeout=30)
     for m, t in _c.execute("select mint, ts from sw_alerts where ts >= 1791358200"):
         alerts.append({"scanner": "sw", "signal": "smart-wallet convergence", "t": t, "mint": m, "sym": None, "mc": None})
+    for m, t in _c.execute("select mint, ts from sw_alerts where ts < 1791358200"):  # pre-live backfill: research only, never messaged
+        alerts.append({"scanner": "swbf", "signal": "smart-wallet backfill", "t": t, "mint": m, "sym": None, "mc": None})
 except Exception as e: print("sw read failed", e)
 
 # resolve pairs via DexScreener
@@ -93,7 +101,7 @@ if os.path.exists(OUT):
 res = []
 now = time.time()
 # Messaged signals first; paused/log-only (dex paid, capitulation) last. Hard time budget so the file always gets rewritten.
-_PRI = {"newpool": 0, "sw": 1, "kol": 2}
+_PRI = {"newpool": 0, "sw": 1, "v3wc": 1, "kol": 2, "swbf": 3}
 alerts.sort(key=lambda a: (_PRI.get(a["scanner"], 3 if a["signal"] in ("Dev sold at a loss", "Side wallet sold") else 4), -a["t"]))
 _T0 = time.time(); BUDGET = float(os.environ.get("GRADE_BUDGET", 420))
 for a in alerts:
@@ -103,9 +111,9 @@ for a in alerts:
     key = (a["scanner"], a.get("pool") or a.get("mint"), int(a["t"]))
     p = a.pop("pair", None)
     dk = done.get(key)
-    if dk and "err" not in dk and "clean_2x" in dk and (now - a["t"] > 86400 or dk.get("graded_at", 0) > now - 1800):
+    if dk and "err" not in dk and "clean_2x" in dk and dk.get("graded_at", 0) > 1791455000 and (now - a["t"] > 86400 or dk.get("graded_at", 0) > now - 1800):
         a.pop("pair", None); res.append(dk); continue
-    if not p: res.append({**a, "err": "no pair"}); continue
+    if not p: res.append(dk if (dk and "err" not in dk) else {**a, "err": "no pair"}); continue
     c, src = candles(p)
     mc_now = p.get("marketCap") or p.get("fdv") or 0; pr_now = float(p.get("priceUsd") or 0)
     scale = mc_now / pr_now if pr_now else 0
@@ -114,7 +122,7 @@ for a in alerts:
              website=bool((p.get("info") or {}).get("websites")), age_h=round((a["t"] * 1000 - (p.get("pairCreatedAt") or 0)) / 3.6e6, 2))
     after = [x for x in c if x[0] >= a["t"] - 60]
     if not after or not scale:
-        a["err"] = "no candles"; res.append(a); continue
+        a["err"] = "no candles"; res.append(dk if (dk and "err" not in dk) else a); continue
     if not a.get("mc"): a["mc"] = after[0][1] * scale
     entry_c = next((x for x in after if x[0] >= a["t"] + 60), after[0])
     entry = entry_c[2]  # pessimistic: candle high
@@ -141,7 +149,7 @@ for a in alerts:
     # Primary metric CLEAN_2X (2R with stop at 0.5x); stretch CLEAN_2.5X (3R). Candles from the alert minute on, in order;
     # a candle touching both stop and target counts as stop first (pessimistic).
     am = a["mc"]; stop_t = None; hit = {}; mae = 1e9
-    for x in after:
+    for x in (y for y in after if y[0] >= a["t"]):  # fix Oct 8 16:00: candles starting at/after alert only (pre-alert minute faked clean 2x)
         lo, hi = x[3] * scale / am, x[2] * scale / am
         for k in (2.0, 2.5):
             if k not in hit and stop_t is None and hi >= k and lo > 0.5: hit[k] = x[0]
