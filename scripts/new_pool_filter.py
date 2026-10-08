@@ -139,14 +139,16 @@ def main():
         pp["buyers_prev5m"] = len(prevw) if (oldest is not None and oldest <= cut2) else None  # None = trade page doesn't reach 10 min back
         # Busy pools: GT's trade page often covers < 10 min, so also split the covered window (max 5 min) into halves.
         if oldest is not None:
-            start = max(cut, oldest); mid = start + (now - start) / 2
+            # anchor on the newest trade, not the runner clock (runner clock lags GT -> negative windows, fix Oct 8 20:30)
+            newest = max((parse_ts(t["attributes"].get("block_timestamp")) for t in tr if t["attributes"].get("block_timestamp")), default=now)
+            start = max(newest - timedelta(minutes=5), oldest); mid = start + (newest - start) / 2
             h1, h2 = set(), set()
             for t in tr:
                 a = t["attributes"]; ts = parse_ts(a.get("block_timestamp"))
                 if a.get("kind") != "buy" or not ts or ts < start: continue
                 (h2 if ts >= mid else h1).add(a.get("tx_from_address"))
             pp["buyers_half_early"], pp["buyers_half_late"] = len(h1), len(h2)
-            pp["half_window_s"] = round((now - start).total_seconds() / 2)
+            pp["half_window_s"] = round((newest - start).total_seconds() / 2)
         if len(allw) < 8 or (big >= 5 and big >= 0.5 * len(allw)):
             try:
                 with open(os.path.join(os.path.dirname(ALERTED), "pool_rejects_v3.jsonl"), "a") as fh:
