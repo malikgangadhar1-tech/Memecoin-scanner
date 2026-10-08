@@ -96,11 +96,12 @@ def step_pool():
                 with open(f"{P}/data/v3_alerts.jsonl", "a") as fh:
                     fh.write(json.dumps({"t": time.time(), "mint": p.get("mint"), "pool": p["addr"], "sym": p.get("symbol"), "mc": p["mcap"],
                         # full setup snapshot for the lab notebook (Rohit Oct 8 16:34: "need the setup info")
-                        **{k: p.get(k) for k in ("liq", "buyers", "buys", "sells", "sellers", "avg", "age_min", "buyers_5m", "buyers_prev5m", "buyers_half_early", "buyers_half_late", "half_window_s", "largest_bundle_5m", "socials", "dev_pct", "top10_pct", "tag")}}) + "\n")
+                        **{k: p.get(k) for k in ("liq", "buyers", "buys", "sells", "sellers", "avg", "age_min", "buyers_5m", "buyers_prev5m", "buyers_half_early", "buyers_half_late", "half_window_s", "largest_bundle_5m", "socials", "dev_pct", "top10_pct", "tag", "creator", "farm_dev")}}) + "\n")
             except Exception: pass
         soc = {True: "socials yes", False: "socials no"}.get(p.get("socials"), "socials unknown")
         conc = " (sells concentrated)" if p["sellers"] and p["sells"] / p["sellers"] > 3 else ""
         tag = f"{p['tag']} — " if p.get("tag") else ""
+        if p.get("farm_dev"): tag = "🚜 FARM DEV — " + tag  # Rohit Oct 8 22:46: label only (top-25 pump.fun farm deployers)
         if (p.get("age_min") is not None) and p["age_min"] < 10: tag = "⭐ FRESH <10m — " + tag  # Rohit Oct 8 16:10: label only (49% vs 30%)
         if p.get("dev_pct") is not None or p.get("top10_pct") is not None:
             dv = p.get("dev_pct"); flag = " ⚠️DEV>1%" if (dv or 0) > 1 else ""
@@ -121,7 +122,7 @@ def accel(p):
 
 def step_band():
     j = lastjson(run(["python3", "scripts/pump_band_watch.py", "--seconds", "20"], 120))
-    lines = [f"pump.fun band: {a['symbol']} ({a.get('name','')}) — mcap {usd(a['mc'])} — {a['buyers5']} buyers / {a['buys5']} buys / {a['sells5']} sells in last 5 min, ${a['buyvol5']:,} bought — "
+    lines = [f"pump.fun band: {'🚜 FARM DEV — ' if a.get('farm_dev') else ''}{a['symbol']} ({a.get('name','')}) — mcap {usd(a['mc'])} — {a['buyers5']} buyers / {a['buys5']} buys / {a['sells5']} sells in last 5 min, ${a['buyvol5']:,} bought — "
              f"age {a['age_min']}m{' — bonded' if a.get('bonded') else ''} — {a['link']}" for a in j.get("alerts", [])]
     if lines: _tl.out.append("\n".join(lines))
 

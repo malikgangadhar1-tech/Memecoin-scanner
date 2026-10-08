@@ -8,6 +8,8 @@ import json, os, sys, time, urllib.request
 P = "/workspace/projects/7ed675e0-9a24-4f62-9d59-e27bf0c6ccd0"
 sys.path.insert(0, f"{P}/research")
 from heat import heat, save
+sys.path.insert(0, f"{P}/scripts")
+from farm_devs import FARM
 LO, HI, MAX_AGE_H, MIN_B5 = 15000, 30000, 4, 8
 args = sys.argv[1:]
 SECS = float(args[args.index("--seconds") + 1]) if "--seconds" in args else 100
@@ -40,6 +42,7 @@ while True:
         bundle = h["max_slot_buyers5"] >= 5 and h["max_slot_buyers5"] >= 0.5 * max(h["buyers5"], 1)
         rec = dict(t=int(now), symbol=c.get("symbol"), name=c.get("name"), mint=m, mc=round(mc), age_min=round(age / 60),
                    bonded=bool(c.get("complete")), twitter=bool(c.get("twitter")), telegram=bool(c.get("telegram")), **h)
+        rec["creator"] = c.get("creator"); rec["farm_dev"] = rec["creator"] in FARM  # FARM DEV label only (Rohit Oct 8 22:46 IST)
         thin_avg = h["buys5"] and h["buyvol5"] / h["buys5"] < 20   # v3: average trade >= $20
         if h["buyers5"] < MIN_B5 or bundle or thin_avg:
             seen_rej[m] = now

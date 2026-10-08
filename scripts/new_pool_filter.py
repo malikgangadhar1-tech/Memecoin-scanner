@@ -174,6 +174,8 @@ def main():
             sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
             from holder_check import holder_labels
             hl = holder_labels(pp["mint"], pp["addr"]); pp.update(dev_pct=hl["dev_pct"], top10_pct=hl["top10_pct"])
+            from farm_devs import is_farm  # FARM DEV label (Rohit Oct 8 22:46 IST), label only
+            pp["creator"] = hl.get("creator"); pp["farm_dev"] = is_farm(hl.get("creator"))
             if commit:
                 with open(os.path.join(os.path.dirname(ALERTED), "v3_holder_labels.jsonl"), "a") as fh:
                     fh.write(json.dumps(dict(t=time.time(), mint=pp["mint"], pool=pp["addr"], **hl)) + "\n")
