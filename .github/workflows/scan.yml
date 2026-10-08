@@ -1,0 +1,63 @@
+name: scan
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: scan
+  cancel-in-progress: false
+jobs:
+  tick:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      HELIUS_API_KEY: ${{ secrets.HELIUS_API_KEY }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      TZ: Asia/Kolkata
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Restore state
+        run: |
+          if git fetch --depth=1 origin state && git archive origin/state | tar -x && [ -f engine/watch.db.gz ]; then touch .restored; else echo "::error::state restore failed"; exit 1; fi
+          if [ -f engine/watch.db.gz ]; then gunzip -f engine/watch.db.gz; fi
+          mkdir -p engine/logs data
+          sudo mkdir -p /workspace/projects
+          sudo ln -sfn "$GITHUB_WORKSPACE" /workspace/projects/7ed675e0-9a24-4f62-9d59-e27bf0c6ccd0
+          sudo ln -sfn "$GITHUB_WORKSPACE/tools" /workspace/tools
+      - name: Scan (all scanners)
+        run: |
+          timeout 600 python3 scripts/tick.py > alerts.txt || echo "tick exit $?"
+          if [ -s alerts.txt ]; then { date -u +%FT%TZ; cat alerts.txt; echo; } >> data/github_alerts.log; cat alerts.txt; fi
+      - name: Grade alerts (hourly)
+        run: |
+          M=$(date -u +%M); if [ "$M" -lt 10 ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            cd grading && GRADE_BUDGET=300 timeout 330 python3 grade.py || echo "grade exit $?"
+          fi
+      - name: Judge re-score (daily 08:30 IST)
+        run: |
+          if [ "$(date -u +%H)" = "03" ] && [ "$(date -u +%M)" -lt 10 ]; then
+            cd engine
+            timeout 200 python3 mark_runners.py || true
+            timeout 500 python3 judge.py || true
+            timeout 120 python3 sw_backtest.py || true
+          fi
+      - name: Save state
+        if: always()
+        run: |
+          [ -f .restored ] || { echo "no restored state, not saving"; exit 0; }
+          S=$RUNNER_TEMP/state; rm -rf $S; mkdir -p $S
+          for f in data scanner/*.json scanner/*.jsonl scanner/*.txt engine/*_watermark.txt engine/sw_backtest.json engine/sw_candles.json engine/sw_insider_blocks.jsonl grading/kol_alerts.json grading/outcomes.jsonl grading/last_run.txt; do
+            [ -e "$f" ] && cp -r --parents "$f" $S/ || true
+          done
+          mkdir -p $S/engine/logs
+          tail -c 2000000 engine/logs/tick.log > $S/engine/logs/tick.log 2>/dev/null || true
+          cp engine/logs/sw_insider_blocks.jsonl $S/engine/logs/ 2>/dev/null || true
+          cp engine/logs/pipeline_$(date -u +%Y%m%d).log $S/engine/logs/ 2>/dev/null || true
+          if [ -f engine/watch.db ]; then sqlite3 engine/watch.db "PRAGMA wal_checkpoint(TRUNCATE);" || true; gzip -c engine/watch.db > $S/engine/watch.db.gz; fi
+          cd $S && git init -q -b state && git add -A
+          git -c user.name=scanner -c user.email=scanner@users.noreply.github.com commit -qm "state $(date -u +%FT%TZ)"
+          git push -qf "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" state

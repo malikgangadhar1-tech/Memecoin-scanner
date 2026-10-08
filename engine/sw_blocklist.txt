@@ -1,0 +1,3 @@
+# wallets excluded from smart-wallet convergence. One per line, then reason.
+DPn2K5e8ZrVhvrUPYHPLaX5Dd78LF9cY4G5qh1QmYFYF  Oct 7 2026: 14 of 15 convergence coins dead (<$5k); serial fake-mcap launches (Nike/YouTube/ChatGPT/Gemini ~$500k -> $2k)
+57wLkQBctPAfLeuoA119Pq77KdGxViqGqYAbbJA2TURf  Oct 7 2026: same ring as DPn2K5e8, 14 of 15 dead

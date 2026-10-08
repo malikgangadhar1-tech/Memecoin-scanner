@@ -1,0 +1,542 @@
+{
+ "generated": "2026-10-06T02:25:46Z",
+ "runners": 11,
+ "candidates": {
+  "gtagyESa99t49VmUqnnfsuowYnigSNKuYXdXWyXWNdd": [
+   {
+    "pool": "2wtPVcWdTMZAi5hnsfPaJkdsMihxhkujuAUSDMSvqpTo",
+    "name": "AI / SOL",
+    "first_buy_ts": "2026-09-30T18:37:10Z",
+    "mins_after_launch": 0.0,
+    "tx_hash": "solana_452047245_5RtAdmAwtUdQNrtUteJcUXqqXr3kA1HNHVgxTqnHq2c4JB8MZUVTiEBXNmbGW1LrcEwLEEGbboTzysARY9Ae448T_15_1790793485",
+    "usd": 12.760298549938106,
+    "runner_mcap": 227634.8843,
+    "runner_at": "2026-09-30T18:49:18Z"
+   },
+   {
+    "pool": "5VggWUCjpQN4X6tVLxA3xGx6eZ3wQoMoxXumhaWyPXa5",
+    "name": "HIGGS / USDC",
+    "first_buy_ts": "2026-10-04T16:23:14Z",
+    "mins_after_launch": 0.3,
+    "tx_hash": "solana_453309207_p6wD94x6PmKiDouBgP3eqEyX339V5fJMJppiG4qE9qUQd5t4k7NXtMPRkRq4fmLDRyvXjUjxgVYjt1YL6LacMvH_15_1791131015",
+    "usd": 18.711257552065987,
+    "runner_mcap": 5522700.12153929,
+    "runner_at": "2026-10-04T16:37:11Z"
+   }
+  ],
+  "4XBqViD1XYF1qHrErrsXBzDrCapvP9fEFX4LPjXZi9YU": [
+   {
+    "pool": "2wtPVcWdTMZAi5hnsfPaJkdsMihxhkujuAUSDMSvqpTo",
+    "name": "AI / SOL",
+    "first_buy_ts": "2026-09-30T18:37:11Z",
+    "mins_after_launch": 0.0,
+    "tx_hash": "solana_452047250_2RsafuEBo7PR5q1bwNsapyrZHJ8sacRF6DVGx8mZ7iSeiWmhHZ6LPK4rQYKQFYgyNrkHryoA4ge2J7JqZ7bLD6Gc_15_1790793493",
+    "usd": 6.4054334610351304,
+    "runner_mcap": 227634.8843,
+    "runner_at": "2026-09-30T18:49:18Z"
+   },
+   {
+    "pool": "5VggWUCjpQN4X6tVLxA3xGx6eZ3wQoMoxXumhaWyPXa5",
+    "name": "HIGGS / USDC",
+    "first_buy_ts": "2026-10-04T16:23:12Z",
+    "mins_after_launch": 0.2,
+    "tx_hash": "solana_453309199_2KjUgTkAJ6yERz2vwF5TgVh9uSa6P6aCZfFn8a6bFjkmqX7Umv8R6M8TanfgDdALaRKjdiTLdc77AAGdsACkaKxB_10_1791131013",
+    "usd": 5.954744238116415,
+    "runner_mcap": 5522700.12153929,
+    "runner_at": "2026-10-04T16:37:11Z"
+   }
+  ],
+  "rLsi2DPwRLovHzLV5XYxa8B597bv8w8nX7fZHJJf8uy": [
+   {
+    "pool": "2wtPVcWdTMZAi5hnsfPaJkdsMihxhkujuAUSDMSvqpTo",
+    "name": "AI / SOL",
+    "first_buy_ts": "2026-09-30T18:37:12Z",
+    "mins_after_launch": 0.0,
+    "tx_hash": "solana_452047254_3icqS3Z5edb8PEWNEjo7LVqA8JAudfoCmRk4bNFV9wqsnn3Mhad2dVPqZjX2xaYVKtj1uETwQTcZWVmPpsrnuCz1_30_1790793484",
+    "usd": 27.448112380739225,
+    "runner_mcap": 227634.8843,
+    "runner_at": "2026-09-30T18:49:18Z"
+   },
+   {
+    "pool": "5VggWUCjpQN4X6tVLxA3xGx6eZ3wQoMoxXumhaWyPXa5",
+    "name": "HIGGS / USDC",
+    "first_buy_ts": "2026-10-04T16:36:11Z",
+    "mins_after_launch": 13.2,
+    "tx_hash": "solana_453312087_55tj3pyZu57pFnda4xLvdPmq7EPSaeGJpe9yWBV4gSPMHsSxvXSfCyAss8rVpCgauWC5cPDPWdszoAtLyMPohg8Q_30_1791131779",
+    "usd": 213.68177129035345,
+    "runner_mcap": 5522700.12153929,
+    "runner_at": "2026-10-04T16:37:11Z"
+   }
+  ],
+  "Luckywzbt7nYBhmEZLnzqAsQmRE8bMmgyduxsP5kktR": [
+   {
+    "pool": "2wtPVcWdTMZAi5hnsfPaJkdsMihxhkujuAUSDMSvqpTo",
+    "name": "AI / SOL",
+    "first_buy_ts": "2026-09-30T18:37:58Z",
+    "mins_after_launch": 0.8,
+    "tx_hash": "solana_452047425_2K4LK8jCgX9Nyx8DUZf1eYBQdHKvaZ8UU5hQd3CpHjFqYo5UWLNHMKoWWjsFkzNAYcG823tNbxeWbxoXyNB87pxK_10_1790793520",
+    "usd": 74.14937539550417,
+    "runner_mcap": 227634.8843,
+    "runner_at": "2026-09-30T18:49:18Z"
+   },
+   {
+    "pool": "5VggWUCjpQN4X6tVLxA3xGx6eZ3wQoMoxXumhaWyPXa5",
+    "name": "HIGGS / USDC",
+    "first_buy_ts": "2026-10-04T16:35:26Z",
+    "mins_after_launch": 12.5,
+    "tx_hash": "solana_453311915_s8cbp5KvVzrzUA8D9aepiEcZ1XPpNXf1gJeBxmfy91nx1aEBctrGXDyHVpuSKg1oG6R4kQ894d5iSRZpqnYWzbr_13_1791131732",
+    "usd": 18.856812887876764,
+    "runner_mcap": 5522700.12153929,
+    "runner_at": "2026-10-04T16:37:11Z"
+   }
+  ],
+  "MriyaNN8TMp6qRWjfr723PK7xgQK7yCt7Kg2v2PQu7X": [
+   {
+    "pool": "2wtPVcWdTMZAi5hnsfPaJkdsMihxhkujuAUSDMSvqpTo",
+    "name": "AI / SOL",
+    "first_buy_ts": "2026-09-30T18:38:02Z",
+    "mins_after_launch": 0.9,
+    "tx_hash": "solana_452047440_4zwYJJTLJdvQyKDQuPDCK1bnNTJY662LrwNFD3TYMcBzfQXWZc1ESYywT3kMFdiaDGGsxDcpLtSgJibNbW2DbEFH_23_1790793522",
+    "usd": 24.114882420715343,
+    "runner_mcap": 227634.8843,
+    "runner_at": "2026-09-30T18:49:18Z"
+   },
+   {
+    "pool": "5VggWUCjpQN4X6tVLxA3xGx6eZ3wQoMoxXumhaWyPXa5",
+    "name": "HIGGS / USDC",
+    "first_buy_ts": "2026-10-04T16:23:12Z",
+    "mins_after_launch": 0.2,
+    "tx_hash": "solana_453309200_5dxcbxXxStRXwQfXp5ePQCLmmkHKJmLvGs5cb1me8ENmfAcQVXJXQuCDEEcr3BZmTHytMPetXbLENx1qjuS7mb2h_20_1791131014",
+    "usd": 40.40515020833422,
+    "runner_mcap": 5522700.12153929,
+    "runner_at": "2026-10-04T16:37:11Z"
+   }
+  ],
+  "R32xAccFis3YzBzGwZ1C4QkGiehLxSao7gDmErA3kjk": [
+   {
+    "pool": "2wtPVcWdTMZAi5hnsfPaJkdsMihxhkujuAUSDMSvqpTo",
+    "name": "AI / SOL",
+    "first_buy_ts": "2026-09-30T18:38:02Z",
+    "mins_after_launch": 0.9,
+    "tx_hash": "solana_452047438_C3DpHYZa4mhTBEgJADU6weGTbHfuqoCEGjtDRoFBz8BVrgX1kpmgViUG6zsUhCySXxT9wAZ6kbJEX5MgXhDi4Lf_30_1790793521",
+    "usd": 32.79179520316351,
+    "runner_mcap": 227634.8843,
+    "runner_at": "2026-09-30T18:49:18Z"
+   },
+   {
+    "pool": "5VggWUCjpQN4X6tVLxA3xGx6eZ3wQoMoxXumhaWyPXa5",
+    "name": "HIGGS / USDC",
+    "first_buy_ts": "2026-10-04T16:33:47Z",
+    "mins_after_launch": 10.8,
+    "tx_hash": "solana_453311556_4g8fBvNzeEsBncBaFWPMQdBupqi7wUZUhDCNfMsPT71cjEut5b34p7K3RsWJyQTGkPS5WtMMRiVv1LQAxpNXV2Aw_32_1791131633",
+    "usd": 250.0777239647635,
+    "runner_mcap": 5522700.12153929,
+    "runner_at": "2026-10-04T16:37:11Z"
+   }
+  ],
+  "shakRDxyKwaBbduqZTZt8Q4etTALbDLnAANStv9TLH3": [
+   {
+    "pool": "2wtPVcWdTMZAi5hnsfPaJkdsMihxhkujuAUSDMSvqpTo",
+    "name": "AI / SOL",
+    "first_buy_ts": "2026-09-30T18:38:39Z",
+    "mins_after_launch": 1.5,
+    "tx_hash": "solana_452047572_5SbWeQ2KbzncWhLLsBiakgPdcsJuPzJhELcELG9KfR3dF6ZJjX3d8ZzyZo2u7BEV4HwkSbZZVhmwpCz5X8y8Pqam_40_1790793540",
+    "usd": 33.612178274753305,
+    "runner_mcap": 227634.8843,
+    "runner_at": "2026-09-30T18:49:18Z"
+   },
+   {
+    "pool": "5VggWUCjpQN4X6tVLxA3xGx6eZ3wQoMoxXumhaWyPXa5",
+    "name": "HIGGS / USDC",
+    "first_buy_ts": "2026-10-04T16:34:19Z",
+    "mins_after_launch": 11.4,
+    "tx_hash": "solana_453311671_3Su6zajiDbtc22aYU2XUhbqWWjnPoFTqhh2i1dJmCUvGMPXjUMnYgZPERUqL7jeAKoR28pbiCikM1kKyp1aH72po_40_1791131662",
+    "usd": 54.74991934026844,
+    "runner_mcap": 5522700.12153929,
+    "runner_at": "2026-10-04T16:37:11Z"
+   }
+  ],
+  "GxDC9e7SP9mzhDo4re5HbpLa2RW7gB9DtmThx4i4pXSq": [
+   {
+    "pool": "2wtPVcWdTMZAi5hnsfPaJkdsMihxhkujuAUSDMSvqpTo",
+    "name": "AI / SOL",
+    "first_buy_ts": "2026-09-30T18:38:48Z",
+    "mins_after_launch": 1.6,
+    "tx_hash": "solana_452047606_4bnHRux6g4z7BwhxGkkrUPznx1gi9BQTWiVeQBG8qLnW4eVhipkVLVCrEnTmK5a8a17VE17RUh8rrjdLhwjmUV2n_51_1790793548",
+    "usd": 24.595052457378905,
+    "runner_mcap": 227634.8843,
+    "runner_at": "2026-09-30T18:49:18Z"
+   },
+   {
+    "pool": "5VggWUCjpQN4X6tVLxA3xGx6eZ3wQoMoxXumhaWyPXa5",
+    "name": "HIGGS / USDC",
+    "first_buy_ts": "2026-10-04T16:23:12Z",
+    "mins_after_launch": 0.2,
+    "tx_hash": "solana_453309201_5ATqScF437F4pmb1jd9aqXgH8Awf7okmCnXuXtj5hZ5LVWj37aFvEBiVh7d3huaFEnnCzMXaf7Um44B6cDoNJMJZ_45_1791131012",
+    "usd": 30.85790003593306,
+    "runner_mcap": 5522700.12153929,
+    "runner_at": "2026-10-04T16:37:11Z"
+   }
+  ],
+  "AgmLJBMDCqWynYnQiPCuj9ewsNNsBJXyzoUhD9LJzN51": [
+   {
+    "pool": "2wtPVcWdTMZAi5hnsfPaJkdsMihxhkujuAUSDMSvqpTo",
+    "name": "AI / SOL",
+    "first_buy_ts": "2026-09-30T18:39:04Z",
+    "mins_after_launch": 1.9,
+    "tx_hash": "solana_452047666_2Q1gmmyq6q4DQ5ErZjrhhczFBEGYJDKDddNpfQp3xpPhE32c5dTeNyoPNhNT7Yz5Tk4ShA6MUrBcRiDi9uwo2Hge_510_1790793554",
+    "usd": 870.1992374911554,
+    "runner_mcap": 227634.8843,
+    "runner_at": "2026-09-30T18:49:18Z"
+   },
+   {
+    "pool": "EXTchQkQpXPKvGFp2msb7Tvm4B8M5nQZn3Z4GpnD9QVt",
+    "name": "SPCXx / LUCKY",
+    "first_buy_ts": "2026-10-01T17:09:07Z",
+    "mins_after_launch": 0.3,
+    "tx_hash": "solana_452350374_z6k9tXjcTxK2n5QJifhuVz1GrrqP6xTR6D3Sn9SvqjLbD2Vxzcfm9ipTWeca3PuGDQhYUoYEhyoG9rCZUQyjX8F_40_1790874597",
+    "usd": 266.4143660117509,
+    "runner_mcap": 46334972.8530608,
+    "runner_at": "2026-10-01T17:22:33Z"
+   },
+   {
+    "pool": "5VggWUCjpQN4X6tVLxA3xGx6eZ3wQoMoxXumhaWyPXa5",
+    "name": "HIGGS / USDC",
+    "first_buy_ts": "2026-10-04T16:33:53Z",
+    "mins_after_launch": 10.9,
+    "tx_hash": "solana_453311578_3w97rSM3T1qsiKfDhDmsPUCCf8VcYRkSYBNwn6E2w2L4wr6rKwBXxsW7DLVVQtH7wfhApWpCL8iqDpUyyFuZkVe1_512_1791131640",
+    "usd": 80.85403203387389,
+    "runner_mcap": 5522700.12153929,
+    "runner_at": "2026-10-04T16:37:11Z"
+   },
+   {
+    "pool": "Arnj2NyELJXKqn7ATt1yoBS5drjV2sNXcNu498D3QQ29",
+    "name": "SHIB / SI",
+    "first_buy_ts": "2026-10-04T16:54:53Z",
+    "mins_after_launch": 1.1,
+    "tx_hash": "solana_453316252_5G1dpzjPa8KBY8i4A2wPSkrYmz2No4b5KJcQPXiTNGUaGorJ5KUPtWqfKH9DabGpNU2zbp1gq7vGW8BikipYKZCr_20_1791132900",
+    "usd": 219.32782523640708,
+    "runner_mcap": 974532.699211373,
+    "runner_at": "2026-10-04T17:07:04Z"
+   }
+  ],
+  "7iVCXQn4u6tiTEfNVqbWSEsRdEi69E9oYsSMiepuECwi": [
+   {
+    "pool": "2wtPVcWdTMZAi5hnsfPaJkdsMihxhkujuAUSDMSvqpTo",
+    "name": "AI / SOL",
+    "first_buy_ts": "2026-09-30T18:39:07Z",
+    "mins_after_launch": 1.9,
+    "tx_hash": "solana_452047677_5XgXiLC27YftonxgxmfkzoVzzVUS9PLTDd8CZHXYA8dioTtwh9ASzFUMsME1L8rHvokPqXSDb7sdg15wCDafr3W9_44_1790793554",
+    "usd": 24.2568811245423,
+    "runner_mcap": 227634.8843,
+    "runner_at": "2026-09-30T18:49:18Z"
+   },
+   {
+    "pool": "5VggWUCjpQN4X6tVLxA3xGx6eZ3wQoMoxXumhaWyPXa5",
+    "name": "HIGGS / USDC",
+    "first_buy_ts": "2026-10-04T16:23:10Z",
+    "mins_after_launch": 0.2,
+    "tx_hash": "solana_453309193_2YU5F2GdzbktD8P1hDqJDKcJqHdVqz6PdaYVXJJYRHKWhwa5oJYkuKfmKzu86WWbNNPHYrf1R3Q5igRpF8yDvw3p_30_1791131010",
+    "usd": 26.44531933031612,
+    "runner_mcap": 5522700.12153929,
+    "runner_at": "2026-10-04T16:37:11Z"
+   }
+  ],
+  "7dGrdJRYtsNR8UYxZ3TnifXGjGc9eRYLq9sELwYpuuUu": [
+   {
+    "pool": "2wtPVcWdTMZAi5hnsfPaJkdsMihxhkujuAUSDMSvqpTo",
+    "name": "AI / SOL",
+    "first_buy_ts": "2026-09-30T18:39:12Z",
+    "mins_after_launch": 2.0,
+    "tx_hash": "solana_452047695_5uRWtxFJyes5P1dRYFCEJYZ8kcjt3nQEFQmsZWrNmobnot9ouy7LFPqSiFyHaMDdhVUESnGX9S9hpmQSmmy1MkuD_11_1790793556",
+    "usd": 58.03534565889741,
+    "runner_mcap": 227634.8843,
+    "runner_at": "2026-09-30T18:49:18Z"
+   },
+   {
+    "pool": "5VggWUCjpQN4X6tVLxA3xGx6eZ3wQoMoxXumhaWyPXa5",
+    "name": "HIGGS / USDC",
+    "first_buy_ts": "2026-10-04T16:23:12Z",
+    "mins_after_launch": 0.2,
+    "tx_hash": "solana_453309201_4JqTDCHh6wgwSyL2fuw2g8XKezbLUSzx44Zw71SVriJKE4WUjVp1e3dZRUN8Q1WpQmwqkco1ENBR6VvkRdqyRYQu_11_1791131011",
+    "usd": 8.215465516042054,
+    "runner_mcap": 5522700.12153929,
+    "runner_at": "2026-10-04T16:37:11Z"
+   }
+  ],
+  "2z2q5gk8TDgqCidzkXkyevXH1aDaVjWL8cQwoRbMF1Jq": [
+   {
+    "pool": "2wtPVcWdTMZAi5hnsfPaJkdsMihxhkujuAUSDMSvqpTo",
+    "name": "AI / SOL",
+    "first_buy_ts": "2026-09-30T18:39:56Z",
+    "mins_after_launch": 2.8,
+    "tx_hash": "solana_452047858_fPR1CmL9oXaKW4nV3EZ1zhYt4edjUr8SBRGbcJzqMFZfQx6wCCpawXwe1a5hs17qmWB77dqjJAQxh8gTPPzS5yB_60_1790793638",
+    "usd": 0.4732650849249861,
+    "runner_mcap": 227634.8843,
+    "runner_at": "2026-09-30T18:49:18Z"
+   },
+   {
+    "pool": "8WsmCnrD17sWLzhwpy81YDRQfkSEgG6qpoQXCfuMwbGo",
+    "name": "MPLX / QUANT",
+    "first_buy_ts": "2026-10-03T17:09:43Z",
+    "mins_after_launch": 1.1,
+    "tx_hash": "solana_452996664_3zCFSTU49JxB1jDttkrWj8z7iFujz5ZRLH6PdvaTTDcLMeEZeShUjCTktPmXkfANpas6f6U2UJpjz2iLeAxPBS31_30_1791047426",
+    "usd": 0.01169354823708206,
+    "runner_mcap": 29446438.2696371,
+    "runner_at": "2026-10-03T17:20:47Z"
+   },
+   {
+    "pool": "Arnj2NyELJXKqn7ATt1yoBS5drjV2sNXcNu498D3QQ29",
+    "name": "SHIB / SI",
+    "first_buy_ts": "2026-10-04T16:59:47Z",
+    "mins_after_launch": 6.0,
+    "tx_hash": "solana_453317342_NbL7STsVApHBW4pFk1PgPN3qnr4RRyUCv1GGa9yRHx5L2314HCpgPCQYQNieHrjQtj7pmdN5Cv4UnMV5jkPmuhF_25_1791133190",
+    "usd": 0.513436809205997,
+    "runner_mcap": 974532.699211373,
+    "runner_at": "2026-10-04T17:07:04Z"
+   }
+  ],
+  "2QfBNK2WDwSLoUQRb1zAnp3KM12N9hQ8q6ApwUMnWW2T": [
+   {
+    "pool": "2wtPVcWdTMZAi5hnsfPaJkdsMihxhkujuAUSDMSvqpTo",
+    "name": "AI / SOL",
+    "first_buy_ts": "2026-09-30T18:41:47Z",
+    "mins_after_launch": 4.6,
+    "tx_hash": "solana_452048270_4qjC1ymuRHY54JKgCv2Y8FWGyn5Fi85VLB2kZzGuRZYyTju8wt4mLfRvde2m3mTnn8fSbin5WfWNYjLsM8iP1VFj_20_1790793803",
+    "usd": 6.30657350452333,
+    "runner_mcap": 227634.8843,
+    "runner_at": "2026-09-30T18:49:18Z"
+   },
+   {
+    "pool": "5VggWUCjpQN4X6tVLxA3xGx6eZ3wQoMoxXumhaWyPXa5",
+    "name": "HIGGS / USDC",
+    "first_buy_ts": "2026-10-04T16:23:01Z",
+    "mins_after_launch": 0.1,
+    "tx_hash": "solana_453309161_5YwNDf8xjfEgeWjjCvuKZYznNhJsJ4L8Zsi53pvbWYkhaA9CM11mub3nTVWEHtyvKLRqEsMy7GiLW3Xb5M23aKt6_20_1791131004",
+    "usd": 0.0023737225639670146,
+    "runner_mcap": 5522700.12153929,
+    "runner_at": "2026-10-04T16:37:11Z"
+   }
+  ],
+  "6nu1VFfvhaZZ8PbrD5Vei326UzjCDgCpX6JdeQew6Phm": [
+   {
+    "pool": "2wtPVcWdTMZAi5hnsfPaJkdsMihxhkujuAUSDMSvqpTo",
+    "name": "AI / SOL",
+    "first_buy_ts": "2026-09-30T18:43:33Z",
+    "mins_after_launch": 6.4,
+    "tx_hash": "solana_452048665_5M37Z2ihakj6bh3adVuFpFzKSxoKC4dF2erD1FJQYub1jpeM25XzxWbi2CWcEX9r4cRPWkFTRdY3VsJnfe6aAXED_40_1790793854",
+    "usd": 1.1726194475461464,
+    "runner_mcap": 227634.8843,
+    "runner_at": "2026-09-30T18:49:18Z"
+   },
+   {
+    "pool": "EXTchQkQpXPKvGFp2msb7Tvm4B8M5nQZn3Z4GpnD9QVt",
+    "name": "SPCXx / LUCKY",
+    "first_buy_ts": "2026-10-01T17:20:58Z",
+    "mins_after_launch": 12.1,
+    "tx_hash": "solana_452353053_4mrD6o3W69Qq2Epkm9jUN4cxK4T7KoB1D4WmpSxi7Gh82oGdFJceHsFnxVjEt3pwndcDsdgt7Ye25ev8fMWVLasz_5_1790875326",
+    "usd": 1.105338339806087,
+    "runner_mcap": 46334972.8530608,
+    "runner_at": "2026-10-01T17:22:33Z"
+   }
+  ],
+  "4pF8Qxdu2pDjWdx1tzGn7or3dbyVn1DQpqZKJx7ALGzH": [
+   {
+    "pool": "2wtPVcWdTMZAi5hnsfPaJkdsMihxhkujuAUSDMSvqpTo",
+    "name": "AI / SOL",
+    "first_buy_ts": "2026-09-30T18:43:47Z",
+    "mins_after_launch": 6.6,
+    "tx_hash": "solana_452048718_3vghjM6nqxy9xJm94UnjHsC4Sw5y4Ct5BZ1RDrJtyM9xCcZpMajzQTwJhWzxeXCXtCLezsgYyBv87KhUqAfQ5CsL_44_1790793862",
+    "usd": 2.936732498428531,
+    "runner_mcap": 227634.8843,
+    "runner_at": "2026-09-30T18:49:18Z"
+   },
+   {
+    "pool": "EXTchQkQpXPKvGFp2msb7Tvm4B8M5nQZn3Z4GpnD9QVt",
+    "name": "SPCXx / LUCKY",
+    "first_buy_ts": "2026-10-01T17:09:39Z",
+    "mins_after_launch": 0.8,
+    "tx_hash": "solana_452350494_5GiR3ML1jwmAorsfMBHvovtxnaedb8s3zzGmPwVmtGHBZtBrBbcHmRfeKzRCrGuCk3vfd15RSxY48uSQSLz6C3yg_30_1790874603",
+    "usd": 5.803415903043828,
+    "runner_mcap": 46334972.8530608,
+    "runner_at": "2026-10-01T17:22:33Z"
+   }
+  ],
+  "CzYQ2kFnBxsNEt9Zy34vQ3n5fSDhvA4o4XaTnq1rLvyr": [
+   {
+    "pool": "2wtPVcWdTMZAi5hnsfPaJkdsMihxhkujuAUSDMSvqpTo",
+    "name": "AI / SOL",
+    "first_buy_ts": "2026-09-30T18:43:50Z",
+    "mins_after_launch": 6.7,
+    "tx_hash": "solana_452048728_4DKfSVBhcPGWgNWAiDdfVu9ok2gNiDfB8Lcgo7LzfTC1CyR2TTmk3k94gKd6vHFF3rssu1b51LBq1sZjm4KuD7PQ_20_1790793864",
+    "usd": 85.48195462801804,
+    "runner_mcap": 227634.8843,
+    "runner_at": "2026-09-30T18:49:18Z"
+   },
+   {
+    "pool": "5VggWUCjpQN4X6tVLxA3xGx6eZ3wQoMoxXumhaWyPXa5",
+    "name": "HIGGS / USDC",
+    "first_buy_ts": "2026-10-04T16:35:10Z",
+    "mins_after_launch": 12.2,
+    "tx_hash": "solana_453311856_64Z2Apx8o5vj5CAE2ff1i5GDPERUEQodfJBUpk9TY44AAByW3T7tjLngy7DcRAkEwyLYMMUy3SBotjAWSQWq4YSm_26_1791131715",
+    "usd": 122.98995201973669,
+    "runner_mcap": 5522700.12153929,
+    "runner_at": "2026-10-04T16:37:11Z"
+   }
+  ],
+  "7JCe3GHwkEr3feHgtLXnmuJ1yB3A7coSeyynxTBgdG8k": [
+   {
+    "pool": "2wtPVcWdTMZAi5hnsfPaJkdsMihxhkujuAUSDMSvqpTo",
+    "name": "AI / SOL",
+    "first_buy_ts": "2026-09-30T18:43:53Z",
+    "mins_after_launch": 6.7,
+    "tx_hash": "solana_452048740_44rPU8CwJ27ydzgXx4CjN2p8dnktjEmoZfeV9ix6rzNx95V8wtCDzbPFg3fW9m1QYrKwcFpsyrKMMttrZPnrfrGT_44_1790793867",
+    "usd": 19.675576947129656,
+    "runner_mcap": 227634.8843,
+    "runner_at": "2026-09-30T18:49:18Z"
+   },
+   {
+    "pool": "5VggWUCjpQN4X6tVLxA3xGx6eZ3wQoMoxXumhaWyPXa5",
+    "name": "HIGGS / USDC",
+    "first_buy_ts": "2026-10-04T16:34:54Z",
+    "mins_after_launch": 11.9,
+    "tx_hash": "solana_453311793_42RtVF19UyimcBX4bHahkjWwNTQqraXyJgZbDfw98HBjvmNYLtkWvoT8FQteTBhhAMMRZG5y8GeeToZ1zrTzHBaL_30_1791131698",
+    "usd": 18.886701014446288,
+    "runner_mcap": 5522700.12153929,
+    "runner_at": "2026-10-04T16:37:11Z"
+   }
+  ],
+  "GLiCiNEnku3pQsmkVkRvnDLbfUN9BWbsrPDWLdPaADng": [
+   {
+    "pool": "2wtPVcWdTMZAi5hnsfPaJkdsMihxhkujuAUSDMSvqpTo",
+    "name": "AI / SOL",
+    "first_buy_ts": "2026-09-30T18:45:17Z",
+    "mins_after_launch": 8.1,
+    "tx_hash": "solana_452049048_rpxpvVUCL9UqA4uFTKfjaFDCs518u1f81YHhV9mTwUfMHrFqn8H2FcPqqgWadCHWdyzVyYbus81MpMDKK9AVeZg_20_1790793919",
+    "usd": 63.11385346876235,
+    "runner_mcap": 227634.8843,
+    "runner_at": "2026-09-30T18:49:18Z"
+   },
+   {
+    "pool": "F6xWuDcFSZjeEkQrbKEVqfBvXJT6oWS6MwZhXokirN9z",
+    "name": "GRIFFIN / SOL",
+    "first_buy_ts": "2026-10-01T17:35:11Z",
+    "mins_after_launch": 0.9,
+    "tx_hash": "solana_452356238_5Ad3DxBrMDrvUP2EjsxjUTM15bSZxGtaB4bHuGx8dToonUyDiSmemk7XdTkpWg88oGCKGMTcQTXn83Rjykrk9Myz_20_1790876116",
+    "usd": 0.045874579327577776,
+    "runner_mcap": 212491.7976,
+    "runner_at": "2026-10-01T17:43:17Z"
+   }
+  ],
+  "CJ7yAUC3Tf52WGrH8LvHzcnib6hGfmU9XDgGni7RDKZu": [
+   {
+    "pool": "EXTchQkQpXPKvGFp2msb7Tvm4B8M5nQZn3Z4GpnD9QVt",
+    "name": "SPCXx / LUCKY",
+    "first_buy_ts": "2026-10-01T17:09:31Z",
+    "mins_after_launch": 0.7,
+    "tx_hash": "solana_452350464_2GfcqqSygpny8MGBjJTHy1EiLN88KysxrSTFEkYfaL4F1Yvdowf8ao9aQb6NigpvwHaiLhtxGfQKj54BGoAvPB6T_40_1790874602",
+    "usd": 382.2725934730684,
+    "runner_mcap": 46334972.8530608,
+    "runner_at": "2026-10-01T17:22:33Z"
+   },
+   {
+    "pool": "Arnj2NyELJXKqn7ATt1yoBS5drjV2sNXcNu498D3QQ29",
+    "name": "SHIB / SI",
+    "first_buy_ts": "2026-10-04T17:00:13Z",
+    "mins_after_launch": 6.5,
+    "tx_hash": "solana_453317432_4tiRbceHqWg2PU9hkx4konmhmcQUKTM5AZskZ5oBEDtSTYv5BnUQLhpSNQWLnAU8t3Da7a4XgfswA9Jewz168kL6_5_1791133247",
+    "usd": 323.1518801418644,
+    "runner_mcap": 974532.699211373,
+    "runner_at": "2026-10-04T17:07:04Z"
+   }
+  ],
+  "3SkBCx49BsK64h6tssBBJZ1WNvpiLdnhnXNmJtP46d7b": [
+   {
+    "pool": "EXTchQkQpXPKvGFp2msb7Tvm4B8M5nQZn3Z4GpnD9QVt",
+    "name": "SPCXx / LUCKY",
+    "first_buy_ts": "2026-10-01T17:09:51Z",
+    "mins_after_launch": 1.0,
+    "tx_hash": "solana_452350543_3KDW4GbZNE6XSUH1Wzw975vkDcJGBXjDKAsUgPGJYaxpiRBBXgeRqNyKQk5FqNro54eTiqhaGWf4PVGo75jrDsHv_20_1790874607",
+    "usd": 68.71319995835218,
+    "runner_mcap": 46334972.8530608,
+    "runner_at": "2026-10-01T17:22:33Z"
+   },
+   {
+    "pool": "8WsmCnrD17sWLzhwpy81YDRQfkSEgG6qpoQXCfuMwbGo",
+    "name": "MPLX / QUANT",
+    "first_buy_ts": "2026-10-03T17:09:07Z",
+    "mins_after_launch": 0.6,
+    "tx_hash": "solana_452996530_4gg1ksrP9wpUVAsHT4uUGaWQ2U5KikgaMu9hHAvJAHwJgy1MRL5sQ2e7eJDqjANkXDSeZUHDMNGCBHvNMoRGDqm7_20_1791047353",
+    "usd": 80.36905012218398,
+    "runner_mcap": 29446438.2696371,
+    "runner_at": "2026-10-03T17:20:47Z"
+   }
+  ],
+  "5KXDF6QnqhBj72hDtJNkkpFaQVUfbFXNybMsp3DiK6tD": [
+   {
+    "pool": "EXTchQkQpXPKvGFp2msb7Tvm4B8M5nQZn3Z4GpnD9QVt",
+    "name": "SPCXx / LUCKY",
+    "first_buy_ts": "2026-10-01T17:10:27Z",
+    "mins_after_launch": 1.6,
+    "tx_hash": "solana_452350674_54go9AiwkBpmpxxPXtXH9DGd6D6257WgznJ9mUdgZhtdQvVHei8mEhLvmvxSWgqkmMYYnxFbmGcDvcF7kNrC55Hp_20_1790874632",
+    "usd": 45.43382445135355,
+    "runner_mcap": 46334972.8530608,
+    "runner_at": "2026-10-01T17:22:33Z"
+   },
+   {
+    "pool": "Arnj2NyELJXKqn7ATt1yoBS5drjV2sNXcNu498D3QQ29",
+    "name": "SHIB / SI",
+    "first_buy_ts": "2026-10-04T16:53:52Z",
+    "mins_after_launch": 0.1,
+    "tx_hash": "solana_453316023_5yN58Bm9GHNmiAyQwfaFpmvzckaDZef8H2K5Rn9T3YLM737XgbUcCn7hfuXR8gyV6HbfGnqz3SNwrdnGrQZnqqtj_20_1791132838",
+    "usd": 81.0113378181578,
+    "runner_mcap": 974532.699211373,
+    "runner_at": "2026-10-04T17:07:04Z"
+   }
+  ],
+  "HuTshmtwcQkWBLzgW3m4uwcmik7Lmz4YFpYcTqMJpXiP": [
+   {
+    "pool": "F6xWuDcFSZjeEkQrbKEVqfBvXJT6oWS6MwZhXokirN9z",
+    "name": "GRIFFIN / SOL",
+    "first_buy_ts": "2026-10-01T17:35:06Z",
+    "mins_after_launch": 0.8,
+    "tx_hash": "solana_452356220_261KnoK6rz1EtxQkaru38SAZpZbUU79SX78riyg9SkyAXdJzQphCgff8asDqL8WZnrM6a48EQV71VcjDoee5htE7_0_1790876111",
+    "usd": 0.0633135163338428,
+    "runner_mcap": 212491.7976,
+    "runner_at": "2026-10-01T17:43:17Z"
+   },
+   {
+    "pool": "BdByhWRySNeW76YLvD5r2FSwrESgvS2smXP81yhqqst1",
+    "name": "ANIMA / SOL",
+    "first_buy_ts": "2026-10-05T18:02:27Z",
+    "mins_after_launch": 0.0,
+    "tx_hash": "solana_453653860_3jhJJ5spXGdphxsbKpb5t9kwDU8Dt2b9fqnQjkoQkz8o45ASkjcj7CjyAetmEwT72mCR998PQw9e6PvDixF2ULcb_3_1791223383",
+    "usd": 4.121483215980546e-05,
+    "runner_mcap": 619941.785103725,
+    "runner_at": "2026-10-05T18:17:50Z"
+   }
+  ],
+  "LionX7R69tL1EEcpRkJ9jRuwV7bi4jFoKmZZnxiVK6y": [
+   {
+    "pool": "F6xWuDcFSZjeEkQrbKEVqfBvXJT6oWS6MwZhXokirN9z",
+    "name": "GRIFFIN / SOL",
+    "first_buy_ts": "2026-10-01T17:35:48Z",
+    "mins_after_launch": 1.6,
+    "tx_hash": "solana_452356382_3Rb2o7MeFNiDgfwxZLMhVtyKd4UxZ3FA8w1RxSyGG8gJt8vLJa49W6pgCetWHUMt2ivsTChnuZ2wQWLnYRqXqvCv_0_1790876155",
+    "usd": 0.040044754712441635,
+    "runner_mcap": 212491.7976,
+    "runner_at": "2026-10-01T17:43:17Z"
+   },
+   {
+    "pool": "BdByhWRySNeW76YLvD5r2FSwrESgvS2smXP81yhqqst1",
+    "name": "ANIMA / SOL",
+    "first_buy_ts": "2026-10-05T18:02:27Z",
+    "mins_after_launch": 0.0,
+    "tx_hash": "solana_453653860_5zGDNz2keYPhPPRNoaUQNatHcsmqoRGjZ4UnbNpJF1FwBhohqENyqL9k8dMrGCpCPT48A9Tvg6XvSrVQr3FXVuHN_0_1791223383",
+    "usd": 0.0013563645055973297,
+    "runner_mcap": 619941.785103725,
+    "runner_at": "2026-10-05T18:17:50Z"
+   }
+  ]
+ }
+}

@@ -1,0 +1,7 @@
+__pycache__/
+*.bak*
+engine/watch.db
+engine/logs/
+data/
+grading/outcomes.jsonl
+alerts.txt
