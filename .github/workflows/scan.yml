@@ -11,7 +11,7 @@ concurrency:
 jobs:
   tick:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 40
     env:
       HELIUS_API_KEY: ${{ secrets.HELIUS_API_KEY || secrets.HELIUS }}
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY || secrets.GEMINI }}
