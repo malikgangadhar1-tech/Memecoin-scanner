@@ -181,6 +181,20 @@ def main():
                     fh.write(json.dumps(dict(t=time.time(), mint=pp["mint"], pool=pp["addr"], **hl)) + "\n")
         except Exception as e:
             errors.append(f"holders {pp['mint']}: {e}")
+    # TOP10 CUT (Rohit Oct 9 09:47 IST "go"): drop a pass whose top-10 non-pool wallets hold >30% of supply.
+    # In-sample n=29: kept 10/15 clean 2x, 6/15 5x+; cut 4/14 clean, 0 runners. Unknown top10 (holder check failed) is KEPT.
+    kept1 = []
+    for pp in passing:
+        t10 = pp.get("top10_pct")
+        if t10 is not None and t10 > 30:
+            reasons["top10_over_30"] = reasons.get("top10_over_30", 0) + 1
+            if commit:
+                with open(os.path.join(os.path.dirname(ALERTED), "pool_rejects_v3.jsonl"), "a") as fh:
+                    fh.write(json.dumps(dict(t=time.time(), pool=pp["addr"], mint=pp.get("mint"), sym=pp.get("symbol"), mc=pp.get("mcap"), top10_pct=t10, dev_pct=pp.get("dev_pct"), reason="top10_over_30")) + "\n")
+                alerted.append(pp["addr"])
+            continue
+        kept1.append(pp)
+    passing = kept1
     # COPYCAT CUT (Rohit Oct 8 15:52 IST "eliminate v3 copycat ticker"; backtest 4/18 clean vs 15/27):
     # drop a pass whose ticker was already alerted earlier by any signal, or by an earlier pass this tick.
     SEEN = os.path.join(os.path.dirname(ALERTED), "seen_symbols.json")
