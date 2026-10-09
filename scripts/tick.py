@@ -105,7 +105,9 @@ def step_pool():
         if (p.get("age_min") is not None) and p["age_min"] < 10: tag = "⭐ FRESH <10m — " + tag  # Rohit Oct 8 16:10: label only (49% vs 30%)
         if p.get("dev_pct") is not None or p.get("top10_pct") is not None:
             dv = p.get("dev_pct"); flag = " ⚠️DEV>1%" if (dv or 0) > 1 else ""
-            tag += f"dev {dv if dv is not None else '?'}%{flag} / top10 {p.get('top10_pct') if p.get('top10_pct') is not None else '?'}% — "
+            # Rohit Oct 9 12:17 "go": dev-out as a confirmation stage, label only, graded apart (in-sample dev out 23/39 vs holding 4/14)
+            dstate = "✅ DEV OUT" if dv == 0 else (f"DEV HOLDING {dv}%{flag}" if dv is not None else "dev ?%")
+            tag += f"{dstate} / top10 {p.get('top10_pct') if p.get('top10_pct') is not None else '?'}% — "
         lines.append(f"{p.get('symbol')} — {tag}mcap {usd(p['mcap'])} — liq {usd(p['liq'])} — {p['buyers']} buyers / {p['buys']} buys / {p['sells']} sells{conc} — "
                      f"{p.get('buyers_5m')} buyers in last 5 min{accel(p)} — {p['age_min']}m old, launched {p['created_ist']} — {soc} — https://dexscreener.com/solana/{p['addr']}")
     if lines: _tl.out.append("\n".join(lines))
