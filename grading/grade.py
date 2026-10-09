@@ -56,6 +56,10 @@ try:
     _c = sqlite3.connect(f"{P}/engine/watch.db", timeout=30)
     for m, t in _c.execute("select mint, ts from sw_alerts where ts >= 1791358200"):
         alerts.append({"scanner": "sw", "signal": "smart-wallet convergence", "t": t, "mint": m, "sym": None, "mc": None})
+    try:
+        for m, t in _c.execute("select mint, ts from sw_cut"):  # Meteora SW cut control (Oct 9 16:35), research only
+            alerts.append({"scanner": "sw", "signal": "smart-wallet meteora cut", "t": t, "mint": m, "sym": None, "mc": None})
+    except Exception: pass
     for m, t in _c.execute("select mint, ts from sw_alerts where ts < 1791358200"):  # pre-live backfill: research only, never messaged
         alerts.append({"scanner": "swbf", "signal": "smart-wallet backfill", "t": t, "mint": m, "sym": None, "mc": None})
 except Exception as e: print("sw read failed", e)

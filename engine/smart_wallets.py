@@ -171,6 +171,8 @@ for mint,L in by.items():
             if ts-3600<=t2<=ts: ws.setdefault(w2,(t2,s2))
         if len(ws)>=2:
             if con.execute("select 1 from sw_alerts where mint=?",(mint,)).fetchone(): break
+            con.execute("create table if not exists sw_cut(mint text, ts integer, wallets text, reason text)")
+            if con.execute("select 1 from sw_cut where mint=?",(mint,)).fetchone(): break
             if not BACKFILL:
                 ins=insiders(mint); bad=[k for k in ws if k in ins]
                 if bad:
@@ -182,7 +184,7 @@ for mint,L in by.items():
             times=sorted(v[0] for v in ws.values())
             tag='TIGHT' if times[-1]-times[0]<=2 else ('LOOSE' if times[-1]-times[0]<=60 else 'NONE')
             if not BACKFILL:
-                mc=liq=0;sym=mint[:6];_age=None;_dex='?'
+                mc=liq=0;sym=mint[:6];_age=None;_dex='?';ps=None;p={}
                 try:
                     ps=json.load(urllib.request.urlopen(urllib.request.Request("https://api.dexscreener.com/tokens/v1/solana/"+mint,headers={"User-Agent":"Mozilla/5.0"}),timeout=15))
                     if ps:
@@ -191,6 +193,10 @@ for mint,L in by.items():
                         if _mig: _age=(ts*1000-min(x['pairCreatedAt'] for x in _mig))/3.6e6; _dex=_mig[0].get('dexId')
                         else: _age=None; _dex='pumpfun'
                 except Exception: pass
+                # Rohit Oct 9 16:35 IST "cut it": no SW alert on Meteora pools (all-time 3/19 clean, 0 runners; cut -> 41/81 vs 44/100). Logged as control in sw_cut.
+                if (p.get('dexId') if ps else None)=='meteora':
+                    con.execute("delete from sw_alerts where mint=?",(mint,)); con.execute("insert into sw_cut values(?,?,?,?)",(mint,ts,json.dumps(ws),'meteora')); con.commit()
+                    break
                 ist=time.strftime('%H:%M',time.gmtime(ts+19800))
                 star=''
                 if _dex not in ('pumpfun','?') and _age is not None and _age<1:
