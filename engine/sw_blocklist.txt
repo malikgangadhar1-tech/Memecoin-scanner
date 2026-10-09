@@ -1,3 +1,5 @@
 # wallets excluded from smart-wallet convergence. One per line, then reason.
 DPn2K5e8ZrVhvrUPYHPLaX5Dd78LF9cY4G5qh1QmYFYF  Oct 7 2026: 14 of 15 convergence coins dead (<$5k); serial fake-mcap launches (Nike/YouTube/ChatGPT/Gemini ~$500k -> $2k)
 57wLkQBctPAfLeuoA119Pq77KdGxViqGqYAbbJA2TURf  Oct 7 2026: same ring as DPn2K5e8, 14 of 15 dead
+GfNqGmNXBimA8kLuXs4FeQdQeykc3MHaV2WDYKBTmCsZ  Oct 9 2026 (Rohit 'alright'): 0/7 clean with 2Q8UGe, peaks 0.74-1.64x, pools drained to <$50 liq
+2Q8UGeETG7VtcrqD38KXqwwbvuAz7LMFiSfPso4nwFEa  Oct 9 2026: same pair as GfNqGm, 0/7
