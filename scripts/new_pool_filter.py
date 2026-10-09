@@ -193,6 +193,15 @@ def main():
                     fh.write(json.dumps(dict(t=time.time(), pool=pp["addr"], mint=pp.get("mint"), sym=pp.get("symbol"), mc=pp.get("mcap"), top10_pct=t10, dev_pct=pp.get("dev_pct"), reason="top10_over_30")) + "\n")
                 alerted.append(pp["addr"])
             continue
+        # SELLS CUT (Rohit Oct 9 18:19 IST "yes"): drop a pass with sells > 30% of buys (early holders dumping into new buyers).
+        # Backtest top10-ok: sells<=30% 19/25 clean (in-sample 14/19 + OOS 5/6) vs 7/17 (~break-even EV). Logged for outcome tracking.
+        if pp.get("buys") and pp["sells"] > 0.3 * pp["buys"]:
+            reasons["sells_over_30pct"] = reasons.get("sells_over_30pct", 0) + 1
+            if commit:
+                with open(os.path.join(os.path.dirname(ALERTED), "pool_rejects_v3.jsonl"), "a") as fh:
+                    fh.write(json.dumps(dict(t=time.time(), pool=pp["addr"], mint=pp.get("mint"), sym=pp.get("symbol"), mc=pp.get("mcap"), buys=pp["buys"], sells=pp["sells"], top10_pct=t10, dev_pct=pp.get("dev_pct"), reason="sells_over_30pct")) + "\n")
+                alerted.append(pp["addr"])
+            continue
         kept1.append(pp)
     passing = kept1
     # COPYCAT CUT (Rohit Oct 8 15:52 IST "eliminate v3 copycat ticker"; backtest 4/18 clean vs 15/27):
