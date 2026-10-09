@@ -39,7 +39,9 @@ jobs:
           fi
       - name: Judge re-score (daily 08:30 IST)
         run: |
-          if [ "$(date -u +%H)" = "03" ] && [ "$(date -u +%M)" -lt 10 ]; then
+          # bug fix Oct 9: GitHub cron drift skipped the 03:00-03:09 UTC window; now run once per UTC day after 03:00 (marker in data/)
+          if [ "$(date -u +%H)" -ge 3 ] && [ "$(cat data/judge_last.txt 2>/dev/null)" != "$(date -u +%F)" ]; then
+            date -u +%F > data/judge_last.txt
             cd engine
             timeout 200 python3 mark_runners.py || true
             timeout 500 python3 judge.py || true
