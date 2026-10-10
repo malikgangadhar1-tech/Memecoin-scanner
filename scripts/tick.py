@@ -156,7 +156,7 @@ def step_walletlive():
 
 from concurrent.futures import ThreadPoolExecutor
 # revival (dev sold at a loss + side wallet sold) TERMINATED by Rohit Oct 8 16:34 IST: "needs way more discretion, I'll look at it later" (3/31 clean 2x)
-STEPS = [("pool", step_pool), ("kol", step_kol), ("walletlive", step_walletlive)]
+STEPS = [("pool", step_pool), ("walletlive", step_walletlive)]  # kol TERMINATED by Rohit Oct 10 12:41 IST (3/24 clean)
 T0 = time.time()
 import threading
 _tl = threading.local()
