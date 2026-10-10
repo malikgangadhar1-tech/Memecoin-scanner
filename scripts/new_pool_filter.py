@@ -100,15 +100,31 @@ def main():
             vol = f(a["volume_usd"][win]) or 0
             avg = vol / (buys + sells) if (buys + sells) else 0
             if liq < 5000: fail("liq"); continue
-            if not (15000 <= mcap <= 30000): fail("mcap"); continue
+            # MC SHADOW (Oct 10 09:20 IST, Rohit "suggest a broader band... after backtests"): passes at $10K-$100K outside the live
+            # $15-30K band run through every v3 rule but are NEVER sent; logged to data/v3_mc_shadow.jsonl and graded "v3 mc-shadow".
+            if not (10000 <= mcap <= 100000): fail("mcap"); continue
+            shadow = not (15000 <= mcap <= 30000)
             if liq < 0.15 * mcap: fail("liq_below_15pct_mcap"); continue  # v3 (Rohit, Oct 7 21:11 IST): liq >= 15% of mcap (was liq >= mcap)
             if buyers < 50: fail("buyers"); continue  # v2 (user-approved). 300 was proposed in the Oct 7 audit, NOT approved
             if buys >= 1.5 * buyers: fail("wash"); continue
             if sells < 0.1 * buys or sellers < 5: fail("sells"); continue
             if avg < 20: fail("dust"); continue
             mint = p["relationships"]["base_token"]["data"]["id"].split("_", 1)[1]
+            # CURVE CUT (Rohit Oct 10 09:11 IST "cut pumpfun curve"): no v3 on pools still on the pump.fun bonding curve.
+            # v3 by alerted pair (no lookahead): curve 11/30 clean vs PumpSwap ~45/89; post-top10 curve 1/6.
+            _dexid = ((p["relationships"].get("dex") or {}).get("data") or {}).get("id", "")
+            if _dexid in ("pump-fun", "pumpfun"):
+                fail("pumpfun_curve" + ("_shadow" if shadow else ""))
+                if commit and not shadow:
+                    try:
+                        with open(os.path.join(os.path.dirname(ALERTED), "pool_rejects_v3.jsonl"), "a") as fh:
+                            fh.write(json.dumps(dict(t=time.time(), pool=addr, mint=mint, sym=a["name"].split(" / ")[0], mc=mcap, buys=buys, sells=sells, reason="pumpfun_curve")) + "\n")
+                    except Exception: pass
+                continue
+            if shadow:
+                if sum(1 for x in passing if x.get("shadow")) >= 6: fail("shadow_cap"); continue  # GT call budget
             passing.append(dict(addr=addr, mint=mint, name=a["name"], mcap=mcap, liq=liq,
-                                tag=("SCALP (thin pool, few min)" if liq < mcap else ""),  # Rohit Oct 7 21:44: thin pool = few-min scalp
+                                tag=("SCALP (thin pool, few min)" if liq < mcap else ""), shadow=shadow, dex_id=_dexid,  # Rohit Oct 7 21:44: thin pool = few-min scalp
                                 buyers=buyers, buys=buys, sells=sells, sellers=sellers,
                                 avg=round(avg, 2), age_min=round(age_h * 60),
                                 created_ist=created.astimezone(IST).strftime("%-I:%M %p IST")))
@@ -190,7 +206,7 @@ def main():
             reasons["top10_over_30"] = reasons.get("top10_over_30", 0) + 1
             if commit:
                 with open(os.path.join(os.path.dirname(ALERTED), "pool_rejects_v3.jsonl"), "a") as fh:
-                    fh.write(json.dumps(dict(t=time.time(), pool=pp["addr"], mint=pp.get("mint"), sym=pp.get("symbol"), mc=pp.get("mcap"), top10_pct=t10, dev_pct=pp.get("dev_pct"), reason="top10_over_30")) + "\n")
+                    fh.write(json.dumps(dict(t=time.time(), pool=pp["addr"], mint=pp.get("mint"), sym=pp.get("symbol"), mc=pp.get("mcap"), top10_pct=t10, dev_pct=pp.get("dev_pct"), reason="top10_over_30", shadow=pp.get("shadow", False))) + "\n")
                 alerted.append(pp["addr"])
             continue
         # SELLS CUT (Rohit Oct 9 18:19 IST "yes"): drop a pass with sells > 30% of buys (early holders dumping into new buyers).
@@ -199,7 +215,7 @@ def main():
             reasons["sells_over_30pct"] = reasons.get("sells_over_30pct", 0) + 1
             if commit:
                 with open(os.path.join(os.path.dirname(ALERTED), "pool_rejects_v3.jsonl"), "a") as fh:
-                    fh.write(json.dumps(dict(t=time.time(), pool=pp["addr"], mint=pp.get("mint"), sym=pp.get("symbol"), mc=pp.get("mcap"), buys=pp["buys"], sells=pp["sells"], top10_pct=t10, dev_pct=pp.get("dev_pct"), reason="sells_over_30pct")) + "\n")
+                    fh.write(json.dumps(dict(t=time.time(), pool=pp["addr"], mint=pp.get("mint"), sym=pp.get("symbol"), mc=pp.get("mcap"), buys=pp["buys"], sells=pp["sells"], top10_pct=t10, dev_pct=pp.get("dev_pct"), reason="sells_over_30pct", shadow=pp.get("shadow", False))) + "\n")
                 alerted.append(pp["addr"])
             continue
         kept1.append(pp)
@@ -222,12 +238,18 @@ def main():
             reasons["copycat_ticker"] = reasons.get("copycat_ticker", 0) + 1
             if commit:
                 with open(os.path.join(os.path.dirname(ALERTED), "pool_rejects_v3.jsonl"), "a") as fh:
-                    fh.write(json.dumps(dict(t=time.time(), pool=pp["addr"], mint=pp.get("mint"), sym=pp.get("symbol"), mc=pp.get("mcap"), reason="copycat_ticker")) + "\n")
+                    fh.write(json.dumps(dict(t=time.time(), pool=pp["addr"], mint=pp.get("mint"), sym=pp.get("symbol"), mc=pp.get("mcap"), reason="copycat_ticker", shadow=pp.get("shadow", False))) + "\n")
                 alerted.append(pp["addr"])
             continue
-        if s_: seen.add(s_)
+        if s_ and not pp.get("shadow"): seen.add(s_)
         kept2.append(pp)
-    passing = kept2
+    passing = [pp for pp in kept2 if not pp.get("shadow")]
+    shadows = [pp for pp in kept2 if pp.get("shadow")]
+    if commit and shadows:
+        with open(os.path.join(os.path.dirname(ALERTED), "v3_mc_shadow.jsonl"), "a") as fh:
+            for pp in shadows:
+                fh.write(json.dumps(dict(t=time.time(), **{k: pp.get(k) for k in ("addr", "mint", "symbol", "mcap", "liq", "buyers", "buys", "sells", "sellers", "avg", "age_min", "buyers_5m", "largest_bundle_5m", "dev_pct", "top10_pct", "dex_id")})) + "\n")
+        alerted += [pp["addr"] for pp in shadows]
     if commit:
         json.dump(sorted(seen), open(SEEN, "w"))
     if commit and passing:
@@ -236,7 +258,7 @@ def main():
         json.dump(alerted, open(ALERTED, "w"))
     if not os.path.exists(ALERTED):
         json.dump([], open(ALERTED, "w"))
-    print(json.dumps(dict(checked=checked, rejects=reasons, errors=errors, passing=passing), indent=1))
+    print(json.dumps(dict(checked=checked, rejects=reasons, errors=errors, passing=passing, shadow=len(shadows)), indent=1))
 
 
 if __name__ == "__main__":

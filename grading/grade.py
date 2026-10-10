@@ -35,6 +35,12 @@ for r in csv.DictReader(open(f"{P}/data/alert_outcomes.csv")):
     _t = ist_ts(r["alerted_at"])
     alerts.append({"scanner": "newpool", "signal": "pool filter v3" if _t >= 1791387720 else ("pool filter v2" if _t >= 1791356100 else "pool filter v1"), "t": _t, "pool": r["pool"], "sym": r["ticker"], "mc": float(r["alert_mcap"] or 0),
                    "liq": float(r["alert_liq"] or 0), "buyers": int(r["alert_buyers"] or 0), "buys": int(r["alert_buys"] or 0), "sells": int(r["alert_sells"] or 0)})
+# v3 MC shadow band (Oct 10 09:20 IST): passes all v3 rules at $10-15K or $30-100K, never sent; research only
+if os.path.exists(f"{P}/data/v3_mc_shadow.jsonl"):
+    for l in open(f"{P}/data/v3_mc_shadow.jsonl"):
+        if l.strip():
+            r = json.loads(l); alerts.append({"scanner": "newpool", "signal": "v3 mc-shadow", "t": r["t"], "pool": r["addr"], "mint": r.get("mint"), "sym": r.get("symbol"), "mc": r.get("mcap"),
+                                              "liq": r.get("liq"), "buyers": r.get("buyers"), "buys": r.get("buys"), "sells": r.get("sells")})
 for m, t, sym in json.load(open(f"{P}/grading/kol_alerts.json")):
     alerts.append({"scanner": "kol", "signal": "3 KOL convergence", "t": t, "mint": m, "sym": sym, "mc": None})
 
