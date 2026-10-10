@@ -1,0 +1,33 @@
+{
+ "alerts": [],
+ "watchlist": 537,
+ "with_data": 502,
+ "dev_checks": 3,
+ "errors": [
+  {
+   "mint": "DNq98kymaw7GxhvLDTtrpUTBzi3L2KvnSedutZMyVhbm",
+   "sig": "A",
+   "err": "HTTP Error 429: Too Many Requests"
+  },
+  {
+   "mint": "6hTLdzZaaCjmqtn7RtaEMQsCbXT5Pg8q76tRViEGpump",
+   "sig": "A",
+   "err": "HTTP Error 429: Too Many Requests"
+  },
+  {
+   "mint": "GyWkSn2ah7dqLyPeZAjEZmfxuU2H4nwfGvgJhfYDVegn",
+   "sig": "A",
+   "err": "HTTP Error 429: Too Many Requests"
+  },
+  {
+   "mint": "J9qzFhTLYnmf3tZYvHBaF96rH3YKToELAAVMzz66pump",
+   "sig": "A",
+   "err": "HTTP Error 429: Too Many Requests"
+  },
+  {
+   "mint": "FAopSovS2WFJK5qEAmcuwAVH98CvmBwT6Lpq4EK2pump",
+   "sig": "A",
+   "err": "HTTP Error 429: Too Many Requests"
+  }
+ ]
+}

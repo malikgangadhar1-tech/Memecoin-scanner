@@ -1,0 +1,1498 @@
+10-07 23:25:40 step kol 7s
+10-07 23:25:44 step band 10s
+10-07 23:30:25 step pool 292s
+10-07 23:33:05 step revival 451s
+10-07 23:33:05 tick done 451s alerts
+10-07 23:33:17 step band 5s
+10-07 23:34:22 step kol 69s
+10-07 23:35:43 step walletlive 151s
+10-07 23:35:43 tick done 151s silent
+10-07 23:47:28 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/22oRVnEKgQRsRT2A7XCecsnS1WjTBxPBC9V33FTdjNsa HTTP Error 429: Too Many Requests
+10-07 23:47:33 step band 5s
+10-07 23:47:34 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/8u7vdo9qaW76tSRWVkBoJchRrvoLBqBgWrm6jyAyx5Lc HTTP Error 429: Too Many Requests
+10-07 23:47:40 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/CckfAsJaupAR2bfpga9uREaAKqJwMajGHUGsaZdn3fJz HTTP Error 429: Too Many Requests
+10-07 23:47:46 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/4E6afcC5nGKts6dJ9BerAMgXv6eppz4K9NdL7sJ1YKhH HTTP Error 429: Too Many Requests
+10-07 23:48:32 step kol 65s
+10-07 23:51:07 step walletlive 220s
+10-07 23:51:45 step pool 258s
+10-07 23:55:10 step revival 462s
+10-07 23:55:10 tick done 462s alerts
+10-07 23:57:20 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/22oRVnEKgQRsRT2A7XCecsnS1WjTBxPBC9V33FTdjNsa HTTP Error 429: Too Many Requests
+10-07 23:57:29 step band 9s
+10-07 23:57:32 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/CckfAsJaupAR2bfpga9uREaAKqJwMajGHUGsaZdn3fJz HTTP Error 429: Too Many Requests
+10-07 23:57:45 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/FN3973ybhd813CVo9ReUJiZHmxTtEufKyao7uZQ1qg9A HTTP Error 429: Too Many Requests
+10-07 23:58:22 step kol 62s
+10-07 23:59:55 step walletlive 155s
+10-08 00:01:10 step pool 230s
+10-08 00:04:14 step revival 414s
+10-08 00:04:16 tick done 416s alerts
+10-08 00:07:52 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/22oRVnEKgQRsRT2A7XCecsnS1WjTBxPBC9V33FTdjNsa HTTP Error 429: Too Many Requests
+10-08 00:07:58 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/8u7vdo9qaW76tSRWVkBoJchRrvoLBqBgWrm6jyAyx5Lc HTTP Error 429: Too Many Requests
+10-08 00:07:59 step band 8s
+10-08 00:08:04 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/CckfAsJaupAR2bfpga9uREaAKqJwMajGHUGsaZdn3fJz HTTP Error 429: Too Many Requests
+10-08 00:08:10 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/FN3973ybhd813CVo9ReUJiZHmxTtEufKyao7uZQ1qg9A HTTP Error 429: Too Many Requests
+10-08 00:08:56 step kol 65s
+10-08 00:10:27 step walletlive 155s
+10-08 00:13:30 step pool 339s
+10-08 00:15:31 step revival 459s
+10-08 00:15:32 tick done 460s alerts
+10-08 00:17:26 step kol 6s
+10-08 00:17:26 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/8u7vdo9qaW76tSRWVkBoJchRrvoLBqBgWrm6jyAyx5Lc HTTP Error 429: Too Many Requests
+10-08 00:17:32 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/CckfAsJaupAR2bfpga9uREaAKqJwMajGHUGsaZdn3fJz HTTP Error 429: Too Many Requests
+10-08 00:17:33 step band 13s
+10-08 00:17:38 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/FN3973ybhd813CVo9ReUJiZHmxTtEufKyao7uZQ1qg9A HTTP Error 429: Too Many Requests
+10-08 00:17:44 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/GJStemLAfr6vtSYL4AB71wdCa8CxgdxxFCM6TPV3WXKC HTTP Error 429: Too Many Requests
+10-08 00:19:55 step walletlive 155s
+10-08 00:24:16 step pool 416s
+10-08 00:25:12 step revival 472s
+10-08 00:25:13 tick done 473s alerts
+10-08 00:27:26 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/CckfAsJaupAR2bfpga9uREaAKqJwMajGHUGsaZdn3fJz HTTP Error 429: Too Many Requests
+10-08 00:27:29 step kol 10s
+10-08 00:27:32 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/FN3973ybhd813CVo9ReUJiZHmxTtEufKyao7uZQ1qg9A HTTP Error 429: Too Many Requests
+10-08 00:27:37 step band 17s
+10-08 00:27:38 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/GJStemLAfr6vtSYL4AB71wdCa8CxgdxxFCM6TPV3WXKC HTTP Error 429: Too Many Requests
+10-08 00:27:44 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/Avkt5bP2BRBoTNLxF9jU5d5fKduL4fjZWeNZf38HFrJD HTTP Error 429: Too Many Requests
+10-08 00:32:10 step pool 291s
+10-08 00:33:44 step revival 385s
+10-08 00:34:31 step walletlive 431s
+10-08 00:34:32 tick done 432s alerts
+10-08 00:37:19 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/CckfAsJaupAR2bfpga9uREaAKqJwMajGHUGsaZdn3fJz HTTP Error 429: Too Many Requests
+10-08 00:37:25 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/FN3973ybhd813CVo9ReUJiZHmxTtEufKyao7uZQ1qg9A HTTP Error 429: Too Many Requests
+10-08 00:37:30 step band 11s
+10-08 00:37:31 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/GJStemLAfr6vtSYL4AB71wdCa8CxgdxxFCM6TPV3WXKC HTTP Error 429: Too Many Requests
+10-08 00:37:37 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/Avkt5bP2BRBoTNLxF9jU5d5fKduL4fjZWeNZf38HFrJD HTTP Error 429: Too Many Requests
+10-08 00:37:43 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/4ZPG1ktaF7RRACzyS8ymkS82Y5xY7GM1Uo6osrVtJhCW HTTP Error 429: Too Many Requests
+10-08 00:38:43 step kol 84s
+10-08 00:39:56 step walletlive 157s
+10-08 00:41:52 step pool 272s
+10-08 00:43:51 step revival 391s
+10-08 00:43:52 tick done 392s alerts
+10-08 00:47:20 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/CckfAsJaupAR2bfpga9uREaAKqJwMajGHUGsaZdn3fJz HTTP Error 429: Too Many Requests
+10-08 00:47:32 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/GJStemLAfr6vtSYL4AB71wdCa8CxgdxxFCM6TPV3WXKC HTTP Error 429: Too Many Requests
+10-08 00:47:43 step band 23s
+10-08 00:47:45 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/4ZPG1ktaF7RRACzyS8ymkS82Y5xY7GM1Uo6osrVtJhCW HTTP Error 429: Too Many Requests
+10-08 00:48:34 step kol 75s
+10-08 00:49:50 step walletlive 151s
+10-08 00:54:17 step pool 418s
+10-08 00:55:20 TIMEOUT revival
+10-08 00:55:20 step revival 480s
+10-08 00:55:21 tick done 481s alerts
+10-08 00:57:27 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/GJStemLAfr6vtSYL4AB71wdCa8CxgdxxFCM6TPV3WXKC HTTP Error 429: Too Many Requests
+10-08 00:57:30 step band 11s
+10-08 00:57:31 step kol 12s
+10-08 00:57:33 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/4ZPG1ktaF7RRACzyS8ymkS82Y5xY7GM1Uo6osrVtJhCW HTTP Error 429: Too Many Requests
+10-08 00:57:45 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/62Zu3P4qQdgdyEjAKrrSYYgCy4MQyXgpDGdTUSjqiVZs HTTP Error 429: Too Many Requests
+10-08 01:00:00 step walletlive 160s
+10-08 01:03:05 step pool 346s
+10-08 01:04:36 step revival 437s
+10-08 01:04:38 tick done 438s alerts
+10-08 01:07:26 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/4ZPG1ktaF7RRACzyS8ymkS82Y5xY7GM1Uo6osrVtJhCW HTTP Error 429: Too Many Requests
+10-08 01:07:32 step kol 12s
+10-08 01:07:32 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/62Zu3P4qQdgdyEjAKrrSYYgCy4MQyXgpDGdTUSjqiVZs HTTP Error 429: Too Many Requests
+10-08 01:07:33 step band 14s
+10-08 01:07:38 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/H4zvhZgXwjwNA22z4ybyfyWG2c94dKU4s6GfT1g3hR9x HTTP Error 429: Too Many Requests
+10-08 01:07:44 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/Bq9GbVG1DGMV5cT7XH2ftqq8NLUDUH94FWZW7qgVJdG2 HTTP Error 429: Too Many Requests
+10-08 01:09:01 step walletlive 101s
+10-08 01:10:55 step pool 215s
+10-08 01:15:19 step revival 479s
+10-08 01:15:24 tick done 484s alerts
+10-08 01:17:33 step band 12s
+10-08 01:17:33 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/H4zvhZgXwjwNA22z4ybyfyWG2c94dKU4s6GfT1g3hR9x HTTP Error 429: Too Many Requests
+10-08 01:17:45 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/Bn4zaDRo2NcB41TtvunNkvhsSQhvnWDi4CmHwCMzUjCK HTTP Error 429: Too Many Requests
+10-08 01:17:49 step kol 29s
+10-08 01:19:51 step walletlive 151s
+10-08 01:21:38 step revival 258s
+10-08 01:24:31 TIMEOUT pool
+10-08 01:24:31 step pool 431s
+10-08 01:24:33 tick done 432s alerts
+10-08 01:27:26 step band 6s
+10-08 01:27:26 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/Bn4zaDRo2NcB41TtvunNkvhsSQhvnWDi4CmHwCMzUjCK HTTP Error 429: Too Many Requests
+10-08 01:27:32 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/2XMoxk1owwgQEuaBUni8UnySEPLAzcqVvK4S3YeCcX4K HTTP Error 429: Too Many Requests
+10-08 01:27:38 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/CKcmXR5weVM4Va5KWSSQD1Nyimg2pj4rW99LPxnpdUiA HTTP Error 429: Too Many Requests
+10-08 01:27:42 step kol 22s
+10-08 01:27:45 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/9AYnbYARMf9SfhhiHrC5N79iBoLCxDwYhiqnxhBkkJxB HTTP Error 429: Too Many Requests
+10-08 01:29:59 step walletlive 159s
+10-08 01:32:58 step pool 338s
+10-08 01:34:19 step revival 419s
+10-08 01:34:20 tick done 420s alerts
+10-08 01:37:26 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/2XMoxk1owwgQEuaBUni8UnySEPLAzcqVvK4S3YeCcX4K HTTP Error 429: Too Many Requests
+10-08 01:37:30 step band 11s
+10-08 01:37:31 step revival 11s
+10-08 01:37:36 step kol 16s
+10-08 01:37:39 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/9AYnbYARMf9SfhhiHrC5N79iBoLCxDwYhiqnxhBkkJxB HTTP Error 429: Too Many Requests
+10-08 01:37:45 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/Hh1DfqVVSkauYwBFruCcuGZrCXNru3FNEe7L7WY6fra1 HTTP Error 429: Too Many Requests
+10-08 01:39:58 step walletlive 158s
+10-08 01:42:45 step pool 325s
+10-08 01:42:46 tick done 326s alerts
+10-08 01:47:25 step band 5s
+10-08 01:47:27 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/9AYnbYARMf9SfhhiHrC5N79iBoLCxDwYhiqnxhBkkJxB HTTP Error 429: Too Many Requests
+10-08 01:47:32 step revival 12s
+10-08 01:47:33 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/Hh1DfqVVSkauYwBFruCcuGZrCXNru3FNEe7L7WY6fra1 HTTP Error 429: Too Many Requests
+10-08 01:47:39 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/J9E2MhkU5MGKrmmGWSf9TV77b19a9a8pYU1f6uGdb6DD HTTP Error 429: Too Many Requests
+10-08 01:47:45 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/EZTuvA6SqyqmwAa9Kt1yERo73xXVE2LPEiKXkEUu8ah HTTP Error 429: Too Many Requests
+10-08 01:48:07 step kol 46s
+10-08 01:49:41 step walletlive 141s
+10-08 01:53:20 step pool 359s
+10-08 01:53:20 tick done 360s alerts
+10-08 01:57:26 step band 6s
+10-08 01:57:26 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/Hh1DfqVVSkauYwBFruCcuGZrCXNru3FNEe7L7WY6fra1 HTTP Error 429: Too Many Requests
+10-08 01:57:31 step revival 11s
+10-08 01:57:32 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/J9E2MhkU5MGKrmmGWSf9TV77b19a9a8pYU1f6uGdb6DD HTTP Error 429: Too Many Requests
+10-08 01:57:38 step kol 18s
+10-08 01:57:38 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/EZTuvA6SqyqmwAa9Kt1yERo73xXVE2LPEiKXkEUu8ah HTTP Error 429: Too Many Requests
+10-08 01:57:44 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/6M3V2bVG2UAXDs2WsGG6Ucid6WVJZ7er573X1FEZVG8L HTTP Error 429: Too Many Requests
+10-08 01:58:56 step walletlive 97s
+10-08 02:02:35 step pool 315s
+10-08 02:02:36 tick done 316s alerts
+10-08 02:07:26 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/J9E2MhkU5MGKrmmGWSf9TV77b19a9a8pYU1f6uGdb6DD HTTP Error 429: Too Many Requests
+10-08 02:07:29 step band 10s
+10-08 02:07:31 step revival 12s
+10-08 02:07:38 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/6M3V2bVG2UAXDs2WsGG6Ucid6WVJZ7er573X1FEZVG8L HTTP Error 429: Too Many Requests
+10-08 02:07:44 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/5Cq7mGGPuvHAz48o3twuvuiYRG92bDK89PoEtjMpNsXe HTTP Error 429: Too Many Requests
+10-08 02:08:51 step kol 92s
+10-08 02:09:19 step walletlive 119s
+10-08 02:11:09 step pool 230s
+10-08 02:11:10 tick done 231s alerts
+10-08 02:17:26 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/6M3V2bVG2UAXDs2WsGG6Ucid6WVJZ7er573X1FEZVG8L HTTP Error 429: Too Many Requests
+10-08 02:17:28 step band 9s
+10-08 02:17:31 step revival 11s
+10-08 02:17:39 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/CHZPS3SnEKvtFMYyhRJ5zbHK1cUXJGyF2YCprCv2MdCj HTTP Error 429: Too Many Requests
+10-08 02:17:45 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/FjMqy5ga89TtJ5fQunTAXPjSGPBD2DGDQTGzqzGdGr7q HTTP Error 429: Too Many Requests
+10-08 02:17:46 step kol 27s
+10-08 02:20:01 step walletlive 161s
+10-08 02:23:16 step pool 356s
+10-08 02:23:17 tick done 357s alerts
+10-08 02:27:20 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/6M3V2bVG2UAXDs2WsGG6Ucid6WVJZ7er573X1FEZVG8L HTTP Error 429: Too Many Requests
+10-08 02:27:29 step kol 10s
+10-08 02:27:31 step revival 12s
+10-08 02:27:37 step band 17s
+10-08 02:27:38 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/DeTAiCntco41gS3LqnrMR3Ps6ZX51AK41WDjrRiZsX7v HTTP Error 429: Too Many Requests
+10-08 02:31:40 step walletlive 260s
+10-08 02:32:10 step pool 291s
+10-08 02:32:26 tick done 306s alerts
+10-08 02:37:26 step band 7s
+10-08 02:37:32 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/5XU7ZQkxQzFFxT4332AFMwURXDdbszCbPXiCngXuujvR HTTP Error 429: Too Many Requests
+10-08 02:37:38 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/4rCkdkk7WnLnzxMekCToZjc89ANCzrP713acNVr4E3kz HTTP Error 429: Too Many Requests
+10-08 02:37:53 step kol 34s
+10-08 02:39:56 step walletlive 157s
+10-08 02:41:54 step pool 275s
+10-08 02:45:07 step revival 468s
+10-08 02:45:24 gemini fail Remote end closed connection without response
+10-08 02:45:24 tick done 485s alerts
+10-08 02:47:20 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/5XU7ZQkxQzFFxT4332AFMwURXDdbszCbPXiCngXuujvR HTTP Error 429: Too Many Requests
+10-08 02:47:24 step band 5s
+10-08 02:47:26 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/4rCkdkk7WnLnzxMekCToZjc89ANCzrP713acNVr4E3kz HTTP Error 429: Too Many Requests
+10-08 02:47:32 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/HjS33eVkZqnqci64jBhCv497VqEDu1hqUETWfyCcc7xc HTTP Error 429: Too Many Requests
+10-08 02:47:38 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/8ThGGQATpASsY6VXs1YGyqPNbfKnXzmW4WJdr8d4g3bU HTTP Error 429: Too Many Requests
+10-08 02:47:57 step kol 38s
+10-08 02:50:25 step walletlive 185s
+10-08 02:53:58 step pool 398s
+10-08 02:54:35 step revival 436s
+10-08 02:54:42 tick done 443s alerts
+10-08 02:57:20 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/5XU7ZQkxQzFFxT4332AFMwURXDdbszCbPXiCngXuujvR HTTP Error 429: Too Many Requests
+10-08 02:57:32 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/HjS33eVkZqnqci64jBhCv497VqEDu1hqUETWfyCcc7xc HTTP Error 429: Too Many Requests
+10-08 02:57:36 step band 16s
+10-08 02:57:38 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/8ThGGQATpASsY6VXs1YGyqPNbfKnXzmW4WJdr8d4g3bU HTTP Error 429: Too Many Requests
+10-08 02:57:48 step kol 28s
+10-08 02:59:52 step walletlive 152s
+10-08 03:02:50 step revival 330s
+10-08 03:02:59 step pool 339s
+10-08 03:03:17 tick done 357s alerts
+10-08 03:07:26 step band 6s
+10-08 03:07:27 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/HjS33eVkZqnqci64jBhCv497VqEDu1hqUETWfyCcc7xc HTTP Error 429: Too Many Requests
+10-08 03:07:33 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/8ThGGQATpASsY6VXs1YGyqPNbfKnXzmW4WJdr8d4g3bU HTTP Error 429: Too Many Requests
+10-08 03:07:45 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/8doSkG4PTSPGQVtQU6VLXbBUvvYCbA4PJGKV9yXdnmyJ HTTP Error 429: Too Many Requests
+10-08 03:08:04 step kol 44s
+10-08 03:09:59 step walletlive 159s
+10-08 03:12:14 step pool 293s
+10-08 03:15:02 step revival 462s
+10-08 03:15:03 tick done 463s alerts
+10-08 03:17:19 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/HjS33eVkZqnqci64jBhCv497VqEDu1hqUETWfyCcc7xc HTTP Error 429: Too Many Requests
+10-08 03:17:32 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/8doSkG4PTSPGQVtQU6VLXbBUvvYCbA4PJGKV9yXdnmyJ HTTP Error 429: Too Many Requests
+10-08 03:17:38 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/71nu3LCSGLekcahi624zmfmaxwizR4TEoLi1ivha8tFT HTTP Error 429: Too Many Requests
+10-08 03:18:30 step band 72s
+10-08 03:18:51 step kol 93s
+10-08 03:20:38 step walletlive 199s
+10-08 03:23:07 step pool 348s
+10-08 03:24:41 step revival 442s
+10-08 03:24:42 tick done 443s alerts
+10-08 03:27:20 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/HjS33eVkZqnqci64jBhCv497VqEDu1hqUETWfyCcc7xc HTTP Error 429: Too Many Requests
+10-08 03:27:26 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/8doSkG4PTSPGQVtQU6VLXbBUvvYCbA4PJGKV9yXdnmyJ HTTP Error 429: Too Many Requests
+10-08 03:27:28 step band 9s
+10-08 03:27:36 step kol 17s
+10-08 03:27:38 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/DJQpGNR9oKUhkbWPxxzKurUUHZGP2jLirX31Q1hfCsvw HTTP Error 429: Too Many Requests
+10-08 03:27:44 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/HsyYVGcWkRUA7Xc2siWfVZQrEK1ZJZkoxUiM7AGYdNmx HTTP Error 429: Too Many Requests
+10-08 03:29:51 step walletlive 151s
+10-08 03:32:28 step revival 309s
+10-08 03:34:30 TIMEOUT pool
+10-08 03:34:30 step pool 431s
+10-08 03:34:31 tick done 432s alerts
+10-08 03:37:26 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/HjS33eVkZqnqci64jBhCv497VqEDu1hqUETWfyCcc7xc HTTP Error 429: Too Many Requests
+10-08 03:37:27 step band 8s
+10-08 03:37:32 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/8doSkG4PTSPGQVtQU6VLXbBUvvYCbA4PJGKV9yXdnmyJ HTTP Error 429: Too Many Requests
+10-08 03:37:38 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/DJQpGNR9oKUhkbWPxxzKurUUHZGP2jLirX31Q1hfCsvw HTTP Error 429: Too Many Requests
+10-08 03:37:44 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/HsyYVGcWkRUA7Xc2siWfVZQrEK1ZJZkoxUiM7AGYdNmx HTTP Error 429: Too Many Requests
+10-08 03:38:30 step kol 70s
+10-08 03:42:39 step pool 320s
+10-08 03:44:33 step walletlive 433s
+10-08 03:45:20 TIMEOUT revival
+10-08 03:45:20 step revival 480s
+10-08 03:45:21 tick done 481s alerts
+10-08 03:47:20 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/HjS33eVkZqnqci64jBhCv497VqEDu1hqUETWfyCcc7xc HTTP Error 429: Too Many Requests
+10-08 03:47:25 step band 5s
+10-08 03:47:26 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/8doSkG4PTSPGQVtQU6VLXbBUvvYCbA4PJGKV9yXdnmyJ HTTP Error 429: Too Many Requests
+10-08 03:47:38 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/HsyYVGcWkRUA7Xc2siWfVZQrEK1ZJZkoxUiM7AGYdNmx HTTP Error 429: Too Many Requests
+10-08 03:47:44 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/7HKSsLvNbQsixjNCaJFfJDjGhruoAHkaEknPXaayui98 HTTP Error 429: Too Many Requests
+10-08 03:48:08 step kol 48s
+10-08 03:49:53 step walletlive 153s
+10-08 03:52:53 step pool 333s
+10-08 03:55:20 TIMEOUT revival
+10-08 03:55:20 step revival 480s
+10-08 03:55:22 tick done 482s alerts
+10-08 03:57:19 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/HjS33eVkZqnqci64jBhCv497VqEDu1hqUETWfyCcc7xc HTTP Error 429: Too Many Requests
+10-08 03:57:32 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/8doSkG4PTSPGQVtQU6VLXbBUvvYCbA4PJGKV9yXdnmyJ HTTP Error 429: Too Many Requests
+10-08 03:57:44 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/7HKSsLvNbQsixjNCaJFfJDjGhruoAHkaEknPXaayui98 HTTP Error 429: Too Many Requests
+10-08 03:58:34 step band 75s
+10-08 03:58:51 step kol 92s
+10-08 03:59:53 step walletlive 154s
+10-08 04:02:14 step pool 295s
+10-08 04:05:19 TIMEOUT revival
+10-08 04:05:19 step revival 480s
+10-08 04:05:21 tick done 481s alerts
+10-08 04:07:26 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/HjS33eVkZqnqci64jBhCv497VqEDu1hqUETWfyCcc7xc HTTP Error 429: Too Many Requests
+10-08 04:07:29 step band 9s
+10-08 04:07:32 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/9NzVk1k7R7AYmuBT3x69sGb2kzAjoTZmCVnpGndiArnC HTTP Error 429: Too Many Requests
+10-08 04:07:44 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/7HKSsLvNbQsixjNCaJFfJDjGhruoAHkaEknPXaayui98 HTTP Error 429: Too Many Requests
+10-08 04:07:48 step kol 29s
+10-08 04:09:58 step walletlive 159s
+10-08 04:12:42 step pool 323s
+10-08 04:15:12 step revival 473s
+10-08 04:15:13 tick done 474s alerts
+10-08 04:17:27 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/9NzVk1k7R7AYmuBT3x69sGb2kzAjoTZmCVnpGndiArnC HTTP Error 429: Too Many Requests
+10-08 04:17:27 step band 7s
+10-08 04:17:33 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/7HKSsLvNbQsixjNCaJFfJDjGhruoAHkaEknPXaayui98 HTTP Error 429: Too Many Requests
+10-08 04:17:34 step kol 14s
+10-08 04:17:39 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/9fmun3FLRTQNTQgMDLzMrVQEMp3A7vNvptE7eL5d7xnx HTTP Error 429: Too Many Requests
+10-08 04:17:45 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/2wBtqooC3yp5yTW97swFtunvuYYsU1XUt5ZxL1dxNnMx HTTP Error 429: Too Many Requests
+10-08 04:20:41 step walletlive 201s
+10-08 04:24:31 TIMEOUT pool
+10-08 04:24:31 step pool 431s
+10-08 04:24:34 step revival 434s
+10-08 04:24:35 tick done 435s alerts
+10-08 04:27:21 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/9NzVk1k7R7AYmuBT3x69sGb2kzAjoTZmCVnpGndiArnC HTTP Error 429: Too Many Requests
+10-08 04:27:27 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/7HKSsLvNbQsixjNCaJFfJDjGhruoAHkaEknPXaayui98 HTTP Error 429: Too Many Requests
+10-08 04:27:28 step band 7s
+10-08 04:27:39 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/2wBtqooC3yp5yTW97swFtunvuYYsU1XUt5ZxL1dxNnMx HTTP Error 429: Too Many Requests
+10-08 04:27:45 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/APduwQzG82jL4D3ajSaFzBNuARHPaAv6p3n6xoKY4dsZ HTTP Error 429: Too Many Requests
+10-08 04:27:49 step kol 28s
+10-08 04:29:51 step walletlive 150s
+10-08 04:32:58 step pool 337s
+10-08 04:34:43 step revival 443s
+10-08 04:34:44 tick done 444s alerts
+10-08 04:37:26 step band 7s
+10-08 04:37:27 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/7HKSsLvNbQsixjNCaJFfJDjGhruoAHkaEknPXaayui98 HTTP Error 429: Too Many Requests
+10-08 04:37:33 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/2wBtqooC3yp5yTW97swFtunvuYYsU1XUt5ZxL1dxNnMx HTTP Error 429: Too Many Requests
+10-08 04:37:39 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/APduwQzG82jL4D3ajSaFzBNuARHPaAv6p3n6xoKY4dsZ HTTP Error 429: Too Many Requests
+10-08 04:37:45 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/BmgRZWSoUMtXk9YBmc8PPENJkJuc7e91D8RHpWfFj12u HTTP Error 429: Too Many Requests
+10-08 04:37:49 step kol 31s
+10-08 04:40:09 step walletlive 170s
+10-08 04:42:32 step pool 313s
+10-08 04:44:38 step revival 439s
+10-08 04:44:39 tick done 440s alerts
+10-08 04:47:27 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/2wBtqooC3yp5yTW97swFtunvuYYsU1XUt5ZxL1dxNnMx HTTP Error 429: Too Many Requests
+10-08 04:47:34 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/APduwQzG82jL4D3ajSaFzBNuARHPaAv6p3n6xoKY4dsZ HTTP Error 429: Too Many Requests
+10-08 04:47:38 step kol 17s
+10-08 04:47:40 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/BmgRZWSoUMtXk9YBmc8PPENJkJuc7e91D8RHpWfFj12u HTTP Error 429: Too Many Requests
+10-08 04:47:46 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/ZdRhmBAjsuGYHYAALDkb6jCaStDstxihu9GH5PUsAnd HTTP Error 429: Too Many Requests
+10-08 04:48:41 step band 81s
+10-08 04:49:41 step walletlive 140s
+10-08 04:53:06 step pool 345s
+10-08 04:54:48 step revival 447s
+10-08 04:54:52 tick done 451s alerts
+10-08 04:57:19 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/FN3973ybhd813CVo9ReUJiZHmxTtEufKyao7uZQ1qg9A HTTP Error 429: Too Many Requests
+10-08 04:57:25 step band 6s
+10-08 04:57:32 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/2wBtqooC3yp5yTW97swFtunvuYYsU1XUt5ZxL1dxNnMx HTTP Error 429: Too Many Requests
+10-08 04:57:38 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/APduwQzG82jL4D3ajSaFzBNuARHPaAv6p3n6xoKY4dsZ HTTP Error 429: Too Many Requests
+10-08 04:58:34 step kol 75s
+10-08 05:03:14 step pool 355s
+10-08 05:03:58 step revival 399s
+10-08 05:04:31 step walletlive 432s
+10-08 05:04:33 tick done 433s alerts
+10-08 05:07:23 step band 2s
+10-08 05:07:27 step kol 6s
+10-08 05:07:28 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/2wBtqooC3yp5yTW97swFtunvuYYsU1XUt5ZxL1dxNnMx HTTP Error 429: Too Many Requests
+10-08 05:07:34 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/APduwQzG82jL4D3ajSaFzBNuARHPaAv6p3n6xoKY4dsZ HTTP Error 429: Too Many Requests
+10-08 05:07:46 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/DB8BR2CSsfKYEFK45DZCmTZYW6BBfzdeBPrn8LxZLGKQ HTTP Error 429: Too Many Requests
+10-08 05:10:00 step walletlive 159s
+10-08 05:12:15 step pool 294s
+10-08 05:14:26 step revival 425s
+10-08 05:14:27 tick done 426s alerts
+10-08 05:17:26 step band 5s
+10-08 05:17:27 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/APduwQzG82jL4D3ajSaFzBNuARHPaAv6p3n6xoKY4dsZ HTTP Error 429: Too Many Requests
+10-08 05:17:27 GET fail https://api.geckoterminal.com/api/v2/networks/solana/tokens/G49ffRyHBiqHw6FDLSMaACaDuwo9PBRuQh1Zo7Mpump HTTP Error 429: Too Many Requests
+10-08 05:17:27 step kol 7s
+10-08 05:17:33 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/DB8BR2CSsfKYEFK45DZCmTZYW6BBfzdeBPrn8LxZLGKQ HTTP Error 429: Too Many Requests
+10-08 05:17:39 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/FWzbapPw321yW44wjf6zs4mMyrHw4g2bS7qjHdPpr939 HTTP Error 429: Too Many Requests
+10-08 05:17:45 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/fsip74GQBXjn51CKYVspfeMkx252K2pZkPDo4Z3Vovn HTTP Error 429: Too Many Requests
+10-08 05:19:45 step walletlive 144s
+10-08 05:23:46 step revival 386s
+10-08 05:24:31 TIMEOUT pool
+10-08 05:24:31 step pool 431s
+10-08 05:24:32 tick done 432s alerts
+10-08 05:27:20 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/GJStemLAfr6vtSYL4AB71wdCa8CxgdxxFCM6TPV3WXKC HTTP Error 429: Too Many Requests
+10-08 05:27:31 step band 11s
+10-08 05:27:32 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/DB8BR2CSsfKYEFK45DZCmTZYW6BBfzdeBPrn8LxZLGKQ HTTP Error 429: Too Many Requests
+10-08 05:27:38 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/FWzbapPw321yW44wjf6zs4mMyrHw4g2bS7qjHdPpr939 HTTP Error 429: Too Many Requests
+10-08 05:27:44 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/fsip74GQBXjn51CKYVspfeMkx252K2pZkPDo4Z3Vovn HTTP Error 429: Too Many Requests
+10-08 05:27:45 step kol 26s
+10-08 05:30:00 step walletlive 160s
+10-08 05:34:30 TIMEOUT pool
+10-08 05:34:30 step pool 430s
+10-08 05:34:38 step revival 438s
+10-08 05:34:48 tick done 448s alerts
+10-08 05:37:26 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/DB8BR2CSsfKYEFK45DZCmTZYW6BBfzdeBPrn8LxZLGKQ HTTP Error 429: Too Many Requests
+10-08 05:37:27 step kol 8s
+10-08 05:37:29 step band 10s
+10-08 05:37:32 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/FWzbapPw321yW44wjf6zs4mMyrHw4g2bS7qjHdPpr939 HTTP Error 429: Too Many Requests
+10-08 05:37:44 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/6zjfMQvuDHRL6Wd5wbME8gVKukeDvRFEo8WRQnNE9k3C HTTP Error 429: Too Many Requests
+10-08 05:42:44 step pool 325s
+10-08 05:43:50 step revival 391s
+10-08 05:44:36 step walletlive 437s
+10-08 05:44:37 tick done 438s alerts
+10-08 05:47:26 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/FWzbapPw321yW44wjf6zs4mMyrHw4g2bS7qjHdPpr939 HTTP Error 429: Too Many Requests
+10-08 05:47:30 step band 11s
+10-08 05:47:32 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/6zjfMQvuDHRL6Wd5wbME8gVKukeDvRFEo8WRQnNE9k3C HTTP Error 429: Too Many Requests
+10-08 05:47:38 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/8BhU3su8qY9swCQ2ZhiNbs5ZasPW3H8i2UHGkomhWUnU HTTP Error 429: Too Many Requests
+10-08 05:47:51 step kol 32s
+10-08 05:49:41 step walletlive 141s
+10-08 05:54:21 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/FWzbapPw321yW44wjf6zs4mMyrHw4g2bS7qjHdPpr939 HTTP Error 429: Too Many Requests
+10-08 05:54:27 step band 5s
+10-08 05:54:27 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/6zjfMQvuDHRL6Wd5wbME8gVKukeDvRFEo8WRQnNE9k3C HTTP Error 429: Too Many Requests
+10-08 05:54:40 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/GudLeQFx2Ck3Hue3VGu8jW9ArcqKwn4cm9f7rrikmKnw HTTP Error 429: Too Many Requests
+10-08 05:54:46 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/9SbmxsS5stvcY8p9rDDR7ZStzeQVpTEbyrAZ7yxKfoNP HTTP Error 429: Too Many Requests
+10-08 05:55:53 step kol 91s
+10-08 05:56:43 step walletlive 141s
+10-08 05:57:19 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/FWzbapPw321yW44wjf6zs4mMyrHw4g2bS7qjHdPpr939 HTTP Error 429: Too Many Requests
+10-08 05:57:27 step kol 7s
+10-08 05:57:32 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/GudLeQFx2Ck3Hue3VGu8jW9ArcqKwn4cm9f7rrikmKnw HTTP Error 429: Too Many Requests
+10-08 05:57:33 step band 14s
+10-08 05:57:38 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/9SbmxsS5stvcY8p9rDDR7ZStzeQVpTEbyrAZ7yxKfoNP HTTP Error 429: Too Many Requests
+10-08 05:59:54 step walletlive 155s
+10-08 06:01:07 step pool 406s
+10-08 06:02:09 step revival 467s
+10-08 06:02:38 tick done 497s alerts
+10-08 06:03:40 step pool 380s
+10-08 06:05:19 TIMEOUT revival
+10-08 06:05:19 step revival 480s
+10-08 06:05:21 tick done 482s alerts
+10-08 06:07:27 step band 7s
+10-08 06:07:32 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/9SbmxsS5stvcY8p9rDDR7ZStzeQVpTEbyrAZ7yxKfoNP HTTP Error 429: Too Many Requests
+10-08 06:07:38 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/CP4sYYiKtkUa9KTR3eQAPR4FTwJur7CNFWW1daLsX96B HTTP Error 429: Too Many Requests
+10-08 06:07:53 step kol 33s
+10-08 06:08:44 step walletlive 85s
+10-08 06:13:40 step pool 380s
+10-08 06:14:26 step revival 426s
+10-08 06:14:27 tick done 428s alerts
+10-08 06:17:25 step band 5s
+10-08 06:17:26 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/FsfsZRkxtRaUttUMY45HHrAGca37MAJYvSG6fWLnxnjb HTTP Error 429: Too Many Requests
+10-08 06:17:38 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/71nu3LCSGLekcahi624zmfmaxwizR4TEoLi1ivha8tFT HTTP Error 429: Too Many Requests
+10-08 06:17:44 step kol 24s
+10-08 06:17:44 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/9SbmxsS5stvcY8p9rDDR7ZStzeQVpTEbyrAZ7yxKfoNP HTTP Error 429: Too Many Requests
+10-08 06:20:02 step walletlive 162s
+10-08 06:22:51 step revival 332s
+10-08 06:23:57 step pool 397s
+10-08 06:23:58 tick done 398s alerts
+10-08 06:27:20 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/Avkt5bP2BRBoTNLxF9jU5d5fKduL4fjZWeNZf38HFrJD HTTP Error 429: Too Many Requests
+10-08 06:27:30 step band 11s
+10-08 06:27:32 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/5Kq29mzF9wErWbHtZYwkKs3T5qmDDT9YAA25KUWH6c8G HTTP Error 429: Too Many Requests
+10-08 06:27:38 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/FsfsZRkxtRaUttUMY45HHrAGca37MAJYvSG6fWLnxnjb HTTP Error 429: Too Many Requests
+10-08 06:27:39 step kol 19s
+10-08 06:29:55 step walletlive 155s
+10-08 06:34:21 step revival 422s
+10-08 06:34:31 TIMEOUT pool
+10-08 06:34:31 step pool 431s
+10-08 06:34:32 tick done 432s alerts
+10-08 06:37:27 step band 7s
+10-08 06:37:32 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/FsfsZRkxtRaUttUMY45HHrAGca37MAJYvSG6fWLnxnjb HTTP Error 429: Too Many Requests
+10-08 06:37:38 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/H3buwnKkav4KvvEVwTGtYR8vF3XPd1Q6shS2F5aFFGSk HTTP Error 429: Too Many Requests
+10-08 06:37:45 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/9SbmxsS5stvcY8p9rDDR7ZStzeQVpTEbyrAZ7yxKfoNP HTTP Error 429: Too Many Requests
+10-08 06:38:32 step kol 73s
+10-08 06:38:45 step walletlive 85s
+10-08 06:43:53 step pool 393s
+10-08 06:45:06 step revival 466s
+10-08 06:45:07 tick done 467s alerts
+10-08 06:47:26 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/H3buwnKkav4KvvEVwTGtYR8vF3XPd1Q6shS2F5aFFGSk HTTP Error 429: Too Many Requests
+10-08 06:47:27 step band 7s
+10-08 06:47:38 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/CP4sYYiKtkUa9KTR3eQAPR4FTwJur7CNFWW1daLsX96B HTTP Error 429: Too Many Requests
+10-08 06:47:41 step kol 21s
+10-08 06:47:44 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/Hdu6FpDhQdEVYqwUrNg929GAj97G5f57bqUBjSZ3bQPx HTTP Error 429: Too Many Requests
+10-08 06:49:53 step walletlive 153s
+10-08 06:53:53 step pool 393s
+10-08 06:55:07 step revival 467s
+10-08 06:55:08 tick done 468s alerts
+10-08 06:57:26 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/DJQpGNR9oKUhkbWPxxzKurUUHZGP2jLirX31Q1hfCsvw HTTP Error 429: Too Many Requests
+10-08 06:57:32 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/HsyYVGcWkRUA7Xc2siWfVZQrEK1ZJZkoxUiM7AGYdNmx HTTP Error 429: Too Many Requests
+10-08 06:57:34 step band 14s
+10-08 06:57:38 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/CP4sYYiKtkUa9KTR3eQAPR4FTwJur7CNFWW1daLsX96B HTTP Error 429: Too Many Requests
+10-08 06:57:44 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/Hdu6FpDhQdEVYqwUrNg929GAj97G5f57bqUBjSZ3bQPx HTTP Error 429: Too Many Requests
+10-08 06:58:51 step kol 92s
+10-08 07:04:28 step revival 428s
+10-08 07:04:30 TIMEOUT pool
+10-08 07:04:30 step pool 431s
+10-08 07:04:44 step walletlive 445s
+10-08 07:04:45 tick done 446s alerts
+10-08 07:07:25 step band 6s
+10-08 07:07:30 step kol 10s
+10-08 07:07:38 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/9fmun3FLRTQNTQgMDLzMrVQEMp3A7vNvptE7eL5d7xnx HTTP Error 429: Too Many Requests
+10-08 07:07:44 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/CP4sYYiKtkUa9KTR3eQAPR4FTwJur7CNFWW1daLsX96B HTTP Error 429: Too Many Requests
+10-08 07:13:00 step pool 340s
+10-08 07:14:35 step walletlive 435s
+10-08 07:14:44 step revival 444s
+10-08 07:15:40 gemini fail [Errno 104] Connection reset by peer
+10-08 07:15:40 tick done 501s alerts
+10-08 07:17:25 step band 5s
+10-08 07:17:26 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/CP4sYYiKtkUa9KTR3eQAPR4FTwJur7CNFWW1daLsX96B HTTP Error 429: Too Many Requests
+10-08 07:17:32 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/Hdu6FpDhQdEVYqwUrNg929GAj97G5f57bqUBjSZ3bQPx HTTP Error 429: Too Many Requests
+10-08 07:17:36 step kol 16s
+10-08 07:17:38 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/7pi6iCwWz9VNEd8YAQF5sPCYszVH4GT2vpGyvGuZEbar HTTP Error 429: Too Many Requests
+10-08 07:19:47 step walletlive 147s
+10-08 07:22:37 step pool 318s
+10-08 07:24:53 step revival 453s
+10-08 07:24:54 tick done 454s alerts
+10-08 07:27:24 step band 5s
+10-08 07:27:33 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/7pi6iCwWz9VNEd8YAQF5sPCYszVH4GT2vpGyvGuZEbar HTTP Error 429: Too Many Requests
+10-08 07:27:39 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/HnppiCJ3ha1MUYziga1AGxHy3VpP4g3Mq8ihP1JwkCXY HTTP Error 429: Too Many Requests
+10-08 07:27:45 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/HDf3umsCYnwjnAcVfoXTnzCx9JvDvKGuhJbr5Zj57ahK HTTP Error 429: Too Many Requests
+10-08 07:28:50 step kol 90s
+10-08 07:30:06 step walletlive 166s
+10-08 07:32:53 step pool 333s
+10-08 07:35:26 step band 4s
+10-08 07:35:28 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/HnppiCJ3ha1MUYziga1AGxHy3VpP4g3Mq8ihP1JwkCXY HTTP Error 429: Too Many Requests
+10-08 07:35:34 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/HDf3umsCYnwjnAcVfoXTnzCx9JvDvKGuhJbr5Zj57ahK HTTP Error 429: Too Many Requests
+10-08 07:35:40 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/8Dk6m64oB8miEHQo9JoQivYq9G3K2VG8VNwz7DhjjRdQ HTTP Error 429: Too Many Requests
+10-08 07:36:54 step kol 93s
+10-08 07:37:19 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/HnppiCJ3ha1MUYziga1AGxHy3VpP4g3Mq8ihP1JwkCXY HTTP Error 429: Too Many Requests
+10-08 07:37:23 step band 4s
+10-08 07:37:25 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/HDf3umsCYnwjnAcVfoXTnzCx9JvDvKGuhJbr5Zj57ahK HTTP Error 429: Too Many Requests
+10-08 07:37:46 step walletlive 145s
+10-08 07:38:24 step kol 65s
+10-08 07:39:57 step walletlive 158s
+10-08 07:42:26 TIMEOUT pool
+10-08 07:42:26 step pool 424s
+10-08 07:42:53 step revival 452s
+10-08 07:42:54 tick done 453s alerts
+10-08 07:44:17 TIMEOUT pool
+10-08 07:44:17 step pool 418s
+10-08 07:45:09 step revival 470s
+10-08 07:45:10 tick done 471s alerts
+10-08 07:47:22 step band 3s
+10-08 07:47:26 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/HnppiCJ3ha1MUYziga1AGxHy3VpP4g3Mq8ihP1JwkCXY HTTP Error 429: Too Many Requests
+10-08 07:47:41 step kol 21s
+10-08 07:50:02 step walletlive 163s
+10-08 07:53:31 step pool 371s
+10-08 07:55:19 TIMEOUT revival
+10-08 07:55:19 step revival 480s
+10-08 07:55:20 tick done 481s alerts
+10-08 07:57:19 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/APduwQzG82jL4D3ajSaFzBNuARHPaAv6p3n6xoKY4dsZ HTTP Error 429: Too Many Requests
+10-08 07:57:25 step band 6s
+10-08 07:57:25 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/BmgRZWSoUMtXk9YBmc8PPENJkJuc7e91D8RHpWfFj12u HTTP Error 429: Too Many Requests
+10-08 07:58:50 step kol 91s
+10-08 07:59:55 step walletlive 155s
+10-08 08:04:18 TIMEOUT pool
+10-08 08:04:18 step pool 418s
+10-08 08:05:19 TIMEOUT revival
+10-08 08:05:19 step revival 480s
+10-08 08:05:20 tick done 481s alerts
+10-08 08:07:25 step band 6s
+10-08 08:07:38 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/DB8BR2CSsfKYEFK45DZCmTZYW6BBfzdeBPrn8LxZLGKQ HTTP Error 429: Too Many Requests
+10-08 08:07:44 step kol 24s
+10-08 08:09:43 step walletlive 143s
+10-08 08:13:27 step pool 368s
+10-08 08:15:19 TIMEOUT revival
+10-08 08:15:19 step revival 480s
+10-08 08:15:20 tick done 481s alerts
+10-08 08:17:24 step band 4s
+10-08 08:17:26 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/7ZNPjwodZPpfQg95RBHDvAgAUtHCQYdcch5uqL6UkFcs HTTP Error 429: Too Many Requests
+10-08 08:18:51 step kol 91s
+10-08 08:20:05 step walletlive 165s
+10-08 08:21:51 step pool 272s
+10-08 08:25:20 TIMEOUT revival
+10-08 08:25:20 step revival 480s
+10-08 08:25:20 tick done 480s alerts
+10-08 08:27:24 step band 4s
+10-08 08:27:26 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/7ZNPjwodZPpfQg95RBHDvAgAUtHCQYdcch5uqL6UkFcs HTTP Error 429: Too Many Requests
+10-08 08:28:43 step kol 83s
+10-08 08:29:58 step walletlive 159s
+10-08 08:34:12 TIMEOUT pool
+10-08 08:34:12 step pool 412s
+10-08 08:35:20 TIMEOUT revival
+10-08 08:35:20 step revival 480s
+10-08 08:35:21 tick done 481s alerts
+10-08 08:37:26 step band 6s
+10-08 08:37:26 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/H4zvhZgXwjwNA22z4ybyfyWG2c94dKU4s6GfT1g3hR9x HTTP Error 429: Too Many Requests
+10-08 08:37:32 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/7ZNPjwodZPpfQg95RBHDvAgAUtHCQYdcch5uqL6UkFcs HTTP Error 429: Too Many Requests
+10-08 08:37:43 step kol 23s
+10-08 08:39:07 step walletlive 107s
+10-08 08:43:17 step pool 357s
+10-08 08:45:01 step revival 461s
+10-08 08:45:02 tick done 462s alerts
+10-08 08:47:23 step band 4s
+10-08 08:47:26 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/7ZNPjwodZPpfQg95RBHDvAgAUtHCQYdcch5uqL6UkFcs HTTP Error 429: Too Many Requests
+10-08 08:47:29 step kol 10s
+10-08 08:50:09 step walletlive 170s
+10-08 08:54:12 TIMEOUT pool
+10-08 08:54:12 step pool 412s
+10-08 08:55:19 TIMEOUT revival
+10-08 08:55:19 step revival 480s
+10-08 08:55:21 tick done 482s alerts
+10-08 08:57:26 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/Bn4zaDRo2NcB41TtvunNkvhsSQhvnWDi4CmHwCMzUjCK HTTP Error 429: Too Many Requests
+10-08 08:57:31 step kol 11s
+10-08 08:57:32 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/fsip74GQBXjn51CKYVspfeMkx252K2pZkPDo4Z3Vovn HTTP Error 429: Too Many Requests
+10-08 08:57:38 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/7ZNPjwodZPpfQg95RBHDvAgAUtHCQYdcch5uqL6UkFcs HTTP Error 429: Too Many Requests
+10-08 08:57:44 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/6mpL28DFPqqdSvi46LYJRq6URG3rgGukxKat9eJS9JGb HTTP Error 429: Too Many Requests
+10-08 09:00:05 step walletlive 166s
+10-08 09:02:37 step pool 318s
+10-08 09:05:19 TIMEOUT revival
+10-08 09:05:19 step revival 480s
+10-08 09:05:19 tick done 480s alerts
+10-08 09:07:26 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/2XMoxk1owwgQEuaBUni8UnySEPLAzcqVvK4S3YeCcX4K HTTP Error 429: Too Many Requests
+10-08 09:07:38 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/6zjfMQvuDHRL6Wd5wbME8gVKukeDvRFEo8WRQnNE9k3C HTTP Error 429: Too Many Requests
+10-08 09:07:44 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/7ZNPjwodZPpfQg95RBHDvAgAUtHCQYdcch5uqL6UkFcs HTTP Error 429: Too Many Requests
+10-08 09:08:45 step kol 85s
+10-08 09:10:03 step walletlive 164s
+10-08 09:15:30 step kol 10s
+10-08 09:15:33 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/8BhU3su8qY9swCQ2ZhiNbs5ZasPW3H8i2UHGkomhWUnU HTTP Error 429: Too Many Requests
+10-08 09:15:45 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/6mpL28DFPqqdSvi46LYJRq6URG3rgGukxKat9eJS9JGb HTTP Error 429: Too Many Requests
+10-08 09:17:25 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/6mpL28DFPqqdSvi46LYJRq6URG3rgGukxKat9eJS9JGb HTTP Error 429: Too Many Requests
+10-08 09:17:27 step kol 8s
+10-08 09:17:31 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/EA1W9NSF1WdDUuscPYETadcckHxoJ6ZYghydGM9HNQeQ HTTP Error 429: Too Many Requests
+10-08 09:17:37 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/Aqh98w2wucifRrRJkF5Kjqq83stNgMZ9fq6WGHAaVgiq HTTP Error 429: Too Many Requests
+10-08 09:17:43 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/Eb57scWKeFpBuSZLLMf3bvhHdnkpWVFj4M4NZ67gyyM4 HTTP Error 429: Too Many Requests
+10-08 09:19:52 step walletlive 272s
+10-08 09:19:52 step walletlive 153s
+10-08 09:22:32 TIMEOUT pool
+10-08 09:22:32 step pool 431s
+10-08 09:22:41 step revival 440s
+10-08 09:22:41 tick done 440s silent
+10-08 09:23:52 step pool 393s
+10-08 09:24:34 step revival 435s
+10-08 09:24:34 tick done 435s silent
+10-08 09:27:25 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/EA1W9NSF1WdDUuscPYETadcckHxoJ6ZYghydGM9HNQeQ HTTP Error 429: Too Many Requests
+10-08 09:27:31 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/Aqh98w2wucifRrRJkF5Kjqq83stNgMZ9fq6WGHAaVgiq HTTP Error 429: Too Many Requests
+10-08 09:27:43 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/BJ2EvDVwDA79QiC1n29iGpQAWxpbQqhWEbe7SSDfshQH HTTP Error 429: Too Many Requests
+10-08 09:28:48 step kol 90s
+10-08 09:30:02 step walletlive 163s
+10-08 09:34:29 TIMEOUT pool
+10-08 09:34:29 step pool 431s
+10-08 09:35:19 TIMEOUT revival
+10-08 09:35:19 step revival 480s
+10-08 09:35:19 tick done 480s silent
+10-08 09:37:20 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/EA1W9NSF1WdDUuscPYETadcckHxoJ6ZYghydGM9HNQeQ HTTP Error 429: Too Many Requests
+10-08 09:37:26 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/Aqh98w2wucifRrRJkF5Kjqq83stNgMZ9fq6WGHAaVgiq HTTP Error 429: Too Many Requests
+10-08 09:37:32 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/BJ2EvDVwDA79QiC1n29iGpQAWxpbQqhWEbe7SSDfshQH HTTP Error 429: Too Many Requests
+10-08 09:37:38 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/7CDh7FJWs8wNdr14E87yAPsPK7GkR6Mmxse6PsYhx8Te HTTP Error 429: Too Many Requests
+10-08 09:38:51 step kol 91s
+10-08 09:39:56 step walletlive 156s
+10-08 09:44:24 TIMEOUT pool
+10-08 09:44:24 step pool 424s
+10-08 09:44:53 step revival 454s
+10-08 09:44:53 tick done 454s silent
+10-08 09:47:19 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/EA1W9NSF1WdDUuscPYETadcckHxoJ6ZYghydGM9HNQeQ HTTP Error 429: Too Many Requests
+10-08 09:47:25 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/Aqh98w2wucifRrRJkF5Kjqq83stNgMZ9fq6WGHAaVgiq HTTP Error 429: Too Many Requests
+10-08 09:47:37 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/7CDh7FJWs8wNdr14E87yAPsPK7GkR6Mmxse6PsYhx8Te HTTP Error 429: Too Many Requests
+10-08 09:47:43 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/AptPDm8nHK5WauQ8YGsG88GpHvs8SZd1gpY1hA723poe HTTP Error 429: Too Many Requests
+10-08 09:47:47 step kol 28s
+10-08 09:49:55 step walletlive 156s
+10-08 09:53:07 step pool 348s
+10-08 09:54:59 step revival 460s
+10-08 09:54:59 tick done 460s silent
+10-08 09:57:32 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/7CDh7FJWs8wNdr14E87yAPsPK7GkR6Mmxse6PsYhx8Te HTTP Error 429: Too Many Requests
+10-08 10:05:26 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/7CDh7FJWs8wNdr14E87yAPsPK7GkR6Mmxse6PsYhx8Te HTTP Error 429: Too Many Requests
+10-08 10:05:30 step kol 11s
+10-08 10:07:20 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/CKcmXR5weVM4Va5KWSSQD1Nyimg2pj4rW99LPxnpdUiA HTTP Error 429: Too Many Requests
+10-08 10:07:26 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/9AYnbYARMf9SfhhiHrC5N79iBoLCxDwYhiqnxhBkkJxB HTTP Error 429: Too Many Requests
+10-08 10:07:28 step walletlive 128s
+10-08 10:08:43 step kol 84s
+10-08 10:10:29 step walletlive 189s
+10-08 10:12:12 TIMEOUT pool
+10-08 10:12:12 step pool 413s
+10-08 10:12:35 step revival 436s
+10-08 10:12:35 tick done 436s alerts
+10-08 10:14:01 step pool 401s
+10-08 10:15:20 TIMEOUT revival
+10-08 10:15:20 step revival 480s
+10-08 10:15:21 tick done 481s alerts
+10-08 10:17:33 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/9AYnbYARMf9SfhhiHrC5N79iBoLCxDwYhiqnxhBkkJxB HTTP Error 429: Too Many Requests
+10-08 10:17:39 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/GudLeQFx2Ck3Hue3VGu8jW9ArcqKwn4cm9f7rrikmKnw HTTP Error 429: Too Many Requests
+10-08 10:18:01 step kol 33s
+10-08 10:23:45 step pool 378s
+10-08 10:24:45 step walletlive 438s
+10-08 10:25:27 TIMEOUT revival
+10-08 10:25:27 step revival 480s
+10-08 10:25:28 tick done 481s alerts
+10-08 10:27:26 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/GudLeQFx2Ck3Hue3VGu8jW9ArcqKwn4cm9f7rrikmKnw HTTP Error 429: Too Many Requests
+10-08 10:27:31 step kol 11s
+10-08 10:30:00 step walletlive 160s
+10-08 10:32:04 step pool 285s
+10-08 10:35:19 TIMEOUT revival
+10-08 10:35:19 step revival 480s
+10-08 10:35:19 tick done 480s alerts
+10-08 10:37:20 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/GudLeQFx2Ck3Hue3VGu8jW9ArcqKwn4cm9f7rrikmKnw HTTP Error 429: Too Many Requests
+10-08 10:37:26 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/9SbmxsS5stvcY8p9rDDR7ZStzeQVpTEbyrAZ7yxKfoNP HTTP Error 429: Too Many Requests
+10-08 10:37:29 step kol 9s
+10-08 10:39:56 step walletlive 156s
+10-08 10:44:12 TIMEOUT pool
+10-08 10:44:12 step pool 412s
+10-08 10:44:44 step revival 444s
+10-08 10:44:44 tick done 444s alerts
+10-08 10:47:36 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/GudLeQFx2Ck3Hue3VGu8jW9ArcqKwn4cm9f7rrikmKnw HTTP Error 429: Too Many Requests
+10-08 10:47:42 step kol 6s
+10-08 10:47:48 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/EUi1UkRDdWifn5VFLCkxXJbkcre8axQXFzMbTgcRuPbT HTTP Error 429: Too Many Requests
+10-08 10:47:55 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/CP4sYYiKtkUa9KTR3eQAPR4FTwJur7CNFWW1daLsX96B HTTP Error 429: Too Many Requests
+10-08 10:50:13 step walletlive 157s
+10-08 10:53:57 step pool 381s
+10-08 10:54:53 step revival 437s
+10-08 10:54:54 tick done 437s alerts
+10-08 10:57:35 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/Hh1DfqVVSkauYwBFruCcuGZrCXNru3FNEe7L7WY6fra1 HTTP Error 429: Too Many Requests
+10-08 10:57:42 step kol 7s
+10-08 10:57:47 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/GudLeQFx2Ck3Hue3VGu8jW9ArcqKwn4cm9f7rrikmKnw HTTP Error 429: Too Many Requests
+10-08 10:58:00 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/CP4sYYiKtkUa9KTR3eQAPR4FTwJur7CNFWW1daLsX96B HTTP Error 429: Too Many Requests
+10-08 11:00:12 step walletlive 157s
+10-08 11:03:25 step pool 350s
+10-08 11:05:35 TIMEOUT revival
+10-08 11:05:35 step revival 480s
+10-08 11:05:35 tick done 480s silent
+10-08 11:07:42 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/GudLeQFx2Ck3Hue3VGu8jW9ArcqKwn4cm9f7rrikmKnw HTTP Error 429: Too Many Requests
+10-08 11:07:54 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/BBmnYXmU2MTujiimVRq5r74YzAeaKZv3hmbdJULG2i46 HTTP Error 429: Too Many Requests
+10-08 11:08:00 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/Hdu6FpDhQdEVYqwUrNg929GAj97G5f57bqUBjSZ3bQPx HTTP Error 429: Too Many Requests
+10-08 11:08:07 step kol 32s
+10-08 11:10:18 step walletlive 162s
+10-08 11:14:45 step pool 430s
+10-08 11:15:02 step revival 447s
+10-08 11:15:03 tick done 448s alerts
+10-08 11:17:36 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/EZTuvA6SqyqmwAa9Kt1yERo73xXVE2LPEiKXkEUu8ah HTTP Error 429: Too Many Requests
+10-08 11:17:42 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/GudLeQFx2Ck3Hue3VGu8jW9ArcqKwn4cm9f7rrikmKnw HTTP Error 429: Too Many Requests
+10-08 11:17:48 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/BBmnYXmU2MTujiimVRq5r74YzAeaKZv3hmbdJULG2i46 HTTP Error 429: Too Many Requests
+10-08 11:17:54 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/Hdu6FpDhQdEVYqwUrNg929GAj97G5f57bqUBjSZ3bQPx HTTP Error 429: Too Many Requests
+10-08 11:18:00 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/7pi6iCwWz9VNEd8YAQF5sPCYszVH4GT2vpGyvGuZEbar HTTP Error 429: Too Many Requests
+10-08 11:18:01 step kol 25s
+10-08 11:20:11 step walletlive 155s
+10-08 11:24:46 TIMEOUT pool
+10-08 11:24:46 step pool 430s
+10-08 11:25:23 step revival 467s
+10-08 11:25:23 tick done 467s silent
+10-08 11:27:38 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/EZTuvA6SqyqmwAa9Kt1yERo73xXVE2LPEiKXkEUu8ah HTTP Error 429: Too Many Requests
+10-08 11:27:50 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/GudLeQFx2Ck3Hue3VGu8jW9ArcqKwn4cm9f7rrikmKnw HTTP Error 429: Too Many Requests
+10-08 11:27:56 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/BBmnYXmU2MTujiimVRq5r74YzAeaKZv3hmbdJULG2i46 HTTP Error 429: Too Many Requests
+10-08 11:28:02 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/Hdu6FpDhQdEVYqwUrNg929GAj97G5f57bqUBjSZ3bQPx HTTP Error 429: Too Many Requests
+10-08 11:29:10 step kol 92s
+10-08 11:30:16 step walletlive 158s
+10-08 11:35:44 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/GudLeQFx2Ck3Hue3VGu8jW9ArcqKwn4cm9f7rrikmKnw HTTP Error 429: Too Many Requests
+10-08 11:35:50 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/BBmnYXmU2MTujiimVRq5r74YzAeaKZv3hmbdJULG2i46 HTTP Error 429: Too Many Requests
+10-08 11:35:51 step kol 13s
+10-08 11:35:56 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/Hdu6FpDhQdEVYqwUrNg929GAj97G5f57bqUBjSZ3bQPx HTTP Error 429: Too Many Requests
+10-08 11:36:02 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/7pi6iCwWz9VNEd8YAQF5sPCYszVH4GT2vpGyvGuZEbar HTTP Error 429: Too Many Requests
+10-08 11:37:35 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/GudLeQFx2Ck3Hue3VGu8jW9ArcqKwn4cm9f7rrikmKnw HTTP Error 429: Too Many Requests
+10-08 11:37:47 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/Hdu6FpDhQdEVYqwUrNg929GAj97G5f57bqUBjSZ3bQPx HTTP Error 429: Too Many Requests
+10-08 11:37:52 step kol 17s
+10-08 11:38:00 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/6JB71uRSnub79oa9u71dvTJw5WDGHpQzyp9cUp9rmg2C HTTP Error 429: Too Many Requests
+10-08 11:40:12 step walletlive 157s
+10-08 11:42:49 TIMEOUT pool
+10-08 11:42:49 step pool 430s
+10-08 11:42:55 step walletlive 437s
+10-08 11:43:38 TIMEOUT revival
+10-08 11:43:38 step revival 480s
+10-08 11:43:38 tick done 480s silent
+10-08 11:44:46 TIMEOUT pool
+10-08 11:44:46 step pool 431s
+10-08 11:45:05 step revival 450s
+10-08 11:45:05 tick done 450s silent
+10-08 11:47:35 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/5Cq7mGGPuvHAz48o3twuvuiYRG92bDK89PoEtjMpNsXe HTTP Error 429: Too Many Requests
+10-08 11:47:48 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/GudLeQFx2Ck3Hue3VGu8jW9ArcqKwn4cm9f7rrikmKnw HTTP Error 429: Too Many Requests
+10-08 11:47:56 step kol 21s
+10-08 11:48:00 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/6JB71uRSnub79oa9u71dvTJw5WDGHpQzyp9cUp9rmg2C HTTP Error 429: Too Many Requests
+10-08 11:50:02 step walletlive 147s
+10-08 11:54:46 TIMEOUT pool
+10-08 11:54:46 step pool 431s
+10-08 11:55:35 TIMEOUT revival
+10-08 11:55:35 step revival 480s
+10-08 11:55:35 tick done 480s silent
+10-08 11:57:36 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/5Cq7mGGPuvHAz48o3twuvuiYRG92bDK89PoEtjMpNsXe HTTP Error 429: Too Many Requests
+10-08 11:57:46 step kol 10s
+10-08 11:57:48 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/6JB71uRSnub79oa9u71dvTJw5WDGHpQzyp9cUp9rmg2C HTTP Error 429: Too Many Requests
+10-08 11:58:01 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/Hf7Y8QgRxVvyeMembrZ2UjgRrKMYMD5ZSHUZSb39m2xE HTTP Error 429: Too Many Requests
+10-08 12:00:15 step walletlive 160s
+10-08 12:04:47 TIMEOUT pool
+10-08 12:04:47 step pool 431s
+10-08 12:05:36 TIMEOUT revival
+10-08 12:05:36 step revival 480s
+10-08 12:05:36 tick done 480s alerts
+10-08 12:07:36 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/5Cq7mGGPuvHAz48o3twuvuiYRG92bDK89PoEtjMpNsXe HTTP Error 429: Too Many Requests
+10-08 12:07:42 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/FjMqy5ga89TtJ5fQunTAXPjSGPBD2DGDQTGzqzGdGr7q HTTP Error 429: Too Many Requests
+10-08 12:07:54 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/HDf3umsCYnwjnAcVfoXTnzCx9JvDvKGuhJbr5Zj57ahK HTTP Error 429: Too Many Requests
+10-08 12:08:00 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/Hf7Y8QgRxVvyeMembrZ2UjgRrKMYMD5ZSHUZSb39m2xE HTTP Error 429: Too Many Requests
+10-08 12:08:00 step kol 25s
+10-08 12:10:13 step walletlive 157s
+10-08 12:14:44 step revival 428s
+10-08 12:14:46 TIMEOUT pool
+10-08 12:14:46 step pool 431s
+10-08 12:14:46 tick done 431s silent
+10-08 12:17:40 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/5Cq7mGGPuvHAz48o3twuvuiYRG92bDK89PoEtjMpNsXe HTTP Error 429: Too Many Requests
+10-08 12:17:46 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/FjMqy5ga89TtJ5fQunTAXPjSGPBD2DGDQTGzqzGdGr7q HTTP Error 429: Too Many Requests
+10-08 12:17:48 step kol 8s
+10-08 12:17:52 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/HDf3umsCYnwjnAcVfoXTnzCx9JvDvKGuhJbr5Zj57ahK HTTP Error 429: Too Many Requests
+10-08 12:17:58 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/Hf7Y8QgRxVvyeMembrZ2UjgRrKMYMD5ZSHUZSb39m2xE HTTP Error 429: Too Many Requests
+10-08 12:18:05 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/HecbvdJ9aZ1xaKAtGDkWksppxrBxQ89cELvTWVfMAHxs HTTP Error 429: Too Many Requests
+10-08 12:23:09 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/FjMqy5ga89TtJ5fQunTAXPjSGPBD2DGDQTGzqzGdGr7q HTTP Error 429: Too Many Requests
+10-08 12:23:11 step kol 8s
+10-08 12:23:15 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/HDf3umsCYnwjnAcVfoXTnzCx9JvDvKGuhJbr5Zj57ahK HTTP Error 429: Too Many Requests
+10-08 12:23:21 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/Hf7Y8QgRxVvyeMembrZ2UjgRrKMYMD5ZSHUZSb39m2xE HTTP Error 429: Too Many Requests
+10-08 12:23:27 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/HecbvdJ9aZ1xaKAtGDkWksppxrBxQ89cELvTWVfMAHxs HTTP Error 429: Too Many Requests
+10-08 12:25:32 step walletlive 149s
+10-08 12:27:08 step pool 245s
+10-08 12:27:25 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/HDf3umsCYnwjnAcVfoXTnzCx9JvDvKGuhJbr5Zj57ahK HTTP Error 429: Too Many Requests
+10-08 12:27:31 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/8Dk6m64oB8miEHQo9JoQivYq9G3K2VG8VNwz7DhjjRdQ HTTP Error 429: Too Many Requests
+10-08 12:27:35 step kol 17s
+10-08 12:27:44 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/HecbvdJ9aZ1xaKAtGDkWksppxrBxQ89cELvTWVfMAHxs HTTP Error 429: Too Many Requests
+10-08 12:30:06 step revival 423s
+10-08 12:30:06 tick done 423s silent
+10-08 12:34:30 TIMEOUT pool
+10-08 12:34:30 step pool 431s
+10-08 12:34:43 step walletlive 445s
+10-08 12:35:19 TIMEOUT revival
+10-08 12:35:19 step revival 480s
+10-08 12:35:19 tick done 480s silent
+10-08 12:37:26 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/8Dk6m64oB8miEHQo9JoQivYq9G3K2VG8VNwz7DhjjRdQ HTTP Error 429: Too Many Requests
+10-08 12:37:39 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/t1y7c3xBZRZWRx7jMqxayP62qdgJAidkdYttZ6hmUDE HTTP Error 429: Too Many Requests
+10-08 12:37:45 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/GtPGyS145BDdbejEbBFAwMyPWjr6q1RmhDb4G8g2rCf1 HTTP Error 429: Too Many Requests
+10-08 12:38:24 step kol 64s
+10-08 12:40:07 step walletlive 167s
+10-08 12:43:08 step pool 348s
+10-08 12:44:27 step revival 427s
+10-08 12:44:27 tick done 427s silent
+10-08 12:47:19 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/8Dk6m64oB8miEHQo9JoQivYq9G3K2VG8VNwz7DhjjRdQ HTTP Error 429: Too Many Requests
+10-08 12:47:28 step kol 9s
+10-08 12:47:31 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/GtPGyS145BDdbejEbBFAwMyPWjr6q1RmhDb4G8g2rCf1 HTTP Error 429: Too Many Requests
+10-08 12:50:45 step walletlive 206s
+10-08 12:53:16 step pool 357s
+10-08 12:54:24 step revival 425s
+10-08 12:54:24 tick done 425s silent
+10-08 12:57:20 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/8Dk6m64oB8miEHQo9JoQivYq9G3K2VG8VNwz7DhjjRdQ HTTP Error 429: Too Many Requests
+10-08 12:57:33 step kol 13s
+10-08 12:59:58 step walletlive 158s
+10-08 13:02:03 step revival 283s
+10-08 13:04:13 TIMEOUT pool
+10-08 13:04:13 step pool 412s
+10-08 13:04:13 tick done 412s silent
+10-08 13:08:39 step kol 80s
+10-08 13:09:03 step walletlive 104s
+10-08 13:12:22 step pool 303s
+10-08 13:15:20 TIMEOUT revival
+10-08 13:15:20 step revival 480s
+10-08 13:15:21 tick done 481s alerts
+10-08 13:17:19 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/DeTAiCntco41gS3LqnrMR3Ps6ZX51AK41WDjrRiZsX7v HTTP Error 429: Too Many Requests
+10-08 13:17:30 step kol 11s
+10-08 13:20:24 step walletlive 185s
+10-08 13:24:11 TIMEOUT pool
+10-08 13:24:11 step pool 412s
+10-08 13:24:30 step revival 431s
+10-08 13:24:30 tick done 431s silent
+10-08 13:26:47 step kol 10s
+10-08 13:27:55 step walletlive 78s
+10-08 13:30:09 step pool 211s
+10-08 13:33:40 step revival 423s
+10-08 13:33:41 tick done 423s alerts
+10-08 13:37:18 step kol 2s
+10-08 13:38:28 step walletlive 72s
+10-08 13:39:20 step pool 124s
+10-08 13:45:16 TIMEOUT revival
+10-08 13:45:16 step revival 480s
+10-08 13:45:16 tick done 480s silent
+10-08 13:59:08 step kol 4s
+10-08 13:59:17 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/EA1W9NSF1WdDUuscPYETadcckHxoJ6ZYghydGM9HNQeQ HTTP Error 429: Too Many Requests
+10-08 13:59:23 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/Aqh98w2wucifRrRJkF5Kjqq83stNgMZ9fq6WGHAaVgiq HTTP Error 429: Too Many Requests
+10-08 13:59:29 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/Eb57scWKeFpBuSZLLMf3bvhHdnkpWVFj4M4NZ67gyyM4 HTTP Error 429: Too Many Requests
+10-08 14:00:55 step walletlive 111s
+10-08 14:04:24 step pool 320s
+10-08 14:07:04 TIMEOUT revival
+10-08 14:07:04 step revival 480s
+10-08 14:07:05 tick done 481s alerts
+10-08 14:21:36 step kol 6s
+10-08 14:21:48 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/BJ2EvDVwDA79QiC1n29iGpQAWxpbQqhWEbe7SSDfshQH HTTP Error 429: Too Many Requests
+10-08 14:21:54 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/7CDh7FJWs8wNdr14E87yAPsPK7GkR6Mmxse6PsYhx8Te HTTP Error 429: Too Many Requests
+10-08 14:22:31 step walletlive 62s
+10-08 14:24:04 step pool 155s
+10-08 14:29:29 TIMEOUT revival
+10-08 14:29:29 step revival 480s
+10-08 14:29:29 tick done 480s silent
+10-08 14:44:50 step kol 8s
+10-08 14:45:00 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/EAjUJb3YyyE4RbJpNPuSJ6krSMaNfmL8f3X6RYtB3uPw HTTP Error 429: Too Many Requests
+10-08 14:46:03 step walletlive 81s
+10-08 14:48:34 step pool 232s
+10-08 14:52:42 TIMEOUT revival
+10-08 14:52:42 step revival 480s
+10-08 14:52:42 tick done 481s alerts
+10-08 15:08:00 step kol 11s
+10-08 15:08:08 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/35oAPUF5BGK5i6gJo7LutngcbMhKjA8JFQDz9zpzoa4q HTTP Error 429: Too Many Requests
+10-08 15:08:14 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/8cRcCczqxshFysGFn3PX45VYuAp2bYA8o4RTNGWyUB9o HTTP Error 429: Too Many Requests
+10-08 15:09:52 step walletlive 123s
+10-08 15:11:29 step pool 220s
+10-08 15:15:01 step revival 432s
+10-08 15:15:02 tick done 433s alerts
+10-08 15:27:38 step kol 4s
+10-08 15:27:46 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/2KRsE6WrNtamFqhH6e1GDzQhmoFNgoQKCYESCTSNEegK HTTP Error 429: Too Many Requests
+10-08 15:27:52 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/3gcn8JPZvDYCZubvnmjtBwgLQEU6H4tmTq7WdG9VBVRN HTTP Error 429: Too Many Requests
+10-08 15:27:58 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/9LCJC2P46yZT1gmSeNZaTJCebGVyekqHoiN5CrCapBci HTTP Error 429: Too Many Requests
+10-08 15:28:28 step walletlive 55s
+10-08 15:29:52 step pool 139s
+10-08 15:35:19 step revival 466s
+10-08 15:35:19 tick done 466s silent
+10-08 15:51:02 step kol 10s
+10-08 15:51:10 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/CSmZxd5QeCcGaz2JefNJ7FS6htQuvMbHUq6czSs5fUbD HTTP Error 429: Too Many Requests
+10-08 15:52:13 step walletlive 81s
+10-08 15:54:02 step pool 190s
+10-08 15:58:52 TIMEOUT revival
+10-08 15:58:52 step revival 480s
+10-08 15:58:52 tick done 480s alerts
+10-08 16:16:06 step kol 4s
+10-08 16:16:21 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/8GajvnKW1SFB2WtRtqm4c1GnUbHvownASvBrVGieDQBe HTTP Error 429: Too Many Requests
+10-08 16:16:27 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/43tdfGSqxCKAArWHvGGVx9KmW7Z83AzNPstxPMDfUwuz HTTP Error 429: Too Many Requests
+10-08 16:17:54 step walletlive 111s
+10-08 16:20:05 step pool 243s
+10-08 16:23:22 step revival 440s
+10-08 16:23:23 tick done 440s alerts
+10-08 16:31:33 step kol 10s
+10-08 16:31:41 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/43tdfGSqxCKAArWHvGGVx9KmW7Z83AzNPstxPMDfUwuz HTTP Error 429: Too Many Requests
+10-08 16:32:21 step walletlive 58s
+10-08 16:33:22 step pool 120s
+10-08 16:39:03 step revival 460s
+10-08 16:39:03 tick done 461s alerts
+10-08 16:57:09 step kol 6s
+10-08 16:57:22 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/9KCkYATTrMWhdBbd2yVY91wbirsfCphnRtwuTwpxkG9r HTTP Error 429: Too Many Requests
+10-08 16:58:56 step walletlive 113s
+10-08 17:00:52 step pool 228s
+10-08 17:00:52 tick done 228s silent
+10-08 17:17:50 step kol 7s
+10-08 17:19:06 step walletlive 82s
+10-08 17:19:20 step pool 96s
+10-08 17:19:22 tick done 98s alerts
+10-08 17:32:50 step kol 10s
+10-08 17:33:39 step walletlive 58s
+10-08 17:35:59 step pool 198s
+10-08 17:36:15 tick done 215s alerts
+10-08 18:03:47 step kol 3s
+10-08 18:04:37 step walletlive 53s
+10-08 18:06:05 step pool 141s
+10-08 18:06:05 tick done 142s alerts
+10-08 18:30:43 step kol 8s
+10-08 18:31:54 step walletlive 79s
+10-08 18:33:42 step pool 187s
+10-08 18:33:59 tick done 204s alerts
+10-08 19:00:33 step kol 8s
+10-08 19:01:24 step walletlive 59s
+10-08 19:01:34 step pool 68s
+10-08 19:01:34 tick done 68s silent
+10-08 19:24:46 step kol 6s
+10-08 19:25:35 step walletlive 55s
+10-08 19:27:18 step pool 158s
+10-08 19:27:18 tick done 158s alerts
+10-08 19:46:31 step kol 10s
+10-08 19:46:39 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/35oAPUF5BGK5i6gJo7LutngcbMhKjA8JFQDz9zpzoa4q HTTP Error 429: Too Many Requests
+10-08 19:46:45 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/Hzn3D8bYA2SXCB2XNDRe6VJmwK4huJJZUVNpiBs8Cgob HTTP Error 429: Too Many Requests
+10-08 19:48:17 step walletlive 116s
+10-08 19:49:16 step pool 175s
+10-08 19:49:16 tick done 175s silent
+10-08 20:11:30 step walletlive 60s
+10-08 20:11:30 step kol 61s
+10-08 20:12:40 step pool 131s
+10-08 20:12:42 tick done 133s alerts
+10-08 20:33:00 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/Hzn3D8bYA2SXCB2XNDRe6VJmwK4huJJZUVNpiBs8Cgob HTTP Error 429: Too Many Requests
+10-08 20:33:40 step kol 59s
+10-08 20:33:43 step walletlive 62s
+10-08 20:36:33 step pool 232s
+10-08 20:36:34 tick done 233s alerts
+10-08 20:58:47 step kol 12s
+10-08 20:58:53 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/Hzn3D8bYA2SXCB2XNDRe6VJmwK4huJJZUVNpiBs8Cgob HTTP Error 429: Too Many Requests
+10-08 20:59:28 step walletlive 54s
+10-08 21:01:24 step pool 170s
+10-08 21:01:25 tick done 170s alerts
+10-08 21:21:46 step kol 5s
+10-08 21:21:59 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/5pVuxuniLqt3FLBPGF8sDCADJZu5dRi9akW5to9axK2o HTTP Error 429: Too Many Requests
+10-08 21:22:35 step walletlive 54s
+10-08 21:24:04 step pool 143s
+10-08 21:24:04 tick done 144s alerts
+10-08 21:46:15 step kol 5s
+10-08 21:46:29 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/4gTGWYcJu8N8esTp3es1bTPucLFomzgEMNzWsmoqzZ9e HTTP Error 429: Too Many Requests
+10-08 21:47:28 step walletlive 77s
+10-08 21:49:14 step pool 184s
+10-08 21:49:15 tick done 184s alerts
+10-08 22:10:49 step kol 6s
+10-08 22:11:41 step walletlive 58s
+10-08 22:12:30 step pool 108s
+10-08 22:13:04 gemini fail gemini 503: b'{\n  "error": {\n    "code": 503,\n    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",\n    "status": "UNAVAILABLE"\n  }\n}\n'
+10-08 22:13:04 tick done 141s alerts
+10-08 22:33:20 step kol 20s
+10-08 22:33:43 step pool 44s
+10-08 22:34:02 step walletlive 62s
+10-08 22:34:02 tick done 62s alerts
+10-08 22:56:47 step kol 12s
+10-08 22:57:40 step walletlive 65s
+10-08 22:59:55 step pool 200s
+10-08 23:00:14 tick done 219s alerts
+10-08 23:17:25 step kol 21s
+10-08 23:18:57 step walletlive 113s
+10-08 23:19:50 step pool 166s
+10-08 23:19:50 tick done 166s alerts
+10-08 23:31:34 step pool 25s
+10-08 23:32:31 step walletlive 82s
+10-08 23:32:40 step kol 91s
+10-08 23:32:40 tick done 91s silent
+10-09 00:00:33 step kol 67s
+10-09 00:00:35 step walletlive 70s
+10-09 00:02:38 step pool 193s
+10-09 00:03:12 tick done 227s alerts
+10-09 00:24:34 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/5k79a29dm1nK9e6X6QzcAQCKYb2HpWw41k9rwnEEo41b HTTP Error 429: Too Many Requests
+10-09 00:25:37 step walletlive 88s
+10-09 00:25:40 step kol 91s
+10-09 00:26:19 step pool 130s
+10-09 00:26:19 tick done 131s alerts
+10-09 00:44:03 step kol 9s
+10-09 00:47:45 step pool 231s
+10-09 00:50:59 step walletlive 424s
+10-09 00:51:07 tick done 433s alerts
+10-09 01:06:03 step kol 9s
+10-09 01:06:20 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/G5hRTNskE7193rBDY5hK3wFfadsJ9H4778DA3uyMgekJ HTTP Error 429: Too Many Requests
+10-09 01:08:00 step walletlive 126s
+10-09 01:08:45 step pool 170s
+10-09 01:08:45 tick done 170s alerts
+10-09 01:24:38 step kol 8s
+10-09 01:25:30 step walletlive 61s
+10-09 01:26:06 step pool 96s
+10-09 01:26:23 tick done 114s alerts
+10-09 01:44:24 step kol 9s
+10-09 01:45:18 step walletlive 63s
+10-09 01:45:47 step pool 92s
+10-09 01:45:47 tick done 92s alerts
+10-09 02:08:03 GET fail https://api.geckoterminal.com/api/v2/networks/solana/tokens/72EKckAM5Q6G4zzpFXin5VM1esVTYHfbFNQZ9fShpump HTTP Error 404: Not Found
+10-09 02:08:03 step kol 2s
+10-09 02:08:13 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/ZdRhmBAjsuGYHYAALDkb6jCaStDstxihu9GH5PUsAnd HTTP Error 429: Too Many Requests
+10-09 02:08:19 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/DB8BR2CSsfKYEFK45DZCmTZYW6BBfzdeBPrn8LxZLGKQ HTTP Error 429: Too Many Requests
+10-09 02:08:26 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/9pPHgXApWg9hH1ybsELsrfGq7L7p5SMwJQ6SX1wLv6e6 HTTP Error 429: Too Many Requests
+10-09 02:10:08 step walletlive 127s
+10-09 02:12:36 step pool 275s
+10-09 02:12:40 tick done 279s alerts
+10-09 02:27:17 step kol 7s
+10-09 02:27:30 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/5pVuxuniLqt3FLBPGF8sDCADJZu5dRi9akW5to9axK2o HTTP Error 429: Too Many Requests
+10-09 02:27:36 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/9pPHgXApWg9hH1ybsELsrfGq7L7p5SMwJQ6SX1wLv6e6 HTTP Error 429: Too Many Requests
+10-09 02:28:32 step walletlive 82s
+10-09 02:30:58 step pool 228s
+10-09 02:30:59 tick done 229s alerts
+10-09 02:48:17 step kol 5s
+10-09 02:48:31 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/4gTGWYcJu8N8esTp3es1bTPucLFomzgEMNzWsmoqzZ9e HTTP Error 429: Too Many Requests
+10-09 02:49:38 step walletlive 85s
+10-09 02:50:37 step pool 145s
+10-09 02:50:37 tick done 145s silent
+10-09 03:08:21 step kol 5s
+10-09 03:08:36 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/8JxZBKT5XCCmQpvCa9z3dV6VBcQEYDAYZAHzfH91ux1o HTTP Error 429: Too Many Requests
+10-09 03:08:42 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/BTZQMpJXxtN1YtiVbKoJXmEQADQrQXjsDM8PbsNUKAps HTTP Error 429: Too Many Requests
+10-09 03:10:22 step walletlive 126s
+10-09 03:10:51 step pool 155s
+10-09 03:10:51 tick done 155s alerts
+10-09 03:26:19 step kol 7s
+10-09 03:26:32 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/BTZQMpJXxtN1YtiVbKoJXmEQADQrQXjsDM8PbsNUKAps HTTP Error 429: Too Many Requests
+10-09 03:26:38 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/CzdtJsEF3AXH9Qeu7UtzmKDZKChaScP7bh8WwfT9brFQ HTTP Error 429: Too Many Requests
+10-09 03:27:34 step walletlive 82s
+10-09 03:29:04 step pool 172s
+10-09 03:29:04 tick done 172s alerts
+10-09 03:45:17 step kol 12s
+10-09 03:46:05 step walletlive 60s
+10-09 03:46:55 step pool 110s
+10-09 03:46:55 tick done 110s silent
+10-09 04:05:41 step kol 14s
+10-09 04:07:27 step walletlive 120s
+10-09 04:08:24 step pool 177s
+10-09 04:08:24 tick done 177s silent
+10-09 04:24:15 step kol 6s
+10-09 04:25:30 step walletlive 81s
+10-09 04:27:02 step pool 174s
+10-09 04:27:02 tick done 174s silent
+10-09 04:42:08 step kol 12s
+10-09 04:42:58 step walletlive 62s
+10-09 04:44:43 step pool 167s
+10-09 04:44:43 tick done 167s alerts
+10-09 05:04:17 step kol 9s
+10-09 05:04:26 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/Hdu6FpDhQdEVYqwUrNg929GAj97G5f57bqUBjSZ3bQPx HTTP Error 429: Too Many Requests
+10-09 05:04:32 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/7pi6iCwWz9VNEd8YAQF5sPCYszVH4GT2vpGyvGuZEbar HTTP Error 429: Too Many Requests
+10-09 05:05:33 step walletlive 85s
+10-09 05:07:34 step pool 206s
+10-09 05:07:34 tick done 207s alerts
+10-09 05:22:07 step kol 6s
+10-09 05:22:20 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/7x2Gk9ZPX97rGcsaGTjzX5hQzF9w5xCGyn2KRdBTsyia HTTP Error 429: Too Many Requests
+10-09 05:26:11 step pool 250s
+10-09 05:29:05 step walletlive 424s
+10-09 05:29:05 tick done 424s alerts
+10-09 05:51:53 step kol 10s
+10-09 05:52:39 step walletlive 55s
+10-09 05:53:51 step pool 127s
+10-09 05:53:51 tick done 127s silent
+10-09 06:26:12 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/9NMqGnUa7cwR26s7g25ZA8mCuF8ZY687d5WuNs34gbEq HTTP Error 429: Too Many Requests
+10-09 06:27:18 step kol 92s
+10-09 06:29:03 step pool 197s
+10-09 06:32:46 step walletlive 420s
+10-09 06:32:47 tick done 421s alerts
+10-09 06:48:15 step kol 33s
+10-09 06:48:44 step walletlive 63s
+10-09 06:49:57 step pool 135s
+10-09 06:49:57 tick done 135s alerts
+10-09 07:08:43 step kol 3s
+10-09 07:11:15 step pool 155s
+10-09 07:15:41 step walletlive 421s
+10-09 07:15:42 tick done 422s alerts
+10-09 07:27:07 step kol 8s
+10-09 07:29:00 step walletlive 121s
+10-09 07:29:51 step pool 172s
+10-09 07:29:51 tick done 172s silent
+10-09 07:46:21 step kol 3s
+10-09 07:47:31 step walletlive 73s
+10-09 07:49:10 step pool 172s
+10-09 07:49:10 tick done 172s silent
+10-09 08:06:45 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/Eb57scWKeFpBuSZLLMf3bvhHdnkpWVFj4M4NZ67gyyM4 HTTP Error 429: Too Many Requests
+10-09 08:06:47 GET fail https://api.geckoterminal.com/api/v2/networks/solana/tokens/5Rc3d1z5Te7YEY9A5WLCNBjbAcFJieUqYPj3hCPwpump HTTP Error 429: Too Many Requests
+10-09 08:06:47 GET fail https://api.geckoterminal.com/api/v2/networks/solana/tokens/63F7FytayU3mZ4XpgsZufsL2Gpyfh52WRexq3jEnpump HTTP Error 429: Too Many Requests
+10-09 08:06:47 GET fail https://api.geckoterminal.com/api/v2/networks/solana/tokens/FTpKVQhQm2bew5rysJALpZVxSpqXMRNMeQrokgrgpump HTTP Error 429: Too Many Requests
+10-09 08:06:47 step kol 21s
+10-09 08:07:26 step walletlive 60s
+10-09 08:09:52 step pool 207s
+10-09 08:09:53 tick done 207s alerts
+10-09 08:24:23 step kol 5s
+10-09 08:24:36 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/CzdtJsEF3AXH9Qeu7UtzmKDZKChaScP7bh8WwfT9brFQ HTTP Error 429: Too Many Requests
+10-09 08:25:36 step walletlive 79s
+10-09 08:26:27 step pool 130s
+10-09 08:26:28 tick done 131s alerts
+10-09 08:43:34 GET fail https://api.geckoterminal.com/api/v2/networks/solana/tokens/k3TjSYCXLPMZBajZGNhAG3ccuE7L3PYMdPFifZqpump HTTP Error 429: Too Many Requests
+10-09 08:43:34 GET fail https://api.geckoterminal.com/api/v2/networks/solana/tokens/D6A2ms6Biw7evdJRmD1c8H2182hHfREjicFzXwKupump HTTP Error 429: Too Many Requests
+10-09 08:43:34 step kol 8s
+10-09 08:43:39 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/BFQ47xRKZ7xL5TQq3eoVtYf4xr9YsUjAZeN9jWRPPLzW HTTP Error 429: Too Many Requests
+10-09 08:43:45 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/2Gjs9p4QJ8KQ4hYf8cB5NVuHsf449BjAkoWxsXNpTUgo HTTP Error 429: Too Many Requests
+10-09 08:43:51 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/GZHiXnVVUSnSGYSH1qx3cnV49br9fJuteQtit7KHmLUs HTTP Error 429: Too Many Requests
+10-09 08:44:29 step walletlive 62s
+10-09 08:48:54 step pool 327s
+10-09 08:48:54 tick done 328s alerts
+10-09 09:07:53 step kol 16s
+10-09 09:07:56 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/6QCvDyAL4WEnRhCstqf1LLHtnzSrs2TzpjmQd4PHokvu HTTP Error 429: Too Many Requests
+10-09 09:09:02 step walletlive 85s
+10-09 09:11:04 step pool 207s
+10-09 09:11:04 tick done 207s alerts
+10-09 09:26:54 step kol 17s
+10-09 09:28:44 step pool 128s
+10-09 09:33:36 step walletlive 419s
+10-09 09:33:36 tick done 419s silent
+10-09 09:48:05 step kol 9s
+10-09 09:49:02 step walletlive 66s
+10-09 09:51:37 step pool 221s
+10-09 09:51:38 tick done 222s alerts
+10-09 10:10:16 step walletlive 60s
+10-09 10:10:50 step kol 93s
+10-09 10:12:06 step pool 169s
+10-09 10:12:06 tick done 169s alerts
+10-09 10:27:53 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/BhEUvqbznP1ebwvu52F4Mytz5C5EBhxbZSHH7Xs4JXEy HTTP Error 429: Too Many Requests
+10-09 10:28:41 step walletlive 67s
+10-09 10:29:06 step kol 92s
+10-09 10:31:40 step pool 246s
+10-09 10:31:42 tick done 248s alerts
+10-09 10:50:06 step walletlive 82s
+10-09 10:50:16 step kol 92s
+10-09 10:52:03 step pool 199s
+10-09 10:52:04 tick done 200s alerts
+10-09 11:09:11 step kol 21s
+10-09 11:11:42 step pool 172s
+10-09 11:15:51 step walletlive 421s
+10-09 11:15:51 tick done 421s alerts
+10-09 11:28:33 step walletlive 51s
+10-09 11:29:13 step kol 91s
+10-09 11:31:12 step pool 210s
+10-09 11:31:12 tick done 211s alerts
+10-09 11:53:57 step walletlive 59s
+10-09 11:54:31 step kol 93s
+10-09 11:56:25 step pool 207s
+10-09 11:56:25 tick done 207s alerts
+10-09 12:23:34 step walletlive 65s
+10-09 12:24:01 step kol 92s
+10-09 12:26:18 step pool 229s
+10-09 12:26:18 tick done 230s alerts
+10-09 12:47:07 step kol 91s
+10-09 12:49:18 step pool 221s
+10-09 12:52:37 step walletlive 420s
+10-09 12:52:37 tick done 421s alerts
+10-09 13:08:26 step kol 15s
+10-09 13:11:40 step pool 210s
+10-09 13:15:17 step walletlive 427s
+10-09 13:15:17 tick done 427s alerts
+10-09 13:27:33 step kol 10s
+10-09 13:28:40 step walletlive 78s
+10-09 13:30:59 step pool 217s
+10-09 13:31:00 tick done 218s alerts
+10-09 13:50:30 step kol 7s
+10-09 13:50:42 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/35oAPUF5BGK5i6gJo7LutngcbMhKjA8JFQDz9zpzoa4q HTTP Error 429: Too Many Requests
+10-09 13:50:48 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/541eNtKGn4Uh4ibc9xiKrtdJ6BRwVdQYpTSXx2LttAWr HTTP Error 429: Too Many Requests
+10-09 13:51:42 step walletlive 79s
+10-09 13:53:33 step pool 190s
+10-09 13:53:33 tick done 190s silent
+10-09 14:17:06 step kol 8s
+10-09 14:18:00 step walletlive 61s
+10-09 14:20:51 step pool 232s
+10-09 14:20:51 tick done 233s alerts
+10-09 14:33:10 GET fail https://api.geckoterminal.com/api/v2/networks/solana/tokens/7mAvyW3YebRMBytZDCZXRvBbhwYjdDJj4VdLWU4epump HTTP Error 429: Too Many Requests
+10-09 14:33:10 step kol 20s
+10-09 14:34:52 step walletlive 121s
+10-09 14:36:17 step pool 206s
+10-09 14:36:17 tick done 206s alerts
+10-09 14:58:24 step kol 5s
+10-09 14:58:32 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/43tdfGSqxCKAArWHvGGVx9KmW7Z83AzNPstxPMDfUwuz HTTP Error 429: Too Many Requests
+10-09 14:58:38 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/GvnHgGkFdTd4jbQjRWWmWG2sZeHRcUAjpbXKZ6bSnFjK HTTP Error 429: Too Many Requests
+10-09 14:58:44 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/H2CJnJkot6piNYuez6mVx6yuN11hbBTfNsraPXhZv83p HTTP Error 429: Too Many Requests
+10-09 15:00:39 step pool 139s
+10-09 15:05:17 step walletlive 418s
+10-09 15:05:17 tick done 418s alerts
+10-09 15:20:44 step kol 8s
+10-09 15:20:49 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/GvnHgGkFdTd4jbQjRWWmWG2sZeHRcUAjpbXKZ6bSnFjK HTTP Error 429: Too Many Requests
+10-09 15:20:55 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/H2CJnJkot6piNYuez6mVx6yuN11hbBTfNsraPXhZv83p HTTP Error 429: Too Many Requests
+10-09 15:26:11 step pool 334s
+10-09 15:27:37 step walletlive 421s
+10-09 15:27:37 tick done 421s alerts
+10-09 15:44:41 step kol 5s
+10-09 15:44:54 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/BhEUvqbznP1ebwvu52F4Mytz5C5EBhxbZSHH7Xs4JXEy HTTP Error 429: Too Many Requests
+10-09 15:45:00 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/6KYEhDGLwPb7b3roHNUJTuEqijXKn9K75eNK6HyPGaHG HTTP Error 429: Too Many Requests
+10-09 15:45:31 step walletlive 56s
+10-09 15:47:15 step pool 159s
+10-09 15:47:15 tick done 159s alerts
+10-09 16:07:56 step kol 7s
+10-09 16:08:14 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/6knWqbEMFcnUyXUpBpGdaCE5FarhNsyR4RHBKDGk8s2j HTTP Error 429: Too Many Requests
+10-09 16:10:08 step pool 140s
+10-09 16:14:49 step walletlive 420s
+10-09 16:14:49 tick done 420s silent
+10-09 16:26:40 step kol 9s
+10-09 16:26:57 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/FAreBXKVVossUFyH3i9z2cJPD6VYBArUwk6KktTpUcTG HTTP Error 429: Too Many Requests
+10-09 16:27:35 step walletlive 64s
+10-09 16:28:13 step pool 102s
+10-09 16:28:13 tick done 102s alerts
+10-09 16:46:07 step kol 4s
+10-09 16:46:28 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/6KYEhDGLwPb7b3roHNUJTuEqijXKn9K75eNK6HyPGaHG HTTP Error 429: Too Many Requests
+10-09 16:48:36 step pool 153s
+10-09 16:53:03 step walletlive 420s
+10-09 16:53:03 tick done 420s silent
+10-09 17:05:07 step kol 6s
+10-09 17:07:00 step walletlive 119s
+10-09 17:07:54 step pool 173s
+10-09 17:07:54 tick done 173s silent
+10-09 17:23:47 step kol 2s
+10-09 17:24:37 step walletlive 52s
+10-09 17:26:06 step pool 141s
+10-09 17:26:06 tick done 142s alerts
+10-09 17:46:32 step kol 16s
+10-09 17:46:35 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/HhsSoKprcicUV1YTRUdXFy7UCF6TQALNTT2xE8twC7XP HTTP Error 429: Too Many Requests
+10-09 17:47:39 step walletlive 83s
+10-09 17:50:21 step pool 245s
+10-09 17:50:21 tick done 245s alerts
+10-09 18:13:43 step kol 17s
+10-09 18:14:45 step walletlive 79s
+10-09 18:16:37 step pool 191s
+10-09 18:16:38 tick done 191s alerts
+10-09 18:36:00 step kol 33s
+10-09 18:37:31 step walletlive 124s
+10-09 18:38:20 step pool 173s
+10-09 18:38:20 tick done 173s alerts
+10-09 19:00:03 step kol 7s
+10-09 19:01:15 step walletlive 79s
+10-09 19:02:49 step pool 174s
+10-09 19:02:49 tick done 174s silent
+10-09 19:22:13 step kol 8s
+10-09 19:23:29 step walletlive 85s
+10-09 19:24:29 step pool 145s
+10-09 19:24:29 tick done 145s silent
+10-09 19:45:53 step kol 9s
+10-09 19:47:05 step walletlive 80s
+10-09 19:47:45 step pool 121s
+10-09 19:47:45 tick done 121s silent
+10-09 20:11:46 step kol 43s
+10-09 20:13:04 step walletlive 121s
+10-09 20:14:00 step pool 176s
+10-09 20:14:00 tick done 176s silent
+10-09 20:33:31 step kol 21s
+10-09 20:34:32 step walletlive 83s
+10-09 20:35:55 step pool 166s
+10-09 20:35:55 tick done 166s alerts
+10-09 20:57:43 GET fail https://api.geckoterminal.com/api/v2/networks/solana/tokens/9qDe8Z4fzHwJQ6UbWJqStkstLaXtw9rSVNHpvrEJpump HTTP Error 429: Too Many Requests
+10-09 20:57:43 step kol 59s
+10-09 20:57:59 step walletlive 75s
+10-09 21:00:43 step pool 239s
+10-09 21:00:43 tick done 239s alerts
+10-09 21:20:56 step kol 112s
+10-09 21:21:05 step walletlive 121s
+10-09 21:22:25 step pool 201s
+10-09 21:22:25 tick done 201s silent
+10-09 21:35:45 step walletlive 84s
+10-09 21:35:51 step kol 90s
+10-09 21:38:10 step pool 230s
+10-09 21:38:10 tick done 230s silent
+10-09 21:57:06 step kol 15s
+10-09 21:58:16 step walletlive 84s
+10-09 21:59:50 step pool 179s
+10-09 21:59:50 tick done 179s alerts
+10-09 22:19:57 step walletlive 61s
+10-09 22:20:28 step kol 92s
+10-09 22:22:14 step pool 198s
+10-09 22:22:14 tick done 198s silent
+10-09 22:34:40 step pool 49s
+10-09 22:35:04 step kol 73s
+10-09 22:35:12 step walletlive 81s
+10-09 22:35:12 tick done 81s silent
+10-09 22:55:31 step walletlive 61s
+10-09 22:56:03 step kol 93s
+10-09 22:58:18 step pool 228s
+10-09 22:58:18 tick done 228s silent
+10-09 23:15:33 step kol 63s
+10-09 23:15:33 step walletlive 63s
+10-09 23:15:46 step pool 76s
+10-09 23:15:46 tick done 76s alerts
+10-09 23:31:16 step kol 48s
+10-09 23:31:46 step walletlive 78s
+10-09 23:33:34 step pool 186s
+10-09 23:33:34 tick done 186s alerts
+10-09 23:59:36 step walletlive 85s
+10-09 23:59:43 step kol 93s
+10-10 00:00:58 step pool 167s
+10-10 00:00:58 tick done 168s alerts
+10-10 00:23:08 step kol 46s
+10-10 00:23:28 step walletlive 65s
+10-10 00:24:35 step pool 133s
+10-10 00:24:35 tick done 133s alerts
+10-10 00:42:01 step kol 11s
+10-10 00:43:58 step walletlive 128s
+10-10 00:44:02 step pool 132s
+10-10 00:44:02 tick done 132s alerts
+10-10 01:06:03 step kol 13s
+10-10 01:07:57 step walletlive 127s
+10-10 01:08:27 step pool 157s
+10-10 01:08:27 tick done 157s alerts
+10-10 01:23:41 step kol 91s
+10-10 01:24:33 step pool 143s
+10-10 01:29:13 step walletlive 423s
+10-10 01:29:13 tick done 423s alerts
+10-10 01:42:13 step kol 5s
+10-10 01:44:39 step pool 152s
+10-10 01:49:12 step walletlive 425s
+10-10 01:49:12 tick done 425s alerts
+10-10 02:06:17 step kol 25s
+10-10 02:06:55 step walletlive 63s
+10-10 02:06:55 step pool 64s
+10-10 02:06:55 tick done 64s alerts
+10-10 02:24:54 step kol 13s
+10-10 02:24:55 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/BFQ47xRKZ7xL5TQq3eoVtYf4xr9YsUjAZeN9jWRPPLzW HTTP Error 429: Too Many Requests
+10-10 02:25:43 step walletlive 61s
+10-10 02:27:40 step pool 178s
+10-10 02:27:40 tick done 178s alerts
+10-10 02:43:07 step kol 9s
+10-10 02:44:00 step walletlive 62s
+10-10 02:45:55 step pool 178s
+10-10 02:45:55 tick done 178s alerts
+10-10 03:07:09 step kol 92s
+10-10 03:07:38 step pool 121s
+10-10 03:12:37 step walletlive 420s
+10-10 03:12:37 tick done 420s alerts
+10-10 03:25:01 step kol 61s
+10-10 03:26:02 step walletlive 122s
+10-10 03:28:17 step pool 257s
+10-10 03:28:18 tick done 258s alerts
+10-10 03:43:55 step walletlive 68s
+10-10 03:44:06 step pool 79s
+10-10 03:44:19 step kol 92s
+10-10 03:44:19 tick done 92s alerts
+10-10 04:06:42 step walletlive 68s
+10-10 04:07:05 step kol 91s
+10-10 04:07:21 step pool 108s
+10-10 04:07:21 tick done 108s alerts
+10-10 04:25:19 step walletlive 82s
+10-10 04:25:28 step kol 91s
+10-10 04:25:52 step pool 115s
+10-10 04:25:52 tick done 115s alerts
+10-10 04:43:18 step walletlive 84s
+10-10 04:43:26 step kol 93s
+10-10 04:44:08 step pool 135s
+10-10 04:44:08 tick done 135s alerts
+10-10 05:04:50 step walletlive 60s
+10-10 05:05:24 step kol 93s
+10-10 05:05:46 step pool 115s
+10-10 05:05:46 tick done 115s silent
+10-10 05:22:44 step walletlive 62s
+10-10 05:23:15 step kol 92s
+10-10 05:23:38 step pool 115s
+10-10 05:23:38 tick done 115s silent
+10-10 05:51:32 step kol 92s
+10-10 05:52:06 step walletlive 127s
+10-10 05:52:42 step pool 162s
+10-10 05:52:42 tick done 162s alerts
+10-10 06:20:49 step walletlive 65s
+10-10 06:21:15 step kol 91s
+10-10 06:22:37 step pool 173s
+10-10 06:22:37 tick done 173s alerts
+10-10 06:38:11 step kol 9s
+10-10 06:40:05 step walletlive 122s
+10-10 06:41:10 step pool 187s
+10-10 06:41:10 tick done 187s alerts
+10-10 07:00:38 step walletlive 81s
+10-10 07:00:49 step kol 91s
+10-10 07:01:18 step pool 120s
+10-10 07:01:18 tick done 120s silent
+10-10 07:20:11 step kol 64s
+10-10 07:20:26 step walletlive 79s
+10-10 07:22:28 step pool 201s
+10-10 07:22:28 tick done 201s silent
+10-10 07:33:30 step walletlive 62s
+10-10 07:34:00 step kol 91s
+10-10 07:35:34 step pool 186s
+10-10 07:35:34 tick done 186s silent
+10-10 07:55:11 step kol 10s
+10-10 07:57:05 step walletlive 124s
+10-10 07:58:40 step pool 219s
+10-10 07:58:40 tick done 219s alerts
+10-10 08:15:12 step kol 10s
+10-10 08:17:02 step walletlive 120s
+10-10 08:19:15 step pool 254s
+10-10 08:19:16 tick done 255s alerts
+10-10 08:30:05 step kol 5s
+10-10 08:31:53 step walletlive 112s
+10-10 08:32:41 step pool 161s
+10-10 08:32:41 tick done 161s silent
+10-10 08:51:16 step kol 15s
+10-10 08:51:20 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/7vFShCS7A1tDfJzYvnGVCKPfZ2xzaawZ7RzTeasssK2x HTTP Error 429: Too Many Requests
+10-10 08:54:08 step pool 188s
+10-10 08:58:01 step walletlive 421s
+10-10 08:58:01 tick done 421s silent
+10-10 09:15:47 step kol 10s
+10-10 09:16:57 step walletlive 80s
+10-10 09:18:46 step pool 188s
+10-10 09:18:46 tick done 188s alerts
+10-10 09:30:42 step kol 9s
+10-10 09:31:54 step walletlive 81s
+10-10 09:33:28 step pool 175s
+10-10 09:33:28 tick done 175s silent
+10-10 09:56:42 step walletlive 72s
+10-10 09:56:42 step kol 72s
+10-10 09:59:45 step pool 254s
+10-10 09:59:46 tick done 255s alerts
+10-10 10:17:21 step kol 7s
+10-10 10:18:34 step walletlive 81s
+10-10 10:21:13 step pool 239s
+10-10 10:21:18 tick done 245s alerts
+10-10 10:32:36 step walletlive 71s
+10-10 10:32:36 step kol 71s
+10-10 10:35:22 step pool 237s
+10-10 10:35:22 tick done 238s alerts
+10-10 10:55:31 step walletlive 54s
+10-10 10:56:08 step kol 91s
+10-10 10:59:07 step pool 270s
+10-10 10:59:07 tick done 270s alerts
+10-10 11:15:21 step walletlive 84s
+10-10 11:15:23 step kol 86s
+10-10 11:17:10 step pool 192s
+10-10 11:17:10 tick done 192s alerts
+10-10 11:30:31 step walletlive 59s
+10-10 11:30:50 step kol 78s
+10-10 11:35:46 step pool 374s
+10-10 11:35:46 tick done 374s alerts
+10-10 11:54:58 step kol 3s
+10-10 11:56:07 step walletlive 72s
+10-10 11:59:36 step pool 281s
+10-10 11:59:37 tick done 282s alerts
+10-10 12:20:38 step walletlive 60s
+10-10 12:20:45 step kol 68s
+10-10 12:23:58 step pool 261s
+10-10 12:23:59 tick done 261s alerts
+10-10 12:34:07 step kol 3s
+10-10 12:35:56 step walletlive 112s
+10-10 12:37:58 step pool 234s
+10-10 12:37:59 tick done 235s alerts
+10-10 13:00:55 step pool 314s
+10-10 13:02:40 step walletlive 419s
+10-10 13:02:41 tick done 420s alerts
+10-10 13:15:44 step walletlive 71s
+10-10 13:17:03 step pool 150s
+10-10 13:17:03 tick done 150s silent
+10-10 13:30:27 step walletlive 72s
+10-10 13:34:05 step pool 289s
+10-10 13:34:05 tick done 289s silent
+10-10 13:50:45 step walletlive 56s
+10-10 13:54:02 step pool 252s
+10-10 13:54:02 tick done 252s silent
+10-10 14:09:43 step walletlive 74s
+10-10 14:12:56 step pool 266s
+10-10 14:12:56 tick done 266s silent
+10-10 14:26:05 step walletlive 71s
+10-10 14:30:11 step pool 318s
+10-10 14:30:12 tick done 319s alerts
+10-10 14:44:18 step walletlive 121s
+10-10 14:45:14 step pool 177s
+10-10 14:45:14 tick done 177s silent
+10-10 15:06:12 step walletlive 74s
+10-10 15:09:40 step pool 282s
+10-10 15:09:40 tick done 282s silent
+10-10 15:24:53 step pool 148s
+10-10 15:29:25 step walletlive 420s
+10-10 15:29:25 tick done 420s silent
+10-10 15:42:27 step walletlive 58s
+10-10 15:43:39 step pool 130s
+10-10 15:43:39 tick done 130s silent
+10-10 16:05:10 step walletlive 74s
+10-10 16:07:39 step pool 223s
+10-10 16:07:39 tick done 223s silent
+10-10 16:22:40 step walletlive 83s
+10-10 16:24:40 step pool 203s
+10-10 16:24:40 tick done 204s alerts
+10-10 16:44:03 step pool 170s
+10-10 16:48:12 step walletlive 419s
+10-10 16:48:12 tick done 420s alerts
+10-10 17:07:28 step pool 241s
+10-10 17:10:29 step walletlive 422s
+10-10 17:10:30 tick done 423s alerts
+10-10 17:22:45 step walletlive 54s
+10-10 17:23:52 step pool 121s
+10-10 17:23:52 tick done 122s alerts
+10-10 17:45:14 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/HzLjKk7Bvjmr2vyipvWjc3qz9iQ99mTBf4caeediU4Yh HTTP Error 429: Too Many Requests
+10-10 17:45:41 step walletlive 52s
+10-10 17:48:51 step pool 242s
+10-10 17:48:51 tick done 242s silent
+10-10 18:11:32 GET fail https://api.geckoterminal.com/api/v2/networks/solana/pools/9ddE2LZ6tCb5E76bHCZBh8mQN9uKmjNik14ixRW3tXrM HTTP Error 429: Too Many Requests
+10-10 18:14:52 step pool 219s
+10-10 18:18:13 step walletlive 420s
+10-10 18:18:13 tick done 420s silent
+10-10 18:33:16 step walletlive 58s
+10-10 18:34:25 step pool 128s
+10-10 18:34:25 tick done 128s silent
+10-10 18:56:34 step walletlive 79s
+10-10 18:57:41 step pool 146s
+10-10 18:57:41 tick done 146s silent
+10-10 19:14:39 step walletlive 58s
+10-10 19:17:54 step pool 254s
+10-10 19:17:55 tick done 254s alerts
+10-10 19:31:16 step pool 151s
+10-10 19:35:44 step walletlive 418s
+10-10 19:35:44 tick done 418s silent
+10-10 19:49:03 step pool 84s
+10-10 19:54:37 step walletlive 418s
+10-10 19:54:37 tick done 418s silent
+10-10 20:06:30 step walletlive 59s
+10-10 20:06:50 step pool 79s
+10-10 20:06:50 tick done 79s silent
+10-10 20:23:44 step pool 136s
+10-10 20:23:44 tick done 136s silent
+10-10 20:44:09 step pool 162s
+10-10 20:44:10 tick done 162s alerts
+10-10 21:06:06 step pool 120s
+10-10 21:06:06 tick done 120s silent
+10-10 21:24:17 step pool 147s
+10-10 21:24:17 tick done 147s silent
+10-10 21:42:41 step pool 81s
+10-10 21:42:41 tick done 81s silent
+10-10 22:06:17 step pool 101s
+10-10 22:06:17 tick done 101s silent
