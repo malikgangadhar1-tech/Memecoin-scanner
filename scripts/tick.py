@@ -11,7 +11,8 @@ Helius: wallet-live used 150+180 credits per 15-min run; at 10 min it runs with 
 --dry: don't commit dedupe state for pool/kol (revival/band/walletlive have their own ledgers and always commit)."""
 import json, os, re, subprocess, sys, time, csv, urllib.request, traceback
 from datetime import datetime, timezone, timedelta
-P = "/workspace/projects/7ed675e0-9a24-4f62-9d59-e27bf0c6ccd0"
+P = os.environ.get("SCANNER_ROOT", "/workspace/projects/7ed675e0-9a24-4f62-9d59-e27bf0c6ccd0")
+FAST = os.environ.get("FAST_V3") == "1"  # fast_v3.py loop: skip slow GT outcome tracking + wallet-confirm (Oct 10)
 IST = timezone(timedelta(hours=5, minutes=30))
 DRY = "--dry" in sys.argv
 ONLY = sys.argv[sys.argv.index("--only") + 1].split(",") if "--only" in sys.argv else None
@@ -80,7 +81,7 @@ def track_outcomes():
     w = csv.DictWriter(open(f, "w", newline=""), fieldnames=list(fields)); w.writeheader(); w.writerows(rows)
 
 def step_pool():
-    if not DRY:
+    if not DRY and not FAST:
         try: track_outcomes()
         except Exception: log("CRASH outcomes", traceback.format_exc()[-800:])
     j = lastjson(run(["python3", "scripts/new_pool_filter.py"] + ([] if DRY else ["--commit"]), 400))
@@ -218,7 +219,7 @@ def wallet_confirm():
     if not DRY: json.dump(sorted(done), open(df, "w"))
     return lines
 try:
-    _wc = wallet_confirm()
+    _wc = [] if FAST else wallet_confirm()
     if _wc: out.append("\n".join(_wc))
 except Exception: log("CRASH wallet_confirm", traceback.format_exc()[-800:])
 

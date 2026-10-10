@@ -5,7 +5,7 @@ only when run with --commit."""
 import json, os, re, sys, time, urllib.request
 from datetime import datetime, timezone, timedelta
 
-ROOT = "/workspace/projects/7ed675e0-9a24-4f62-9d59-e27bf0c6ccd0"
+ROOT = os.environ.get("SCANNER_ROOT", "/workspace/projects/7ed675e0-9a24-4f62-9d59-e27bf0c6ccd0")
 ALERTED = f"{ROOT}/data/pool_alerted.json"
 SOL = "So11111111111111111111111111111111111111112"
 IST = timezone(timedelta(hours=5, minutes=30))
