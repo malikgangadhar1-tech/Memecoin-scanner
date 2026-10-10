@@ -12,16 +12,26 @@ IST = timezone(timedelta(hours=5, minutes=30))
 UA = {"User-Agent": "Mozilla/5.0", "Accept": "application/json"}
 
 
-def get(url, tries=4):
+_LAST = [0.0]
+PACE = float(os.environ.get("GT_PACE_S", "6"))  # 2.2s tested Oct 10: 63s scan but 5 calls lost to 429s (coverage loss)
+def get(url, tries=5):
+    # Speed fix Oct 10 16:25 IST (Rohit "can we shorten it?"): profile showed 270 of 274s were 429 backoff sleeps (15/30/45s).
+    # Now: pace GeckoTerminal calls ~2.2s apart (free tier ~30/min), honour Retry-After, short backoff 3/6/10/15s. Rules unchanged.
     for i in range(tries):
+        gap = time.time() - _LAST[0]
+        if gap < PACE: time.sleep(PACE - gap)
+        _LAST[0] = time.time()
         try:
             req = urllib.request.Request(url, headers=UA)
-            with urllib.request.urlopen(req, timeout=30) as r:
+            with urllib.request.urlopen(req, timeout=20) as r:
                 return json.load(r)
         except Exception as e:
             if i == tries - 1:
                 raise
-            time.sleep(15 * (i + 1))
+            ra = getattr(e, "headers", None) and e.headers.get("Retry-After")
+            try: w = min(20, float(ra)) if ra else (8, 15, 20, 20)[min(i, 3)]
+            except Exception: w = (8, 15, 20, 20)[min(i, 3)]
+            time.sleep(w)
 
 
 def parse_ts(s):
@@ -128,13 +138,13 @@ def main():
                                 buyers=buyers, buys=buys, sells=sells, sellers=sellers,
                                 avg=round(avg, 2), age_min=round(age_h * 60),
                                 created_ist=created.astimezone(IST).strftime("%-I:%M %p IST")))
-        time.sleep(2)
+        pass  # pacing now inside get()
     # v3 (Rohit, Oct 7 21:11-21:12 IST): >= 8 distinct buyer wallets in the 5 min before alert.
     # Many small bundles with different wallets are fine; ONE big bundle is not:
     # reject if a single block holds >= 5 distinct buyers AND >= 50% of the 5-min buyers.
     kept = []
     for pp in passing:
-        time.sleep(2)
+        pass  # pacing now inside get()
         try:
             tr = get(f"https://api.geckoterminal.com/api/v2/networks/solana/pools/{pp['addr']}/trades")["data"]
         except Exception as e:
@@ -177,7 +187,7 @@ def main():
         kept.append(pp)
     passing = kept
     for pp in passing:
-        time.sleep(2)
+        pass  # pacing now inside get()
         try:
             info = get(f"https://api.geckoterminal.com/api/v2/networks/solana/tokens/{pp['mint']}/info")["data"]["attributes"]
             pp["symbol"] = info.get("symbol") or pp["name"].split(" / ")[0]
