@@ -57,6 +57,24 @@ def f(x):
         return None
 
 
+def dex_batch(mints):
+    """DexScreener tokens/v1 (300 req/min, separate from GT): {mint: best-liquidity SOL pair}. Empty dict on failure."""
+    out = {}
+    for i in range(0, len(mints), 30):
+        chunk = mints[i:i + 30]
+        if not chunk: continue
+        try:
+            req = urllib.request.Request("https://api.dexscreener.com/tokens/v1/solana/" + ",".join(chunk), headers=UA)
+            with urllib.request.urlopen(req, timeout=10) as r:
+                for d in json.load(r):
+                    m = (d.get("baseToken") or {}).get("address")
+                    if m and ((d.get("liquidity") or {}).get("usd") or 0) >= ((out.get(m, {}).get("liquidity") or {}).get("usd") or 0):
+                        out[m] = d
+        except Exception:
+            pass
+    return out
+
+
 def main():
     commit = "--commit" in sys.argv
     alerted = []
@@ -200,15 +218,23 @@ def main():
             reasons["one_big_bundle"] = reasons.get("one_big_bundle", 0) + 1; continue
         kept.append(pp)
     passing = kept
+    # SPEED (Oct 10 20:12 IST, Rohit "84s? can we reduce it"): symbol/socials from ONE DexScreener batch call instead of one
+    # rate-limited GeckoTerminal /info call per pass (~6-10s each). Labels only; no rule reads these.
+    _ds = dex_batch([pp["mint"] for pp in passing])
     for pp in passing:
-        pass  # pacing now inside get()
-        try:
-            info = get(f"https://api.geckoterminal.com/api/v2/networks/solana/tokens/{pp['mint']}/info")["data"]["attributes"]
-            pp["symbol"] = info.get("symbol") or pp["name"].split(" / ")[0]
-            pp["socials"] = bool(info.get("websites") or info.get("twitter_handle") or info.get("telegram_handle"))
-        except Exception:
-            pp["symbol"] = pp["name"].split(" / ")[0]
-            pp["socials"] = None
+        d = _ds.get(pp["mint"])
+        if d is not None:
+            pp["symbol"] = (d.get("baseToken") or {}).get("symbol") or pp["name"].split(" / ")[0]
+            inf = d.get("info") or {}
+            pp["socials"] = bool(inf.get("websites") or inf.get("socials"))
+        else:
+            try:
+                info = get(f"https://api.geckoterminal.com/api/v2/networks/solana/tokens/{pp['mint']}/info")["data"]["attributes"]
+                pp["symbol"] = info.get("symbol") or pp["name"].split(" / ")[0]
+                pp["socials"] = bool(info.get("websites") or info.get("twitter_handle") or info.get("telegram_handle"))
+            except Exception:
+                pp["symbol"] = pp["name"].split(" / ")[0]
+                pp["socials"] = None
         # Anti-rug LABELS (Rohit Oct 8 09:16 IST): dev % and top-10 holder %, label only until v3 n=50
         try:
             sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -268,6 +294,13 @@ def main():
         if s_ and not pp.get("shadow"): seen.add(s_)
         kept2.append(pp)
     passing = [pp for pp in kept2 if not pp.get("shadow")]
+    # FRESH MC AT SEND (Oct 10 20:12 IST): the page MC is read at the start of the scan; re-read it right before the ping so the
+    # number Rohit (or a bot) sees is the price he can actually get. "mcap" (rule/grading baseline) is unchanged.
+    _fr = dex_batch([pp["mint"] for pp in passing])
+    for pp in passing:
+        d = _fr.get(pp["mint"])
+        if d and d.get("marketCap"):
+            pp["mc_fresh"] = float(d["marketCap"]); pp["mc_fresh_t"] = time.time()
     shadows = [pp for pp in kept2 if pp.get("shadow")]
     if commit and shadows:
         with open(os.path.join(os.path.dirname(ALERTED), "v3_mc_shadow.jsonl"), "a") as fh:

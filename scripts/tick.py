@@ -95,7 +95,7 @@ def step_pool():
                 w.writerow([p["addr"], p.get("symbol"), datetime.now(IST).isoformat(timespec="seconds"), round(p["mcap"]), round(p["liq"]), p["buyers"], p["buys"], p["sells"], "", "", "", "", ""])
             try:
                 with open(f"{P}/data/v3_alerts.jsonl", "a") as fh:
-                    fh.write(json.dumps({"t": time.time(), "mint": p.get("mint"), "pool": p["addr"], "sym": p.get("symbol"), "mc": p["mcap"],
+                    fh.write(json.dumps({"t": time.time(), "mint": p.get("mint"), "pool": p["addr"], "sym": p.get("symbol"), "mc": p["mcap"], "mc_fresh": p.get("mc_fresh"), "mc_fresh_t": p.get("mc_fresh_t"),
                         # full setup snapshot for the lab notebook (Rohit Oct 8 16:34: "need the setup info")
                         **{k: p.get(k) for k in ("liq", "buyers", "buys", "sells", "sellers", "avg", "age_min", "buyers_5m", "buyers_prev5m", "buyers_half_early", "buyers_half_late", "half_window_s", "largest_bundle_5m", "socials", "dev_pct", "top10_pct", "tag", "creator", "farm_dev")}}) + "\n")
             except Exception: pass
@@ -109,7 +109,7 @@ def step_pool():
             # Rohit Oct 9 12:17 "go": dev-out as a confirmation stage, label only, graded apart (in-sample dev out 23/39 vs holding 4/14)
             dstate = "✅ DEV OUT" if dv == 0 else (f"DEV HOLDING {dv}%{flag}" if dv is not None else "dev ?%")
             tag += f"{dstate} / top10 {p.get('top10_pct') if p.get('top10_pct') is not None else '?'}% — "
-        lines.append(f"{p.get('symbol')} — {tag}mcap {usd(p['mcap'])} — liq {usd(p['liq'])} — {p['buyers']} buyers / {p['buys']} buys / {p['sells']} sells{conc} — "
+        lines.append(f"{p.get('symbol')} — {tag}mcap {usd(p['mc_fresh']) + ' now (scan ' + usd(p['mcap']) + ')' if p.get('mc_fresh') else usd(p['mcap'])} — liq {usd(p['liq'])} — {p['buyers']} buyers / {p['buys']} buys / {p['sells']} sells{conc} — "
                      f"{p.get('buyers_5m')} buyers in last 5 min{accel(p)} — {p['age_min']}m old, launched {p['created_ist']} — {soc} — https://dexscreener.com/solana/{p['addr']}")
     if lines: _tl.out.append("\n".join(lines))
 
