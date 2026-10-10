@@ -68,6 +68,7 @@ def main():
     seen = set(alerted)
     now = datetime.now(timezone.utc)
     checked, passing, reasons, errors = 0, [], {}, []
+    v4snaps = []
     # Oct 7 audit: new_pools only reaches ~10 min back (~20 launches/min), so pools that hit $15-30k later
     # were never seen (e.g. HEALTHCOIN 4.7x). Also screen trending pools (same rules, same <4h age cap).
     G = "https://api.geckoterminal.com/api/v2/networks/solana"
@@ -99,6 +100,19 @@ def main():
             if q != SOL:
                 fail("not_sol"); continue
             addr = a["address"]
+            # V4 DATA LAYER (Rohit Oct 10 18:32 IST: "v4 needs every strength of v3 and few weaknesses"): snapshot EVERY young
+            # SOL pool on every scan, alerted or not, from the page we already fetched. Log only; v3 logic below is unchanged.
+            try:
+                _w = "h24" if age_h > 6 else "h6"; _t = a["transactions"]; _v = a.get("volume_usd") or {}; _pc = a.get("price_change_percentage") or {}
+                v4snaps.append(dict(t=round(time.time()), pool=addr, mint=p["relationships"]["base_token"]["data"]["id"].split("_", 1)[1],
+                    sym=a["name"].split(" / ")[0], dex=((p["relationships"].get("dex") or {}).get("data") or {}).get("id", ""),
+                    src=("new" if "new_pools" in url else "trend"), age_min=round(age_h * 60, 1),
+                    mc=f(a.get("market_cap_usd")), fdv=f(a.get("fdv_usd")), liq=f(a.get("reserve_in_usd")), px=f(a.get("base_token_price_usd")),
+                    tx={k: _t.get(k) for k in ("m5", "m15", "m30", "h1", _w) if _t.get(k)},
+                    vol={k: f(_v.get(k)) for k in ("m5", "m15", "m30", "h1", _w)}, chg={k: f(_pc.get(k)) for k in ("m5", "m15", "m30", "h1")},
+                    alerted_before=addr in seen))
+            except Exception as _e:
+                errors.append(f"v4snap {addr}: {_e}")
             if addr in seen:
                 fail("already_alerted"); continue
             seen.add(addr)
@@ -260,6 +274,16 @@ def main():
             for pp in shadows:
                 fh.write(json.dumps(dict(t=time.time(), **{k: pp.get(k) for k in ("addr", "mint", "symbol", "mcap", "liq", "buyers", "buys", "sells", "sellers", "avg", "age_min", "buyers_5m", "largest_bundle_5m", "dev_pct", "top10_pct", "dex_id")})) + "\n")
         alerted += [pp["addr"] for pp in shadows]
+    if commit and v4snaps:
+        try:
+            _fin = {pp["addr"]: ("shadow" if pp.get("shadow") else "ALERT") for pp in kept2}
+            import gzip  # ~100KB/scan raw -> gzip, one file per UTC day (keeps the state branch small)
+            _d = os.path.join(os.path.dirname(ALERTED), "v4_snaps"); os.makedirs(_d, exist_ok=True)
+            with gzip.open(os.path.join(_d, now.strftime("%Y%m%d") + ".jsonl.gz"), "at") as fh:
+                for sn in v4snaps:
+                    sn["v3"] = _fin.get(sn["pool"], "no"); fh.write(json.dumps(sn, separators=(",", ":")) + "\n")
+        except Exception as e:
+            errors.append(f"v4snap write: {e}")
     if commit:
         json.dump(sorted(seen), open(SEEN, "w"))
     if commit and passing:
